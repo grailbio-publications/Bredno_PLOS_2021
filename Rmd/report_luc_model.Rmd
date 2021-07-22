@@ -191,7 +191,7 @@ df_population <- tibble::tribble(
   sum(has_ectf & stage_i_ii_iii),
   "~ with size information",
   sum(has_ectf & stage_i_ii_iii & has_size),
-  "~ with Ki-67 information",
+  "~ with PET SUV information",
   sum(has_ectf & has_size & stage_i_ii_iii & has_suv),
   "~ with LN information",
   sum(has_ectf & stage_i_ii_iii & has_ln & has_size & has_suv),
