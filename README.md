@@ -36,18 +36,20 @@ All data required to reproduce the results is provided in the directory
 `data`. The data used in the presented analyses are provided in tables separate
 for breast, lung, and colorectal cancers and for participants used in training and validation. 
 
-- supplemental_data_bc_training.tsv: Training data to generate the biophysical
+- `supplemental_data_bc_training.tsv`: Training data to generate the biophysical
   model for breast cancer.
-- supplemental_data_bc_validation.tsv: Validation data for the breast cancer
+- `supplemental_data_bc_validation.tsv`: Validation data for the breast cancer
   model.
-- supplemental_data_crc_training.tsv: Training data to generate the biophysical
+- `supplemental_data_crc_training.tsv`: Training data to generate the biophysical
   model for colorectal cancer.
-- supplemental_data_crc_validation.tsv: Validation data for the colorectal cancer
+- `supplemental_data_crc_validation.tsv`: Validation data for the colorectal cancer
   model.
-- supplemental_data_luc_training.tsv: Training data to generate the biophysical
+- `supplemental_data_luc_training.tsv`: Training data to generate the biophysical
   model for lung cancer.
-- supplemental_data_luc_validation.tsv: Validation data for the lung cancer
+- `supplemental_data_luc_validation.tsv`: Validation data for the lung cancer
   model.
+  
+The columns and variables are described in `data_dictionary.txt`.
 
 ## Code
 
