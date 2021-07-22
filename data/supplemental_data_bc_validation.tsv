@@ -1,0 +1,352 @@
+participant_id	sex	age	clinical_stage	n_stage	m_stage	t_stage	ln_involved	laterality	n_primary_lesions	histologic_grade	ki67_pos	weight_kg	height_m	size_1	size_2	size_3	size_4	hr_status	histologic_type	tm_classifier_result
+ccga_10069	Female	37	II	N1	M0	T1	1	unilateral	1	3	75	52.9	1.64	11	NA	NA	NA	Negative	IDC	not detected
+ccga_10601	Female	49	I	N0	Mx	T1	0,1	bilateral	2	2	30	60.3	1.63	13	NA	NA	NA	Positive	IDC	not detected
+ccga_12677	Female	68	II	N0	M0	T3	Other/missing	unilateral	1	3	NA	61.7	1.55	48	NA	NA	NA	Negative	Other	detected
+ccga_12843	Female	62	II	N0	M0	T2	Other/missing	unilateral	1	3	25	61.2	1.6	30	NA	NA	NA	Negative	IDC	detected
+ccga_13033	Female	61	III	N1	M0	T3	Other/missing	unilateral	1	3	NA	86	1.52	55	NA	NA	NA	Negative	IDC	detected
+ccga_13149	Female	64	I	N0	M0	T1	Other/missing	unilateral	1	3	60	96.3	1.61	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_14706	Female	53	I	N0	M0	T1	1	unilateral	1	3	60	97.5	1.63	12	NA	NA	NA	Negative	IDC	not detected
+ccga_14734	Female	59	IV	N1	M1	T4	1	unilateral	1	Other/missing	NA	77.1	1.73	44	NA	NA	NA	Positive	Other	detected
+ccga_14815	Female	74	II	N0	M0	T2	Other/missing	unilateral	1	3	90	59.2	1.57	NA	NA	NA	NA	Negative	IDC	detected
+ccga_3289	Female	74	I	N0	Mx	T1	0	unilateral	1	2	5	77.6	1.5	14	NA	NA	NA	Positive	IDC	not detected
+ccga_3343	Female	54	II	N0	M0	T2	0	unilateral	1	2	31	68	1.68	12	NA	NA	NA	Positive	IDC	not detected
+ccga_3761	Female	53	III	N1	Mx	T2	1	unilateral	1	3	15	65.3	1.68	NA	NA	NA	NA	Negative	IDC	detected
+ccga_4032	Female	56	II	N0	Mx	T2	1	unilateral	1	3	25	94.8	1.59	33	NA	NA	NA	Positive	IDC	not detected
+ccga_4093	Female	39	I	N0	M0	T1	Other/missing	unilateral	1	2	NA	56	1.7	19	NA	NA	NA	Positive	IDC	not detected
+ccga_4107	Female	60	II	N0	M0	T2	Other/missing	unilateral	1	2	NA	63	1.63	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_4199	Female	70	I	N0	Mx	T1	0	unilateral	1	2	15	101.2	1.63	10	NA	NA	NA	Positive	IDC	not detected
+ccga_4333	Female	47	I	N0	M0	T1	Other/missing	unilateral	1	2	15	97.1	1.68	4	NA	NA	NA	Positive	IDC	not detected
+ccga_5481	Female	54	I	N0	M0	T1	0	unilateral	1	2	8	75.1	1.57	15	NA	NA	NA	Positive	IDC	not detected
+ccga_5884	Female	59	IV	N2	M1	T2	4	unilateral	1	3	40	71.7	1.75	30	NA	NA	NA	Positive	IDC	detected
+ccga_608	Female	63	II	N1	M0	T1	1	unilateral	1	3	NA	85.7	1.52	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_6304	Female	35	II	N1	M0	T2	1	unilateral	1	3	50	60.9	1.63	21	NA	NA	NA	Negative	IDC	detected
+ccga_6684	Female	48	II	N1	M0	T2	Other/missing	unilateral	1	2	14	84	1.57	NA	NA	NA	NA	Positive	IDC	detected
+ccga_6975	Female	38	II	N1	M0	T2	Other/missing	unilateral	1	3	NA	56	1.55	48	NA	NA	NA	Positive	Other	detected
+ccga_7096	Female	45	II	N1	M0	T2	2	unilateral	1	3	NA	71.7	1.65	NA	NA	NA	NA	Negative	IDC	detected
+ccga_7221	Female	53	I	Nx	Mx	T1	1	unilateral	1	2	NA	59.4	1.56	17	NA	NA	NA	Positive	Other	not detected
+ccga_7391	Female	56	II	N1	M0	T2	1	unilateral	1	3	88	114.8	1.65	NA	NA	NA	NA	Negative	IDC	detected
+ccga_7427	Female	59	II	N0	M0	T2	0	unilateral	1	2	NA	155.1	1.63	24	NA	NA	NA	Positive	IDC	not detected
+ccga_7723	Female	40	II	N0	M0	T2	0	unilateral	1	3	90	81.2	1.61	25	NA	NA	NA	Positive	IDC	detected
+ccga_7988	Female	59	I	N0	M0	T1	0	unilateral	1	1	NA	111.1	1.75	5	NA	NA	NA	Positive	IDC	not detected
+ccga_8187	Female	68	I	N0	M0	T1	0	unilateral	1	2	NA	84.8	1.73	18	NA	NA	NA	Positive	ILC	not detected
+ccga_8325	Female	64	I	N0	M0	T1	Other/missing	unilateral	1	2	NA	161	1.65	21	NA	NA	NA	Positive	IDC	not detected
+ccga_8397	Female	74	I	N0	M0	T1	1	unilateral	1	1	1	81.6	1.6	11	NA	NA	NA	Positive	IDC	not detected
+ccga_8451	Female	57	I	N0	M0	T1	Other/missing	unilateral	1	2	26	85.5	1.64	10	NA	NA	NA	Positive	IDC	not detected
+ccga_8729	Female	47	I	N0	M0	T1	1	unilateral	1	2	NA	70.8	1.46	23	NA	NA	NA	Positive	IDC	not detected
+ccga_8924	Female	56	I	N0	Mx	T1	Other/missing	unilateral	2	2	NA	106.6	1.66	6.5	3	NA	NA	Positive	Other	not detected
+ccga_9340	Female	42	II	N0	M0	T2	1	unilateral	1	2	30	73.7	1.52	14	NA	NA	NA	Positive	IDC	not detected
+ccga_9691	Female	68	I	N0	M0	T1	0	unilateral	1	1	1	70.3	1.68	14	NA	NA	NA	Positive	IDC	not detected
+ccga_9746	Female	76	II	N0	M0	T2	0	unilateral	1	3	NA	72.6	1.6	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_9800	Female	57	III	N1	M0	T4	Other/missing	unilateral	1	3	NA	149.7	1.65	NA	NA	NA	NA	Positive	IDC	detected
+ccga_9816	Male	70	II	N0	M0	T2	0	unilateral	1	2	20	117.7	1.75	23	NA	NA	NA	Positive	IDC	not detected
+ccga_9828	Female	64	I	N0	Non-informative	T1	0	unilateral	1	2	NA	64.9	1.6	22	NA	NA	NA	Positive	ILC	not detected
+ccga_987	Female	76	I	N0	M0	T1	0	unilateral	1	1	14	83.9	1.6	11	NA	NA	NA	Positive	IDC	not detected
+ccga_10188	Female	58	III	N3	M0	T2	Other/missing	unilateral	1	2	NA	57.6	1.63	25	NA	NA	NA	Positive	IDC	detected
+ccga_10265	Female	65	III	N2	M0	T3	1	unilateral	1	3	52	88.2	1.68	29	NA	NA	NA	Positive	IDC	detected
+ccga_10314	Female	50	I	N0	M0	T1	0	unilateral	2	1	NA	61.7	1.57	4	NA	NA	NA	Positive	IDC	not detected
+ccga_10604	Female	57	II	N1	M0	T1	1	unilateral	1	3	NA	93.4	1.67	NA	NA	NA	NA	Positive	Other	detected
+ccga_10746	Female	59	II	N0	Mx	T2	0	unilateral	1	2	NA	83	1.55	25	NA	NA	NA	Positive	ILC	not detected
+ccga_1204	Female	84	I	N0	M0	T1	0	unilateral	3	3	70	63.6	1.53	5	NA	NA	NA	Positive	IDC	not detected
+ccga_12301	Female	52	II	N1	M0	T2	1	unilateral	1	3	90	114.6	1.65	NA	NA	NA	NA	Negative	IDC	detected
+ccga_14049	Female	53	II	N0	M0	T2	Other/missing	unilateral	1	3	70	97.2	1.73	17	NA	NA	NA	Negative	IDC	detected
+ccga_14103	Female	42	II	N1	M0	T1	Other/missing	unilateral	1	3	80	63.9	1.73	NA	NA	NA	NA	Negative	IDC	detected
+ccga_14464	Female	69	III	N2	M0	T2	4	unilateral	1	3	26	108	1.6	33	NA	NA	NA	Negative	IDC	detected
+ccga_14465	Female	49	II	N0	M0	T2	0	unilateral	1	3	95	79.8	1.65	26	NA	NA	NA	Negative	IDC	detected
+ccga_15189	Female	79	IV	N2	M1	T0	Other/missing	unilateral	1	Other/missing	NA	54	1.57	NA	NA	NA	NA	Negative	Other	detected
+ccga_1850	Female	52	I	N0	M0	T1	0,0	bilateral	2	2	10	68.9	1.56	1	NA	NA	NA	Positive	IDC	not detected
+ccga_2353	Female	80	II	N0	M0	T2	0	unilateral	1	3	45	74.8	1.6	22	NA	NA	NA	Positive	IDC	not detected
+ccga_3312	Female	75	I	N0	M0	T1	0	unilateral	1	1	1	70.2	1.58	6	NA	NA	NA	Positive	IDC	not detected
+ccga_3638	Female	63	I	N0	M0	T1	Other/missing	unilateral	1	3	43	56.7	1.7	NA	NA	NA	NA	Negative	IDC	detected
+ccga_3675	Female	48	II	N0	M0	T2	Other/missing	unilateral	1	2	NA	95.2	1.66	NA	NA	NA	NA	Positive	Other	not detected
+ccga_4087	Female	62	I	N0	M0	T1	0	unilateral	1	1	NA	87.5	1.6	6	NA	NA	NA	Positive	IDC	not detected
+ccga_4108	Female	24	II	N1	M0	T2	1	unilateral	1	3	60	66.1	1.57	32	NA	NA	NA	Positive	IDC	detected
+ccga_4398	Female	71	I	Nx	Mx	T1	1	unilateral	1	2	NA	78.5	1.6	18	NA	NA	NA	Positive	IDC	not detected
+ccga_4811	Female	62	IV	N2	M1	T3	Other/missing	unilateral	1	2	NA	99.8	1.72	NA	NA	NA	NA	Positive	IDC	detected
+ccga_5278	Female	49	II	N0	M0	T2	1	unilateral	1	2	35	61.5	1.58	40	NA	NA	NA	Positive	IDC	not detected
+ccga_5612	Female	75	II	N0	M0	T2	0	unilateral	2	2	NA	77.1	1.55	23	8	NA	NA	Positive	IDC	not detected
+ccga_5667	Female	57	I	N0	M0	T1	0,0	bilateral	3	2	16	58.9	1.68	22	5	3	NA	Positive	ILC	not detected
+ccga_576	Female	72	II	N0	M0	T2	0	unilateral	1	3	NA	99.8	1.57	28	NA	NA	NA	Positive	IDC	not detected
+ccga_6077	Female	55	III	N3	M0	T4	1	unilateral	2	3	60	106.1	1.78	50	NA	NA	NA	Negative	IDC	detected
+ccga_6785	Female	58	I	N0	M0	T1	0	unilateral	1	2	NA	68	1.73	19	NA	NA	NA	Positive	IDC	not detected
+ccga_6913	Female	49	II	N1	M0	T1	1	unilateral	1	2	15	63	1.63	11	NA	NA	NA	Positive	ILC	not detected
+ccga_7105	Female	66	II	N1	M0	T2	Other/missing	unilateral	1	2	15	61.5	1.68	26	NA	NA	NA	Positive	IDC	not detected
+ccga_7375	Female	64	II	N0	M0	T2	Other/missing	unilateral	1	3	80	68.5	1.55	26	NA	NA	NA	Negative	IDC	detected
+ccga_7462	Female	67	I	N0	M0	T1	0,Other/missing	bilateral	3	1	NA	86.2	1.65	18	7	NA	NA	Positive	Other	not detected
+ccga_7647	Female	47	III	N1	M0	T3	Other/missing,Other/missing	bilateral	2	2	NA	79	1.52	80	NA	NA	NA	Positive	IDC	detected
+ccga_8077	Female	52	II	N1	M0	Tx	12	unilateral	3	1	NA	67.6	1.65	21	19	10	NA	Positive	ILC	detected
+ccga_8191	Female	75	I	N0	M0	T1	1	unilateral	1	1	NA	85.7	1.57	14	NA	NA	NA	Positive	Other	not detected
+ccga_8519	Female	48	II	N0	M0	T2	Other/missing	unilateral	1	2	30	124.3	1.7	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_8629	Female	71	II	N1	M0	T2	Other/missing	unilateral	1	2	45	63	1.54	50	NA	NA	NA	Positive	IDC	not detected
+ccga_8846	Female	61	II	N0	M0	T2	Other/missing	unilateral	1	1	33	95.3	1.57	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_8976	Female	56	I	N0	M0	T1	0	unilateral	1	1	5	74.2	1.57	8	NA	NA	NA	Positive	ILC	not detected
+ccga_9080	Female	25	II	N0	Mx	T2	Other/missing	unilateral	1	3	63	96.6	1.78	NA	NA	NA	NA	Negative	IDC	detected
+ccga_9280	Female	65	II	N0	M0	T2	Other/missing	unilateral	1	3	95	98.9	1.73	NA	NA	NA	NA	Positive	IDC	detected
+ccga_9613	Female	71	I	N0	M0	T1	Other/missing,Other/missing	bilateral	2	1	NA	84.8	1.75	10	10	NA	NA	Positive	IDC	not detected
+ccga_9655	Female	36	I	N1	M0	T2	Other/missing	unilateral	1	2	NA	92.1	1.7	NA	NA	NA	NA	Positive	IDC	detected
+ccga_9667	Female	62	I	N0	M0	T1	0,4	bilateral	2	2	10	64.4	1.6	14	11	NA	NA	Positive	Other	not detected
+ccga_9819	Female	52	III	N3	M0	T2	Other/missing	unilateral	1	3	90	43.4	1.35	NA	NA	NA	NA	Negative	Other	detected
+ccga_10266	Female	61	I	N0	M0	T1	0	unilateral	1	1	17	64.9	1.54	22	NA	NA	NA	Positive	ILC	not detected
+ccga_12352	Female	67	II	N0	M0	T2	1	unilateral	1	3	86	63.5	1.6	18	NA	NA	NA	Negative	Other	detected
+ccga_12509	Female	52	II	N1	M0	T1	1	unilateral	1	2	NA	84.6	1.65	65	NA	NA	NA	Negative	IDC	not detected
+ccga_12536	Female	74	II	N1	M0	T2	1	unilateral	1	3	NA	57.9	1.73	25	NA	NA	NA	Negative	IDC	detected
+ccga_13493	Female	68	II	N0	M0	T2	Other/missing	unilateral	1	3	55	114.8	1.65	NA	NA	NA	NA	Negative	IDC	detected
+ccga_14085	Female	50	I	N0	M0	T1	Other/missing	unilateral	1	2	NA	58.5	1.6	10	NA	NA	NA	Negative	IDC	not detected
+ccga_14524	Female	42	III	N1	M0	T3	1	unilateral	1	3	NA	110.7	1.73	55	NA	NA	NA	Negative	Other	detected
+ccga_1484	Female	56	III	N1	M0	T3	1	unilateral	1	2	16	83.5	1.68	15	NA	NA	NA	Positive	ILC	detected
+ccga_15206	Female	53	I	N0	M0	T1	Other/missing	unilateral	1	3	NA	93.3	1.75	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_2514	Female	72	II	N0	M0	T2	0	unilateral	1	2	25	61.3	1.64	23	NA	NA	NA	Positive	ILC	not detected
+ccga_3688	Female	37	III	N1	M0	T3	13,2	bilateral	2	2	10	58.1	1.7	75	70	NA	NA	Positive	ILC	not detected
+ccga_3829	Female	77	I	N0	M0	T1	Other/missing	unilateral	1	1	15	74.1	1.6	6	NA	NA	NA	Positive	IDC	not detected
+ccga_4237	Female	50	II	N1	M0	T2	1	unilateral	1	3	90	54.9	1.6	NA	NA	NA	NA	Positive	IDC	detected
+ccga_4381	Female	50	I	N0	M0	T1	0,0	bilateral	4	2	NA	53.5	1.52	18	15	12	3	Positive	IDC	not detected
+ccga_4683	Female	55	I	N0	M0	T1	0	unilateral	1	2	39	101.2	1.69	11	NA	NA	NA	Positive	Other	not detected
+ccga_5266	Female	53	III	N1	M0	T4	1	unilateral	1	3	39	88	1.65	NA	NA	NA	NA	Positive	IDC	detected
+ccga_5303	Female	50	II	N0	M0	T2	0,2	bilateral	2	2	NA	81.6	1.7	85	NA	NA	NA	Positive	Other	not detected
+ccga_5470	Female	68	I	N0	M0	T1	0	unilateral	1	2	NA	69.4	1.65	8	NA	NA	NA	Positive	IDC	not detected
+ccga_5549	Female	45	II	N1	M0	T2	1	unilateral	1	3	90	65.3	1.56	NA	NA	NA	NA	Negative	IDC	detected
+ccga_5796	Female	41	II	N0	M0	T2	0	unilateral	1	3	42	106.6	1.78	38	NA	NA	NA	Positive	IDC	not detected
+ccga_5969	Female	62	II	N1	M0	T1	2	unilateral	2	3	23	93.4	1.63	12	12	NA	NA	Positive	IDC	not detected
+ccga_6043	Female	70	I	N0	M0	T1	0	unilateral	1	3	77	53	1.61	13	NA	NA	NA	Negative	IDC	not detected
+ccga_6103	Female	61	II	N1	Mx	T2	1	unilateral	1	3	NA	114.3	1.63	NA	NA	NA	NA	Negative	IDC	detected
+ccga_6119	Female	63	I	Nx	M0	T1	0	unilateral	1	1	NA	54	1.55	8	NA	NA	NA	Positive	IDC	not detected
+ccga_6344	Female	67	I	N0	M0	T1	0	unilateral	1	2	25	102.6	1.56	22	NA	NA	NA	Positive	IDC	not detected
+ccga_6661	Female	46	I	N0	M0	T1	0	unilateral	1	2	NA	70.8	1.7	15	NA	NA	NA	Positive	ILC	not detected
+ccga_6685	Female	47	II	N0	M0	T3	0,1	bilateral	2	2	NA	53.5	1.52	25	23	NA	NA	Positive	Other	not detected
+ccga_6696	Female	60	II	N0	M0	T2	1	unilateral	1	3	NA	78	1.57	23	NA	NA	NA	Positive	IDC	detected
+ccga_684	Female	52	II	N0	M0	T3	1	unilateral	1	2	40	76.7	1.61	49	NA	NA	NA	Positive	IDC	detected
+ccga_7097	Female	64	I	N0	M0	T1	1	unilateral	1	2	2	69.9	1.55	16	NA	NA	NA	Positive	IDC	not detected
+ccga_7592	Female	41	II	N0	M0	T2	1	unilateral	2	1	15	56.6	1.71	40	20	NA	NA	Positive	IDC	not detected
+ccga_8093	Female	66	II	N0	M0	T2	0	unilateral	1	1	15	71.4	1.65	22	NA	NA	NA	Positive	Other	not detected
+ccga_8170	Female	34	II	N0	M0	T3	Other/missing	unilateral	1	3	85	75.8	1.61	NA	NA	NA	NA	Negative	IDC	detected
+ccga_8223	Female	57	I	N0	Mx	T1	0	unilateral	1	1	1	89.5	1.66	7	NA	NA	NA	Positive	IDC	not detected
+ccga_8334	Female	40	II	N1	M0	T2	Other/missing	unilateral	1	3	15	105.8	1.57	26	NA	NA	NA	Negative	IDC	detected
+ccga_8479	Female	54	I	N0	M0	T1	0,0	bilateral	2	1	7	78.9	1.65	18	2	NA	NA	Positive	Other	not detected
+ccga_8849	Female	60	I	N0	M0	T1	0	unilateral	1	3	55	48.3	1.52	20	NA	NA	NA	Negative	IDC	not detected
+ccga_980	Female	29	IV	N3	M1	T4	Other/missing	unilateral	1	Other/missing	40	60.2	1.59	80	NA	NA	NA	Positive	Other	detected
+ccga_10163	Female	66	I	N0	M0	T1	0	unilateral	1	2	NA	73.3	1.69	13	NA	NA	NA	Positive	IDC	not detected
+ccga_10224	Female	53	I	N1	M0	T1	1	unilateral	1	3	NA	64.4	1.57	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_12443	Female	39	II	N1	Mx	T2	Other/missing	unilateral	1	2	NA	62.6	1.6	31	NA	NA	NA	Negative	IDC	detected
+ccga_12472	Female	41	II	N0	M0	T2	0	unilateral	1	3	83	81.5	1.61	40	NA	NA	NA	Negative	IDC	detected
+ccga_13267	Female	56	I	N0	M0	T1	Other/missing	unilateral	1	3	NA	81.2	1.55	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_14165	Female	67	II	N0	M0	T2	Other/missing	unilateral	1	3	70	70.8	1.6	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_14514	Female	44	III	N1	M0	T2	Other/missing	unilateral	1	3	NA	84.2	1.54	NA	NA	NA	NA	Negative	IDC	detected
+ccga_1483	Female	67	III	N3	M0	T4	1	unilateral	1	3	48	89.4	1.66	NA	NA	NA	NA	Negative	IDC	detected
+ccga_14922	Female	65	II	N0	M0	T2	Other/missing	unilateral	1	3	55	69.6	1.63	27	NA	NA	NA	Negative	IDC	not detected
+ccga_1515	Female	65	II	N0	Mx	T2	0	unilateral	1	2	NA	54	1.55	29	NA	NA	NA	Positive	Other	not detected
+ccga_2422	Female	47	IV	N1	M1	T2	Other/missing	unilateral	1	Other/missing	20	102.5	1.61	20	NA	NA	NA	Positive	Other	detected
+ccga_2517	Female	40	II	N0	M0	T2	Other/missing	unilateral	1	2	5	48.1	1.6	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_4222	Female	74	I	N0	M0	T1	0	unilateral	1	2	NA	108.6	1.68	16	NA	NA	NA	Positive	Other	not detected
+ccga_4549	Female	59	I	N0	M0	T1	0	unilateral	1	1	NA	92	1.78	8	NA	NA	NA	Positive	IDC	not detected
+ccga_4951	Female	51	II	N1	M0	T2	1	unilateral	1	2	31	46.7	1.6	23	NA	NA	NA	Positive	IDC	not detected
+ccga_5299	Female	57	I	N0	Mx	T1	0	unilateral	1	3	NA	83.9	1.73	14	NA	NA	NA	Positive	IDC	not detected
+ccga_5881	Female	60	I	N0	M0	T1	1	unilateral	2	3	NA	91	1.55	14	5	NA	NA	Positive	IDC	not detected
+ccga_6069	Female	63	III	N0	M0	T4	Other/missing	unilateral	1	3	50	72.1	1.63	15	NA	NA	NA	Positive	IDC	detected
+ccga_6580	Female	53	II	N0	M0	T3	Other/missing	unilateral	1	3	90	66.4	1.63	NA	NA	NA	NA	Negative	IDC	detected
+ccga_6586	Female	71	I	N0	M0	T1	0	unilateral	1	3	NA	94.3	1.55	20	NA	NA	NA	Positive	IDC	not detected
+ccga_6807	Female	44	II	N0	M0	T2	0	unilateral	1	2	NA	74.8	1.63	15	NA	NA	NA	Positive	Other	not detected
+ccga_6831	Female	68	II	N0	M0	T2	0,0	bilateral	2	3	40	58.5	1.52	24	21	NA	NA	Positive	ILC	not detected
+ccga_6914	Female	62	II	N0	M0	T3	0	unilateral	1	3	70	79.4	1.5	57	NA	NA	NA	Positive	IDC	detected
+ccga_6927	Female	70	I	N0	M0	T1	0	unilateral	1	1	NA	54	1.57	4.2	NA	NA	NA	Positive	IDC	not detected
+ccga_7120	Female	68	I	N0	M0	T1	0,Other/missing	bilateral	2	1	NA	115.2	1.78	14	NA	NA	NA	Positive	IDC	not detected
+ccga_7350	Female	33	II	N0	M0	T2	Other/missing	unilateral	1	3	NA	62.6	1.52	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_7382	Female	65	IV	N1	M1	T2	1	unilateral	1	3	60	87.1	1.65	NA	NA	NA	NA	Negative	IDC	detected
+ccga_742	Female	42	I	N0	M0	T1	1	unilateral	3	3	25	55.3	1.6	20	8	NA	NA	Positive	Other	not detected
+ccga_7514	Female	71	I	N0	M0	T1	0	unilateral	1	1	NA	110.7	1.7	NA	NA	NA	NA	Positive	Other	not detected
+ccga_7569	Female	52	I	N0	M0	T1	0	unilateral	3	2	8	88.1	1.73	16	14	1	NA	Positive	IDC	not detected
+ccga_7754	Female	64	II	N0	M0	T2	Other/missing	unilateral	1	3	28	118	1.68	NA	NA	NA	NA	Positive	IDC	detected
+ccga_8581	Female	46	III	N1	Mx	T3	1	unilateral	1	2	NA	82.1	1.75	40	NA	NA	NA	Positive	IDC	detected
+ccga_8609	Female	61	I	N0	M0	T1	0	unilateral	2	2	NA	79.4	1.6	15	12	NA	NA	Positive	IDC	not detected
+ccga_8773	Female	44	II	N0	M0	T2	2	unilateral	1	3	20	77.9	1.65	45	NA	NA	NA	Negative	IDC	detected
+ccga_8783	Female	59	I	N0	Non-informative	T1	0,0	bilateral	3	2	NA	89.8	1.68	5	4	4	NA	Positive	Other	not detected
+ccga_8793	Female	78	I	N0	M0	T1	0	unilateral	1	2	NA	73.9	1.52	15	NA	NA	NA	Positive	Other	not detected
+ccga_8955	Female	65	I	N0	M0	T1	0	unilateral	1	2	NA	59	1.65	21	NA	NA	NA	Positive	IDC	not detected
+ccga_8962	Female	49	I	N0	M0	T1	0	unilateral	1	2	10	57.1	1.57	6	NA	NA	NA	Positive	IDC	not detected
+ccga_8974	Female	39	I	N0	M0	T1	3	unilateral	1	1	10	55.2	1.6	35	NA	NA	NA	Positive	IDC	not detected
+ccga_9244	Female	66	II	N0	M0	T2	0	unilateral	1	1	NA	99.8	1.73	28	NA	NA	NA	Positive	IDC	not detected
+ccga_9483	Female	76	II	N0	M0	T2	Other/missing	unilateral	1	3	95	57.6	1.56	NA	NA	NA	NA	Negative	IDC	detected
+ccga_9561	Female	64	I	N0	M0	T1	0	unilateral	1	2	NA	63.9	1.64	7	NA	NA	NA	Positive	IDC	not detected
+ccga_9578	Female	42	I	N0	M0	T1	1	unilateral	3	2	25	88.7	1.66	20	12	11	NA	Positive	ILC	not detected
+ccga_9647	Female	48	II	N0	M0	T2	0	unilateral	1	3	NA	94.3	1.63	20	NA	NA	NA	Negative	IDC	not detected
+ccga_9709	Female	41	II	N1	Mx	T2	1	unilateral	2	2	7	61.2	1.47	17	16	NA	NA	Positive	IDC	not detected
+ccga_10341	Female	22	I	N1	M0	T2	1	unilateral	1	3	96	93.4	1.63	NA	NA	NA	NA	Positive	IDC	detected
+ccga_10416	Female	70	I	N0	M0	T1	0	unilateral	1	2	15	83.5	1.6	11	NA	NA	NA	Positive	IDC	not detected
+ccga_10466	Female	70	II	Nx	Non-informative	T2	2	unilateral	1	2	NA	70.8	1.68	27	NA	NA	NA	Positive	IDC	not detected
+ccga_12280	Female	59	III	N1	M0	T2	1	unilateral	1	2	80	68	1.57	21	NA	NA	NA	Negative	Other	detected
+ccga_13726	Female	65	II	Non-informative	Non-informative	Non-informative	0	unilateral	1	2	5	73.5	1.75	31	NA	NA	NA	Negative	IDC	not detected
+ccga_1402	Female	55	I	N0	M0	T1	0	unilateral	1	3	46	65	1.75	6	NA	NA	NA	Negative	IDC	not detected
+ccga_14441	Female	47	II	N0	M0	T2	Other/missing	unilateral	1	3	50	87.1	1.65	14	NA	NA	NA	Negative	IDC	not detected
+ccga_15259	Female	52	II	N0	M0	T2	Other/missing	unilateral	1	Other/missing	NA	57.2	1.55	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_2758	Female	56	II	Nx	Mx	T2	1	unilateral	1	2	40	88.8	1.63	42	NA	NA	NA	Positive	IDC	not detected
+ccga_3596	Female	31	I	N0	Mx	T1	Other/missing	unilateral	1	1	NA	69.9	1.64	13	NA	NA	NA	Positive	IDC	not detected
+ccga_3701	Female	57	I	N0	M0	T1	0,Other/missing	bilateral	2	3	NA	72.6	1.65	18	NA	NA	NA	Positive	IDC	not detected
+ccga_4961	Female	63	II	N0	M0	T2	0	unilateral	1	1	5	66.7	1.6	25	NA	NA	NA	Positive	Other	not detected
+ccga_5468	Female	48	II	N1	M0	T2	1	unilateral	1	3	99	62.9	1.64	NA	NA	NA	NA	Negative	IDC	detected
+ccga_5837	Female	67	II	N1	M0	T2	1	unilateral	2	3	10	55	1.55	55	13	NA	NA	Positive	IDC	not detected
+ccga_5851	Female	85	II	N1	M0	T2	1	unilateral	1	2	13	58.4	1.65	22	NA	NA	NA	Positive	IDC	not detected
+ccga_6005	Female	83	III	N2	M0	T2	Other/missing,1	bilateral	2	2	30	63.6	1.61	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_6400	Female	39	II	N1	M0	T2	0,1	bilateral	2	1	NA	92.1	1.75	20	NA	NA	NA	Positive	IDC	not detected
+ccga_6633	Female	32	II	N0	M0	T2	Other/missing	unilateral	1	2	NA	71	1.6	20	NA	NA	NA	Positive	IDC	not detected
+ccga_6646	Female	60	I	N0	M0	T1	0	unilateral	1	2	8	76.2	1.52	11	NA	NA	NA	Positive	IDC	not detected
+ccga_6718	Female	41	I	N0	M0	T1	0	unilateral	2	2	NA	85.3	1.55	9	5	NA	NA	Positive	ILC	not detected
+ccga_6803	Female	55	II	N1	M0	T2	1	unilateral	1	2	NA	73.1	1.65	30	NA	NA	NA	Negative	IDC	detected
+ccga_6867	Female	73	I	N0	M0	T1	0	unilateral	1	1	10	61.1	1.52	8	NA	NA	NA	Positive	IDC	not detected
+ccga_6940	Female	63	II	N0	M0	T2	0	unilateral	1	1	NA	75.1	1.7	35	NA	NA	NA	Positive	IDC	not detected
+ccga_7028	Female	51	II	N1	M0	T1	1	unilateral	1	2	NA	133.4	1.75	17	NA	NA	NA	Positive	IDC	not detected
+ccga_7217	Female	58	I	N0	M0	T1	0	unilateral	1	1	3	81.6	1.71	7	NA	NA	NA	Positive	Other	not detected
+ccga_7259	Female	49	II	N0	M0	T2	0	unilateral	1	2	10	92	1.71	25	NA	NA	NA	Positive	IDC	not detected
+ccga_7362	Female	48	III	N2	M0	T1	1	unilateral	1	3	50	82.2	1.63	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_7804	Female	56	I	N0	M0	T1	0	unilateral	1	1	NA	83.5	1.7	7	NA	NA	NA	Positive	IDC	not detected
+ccga_7856	Female	63	III	N0	M0	T4	Other/missing	unilateral	1	2	70	105.3	1.68	31	NA	NA	NA	Positive	ILC	detected
+ccga_8448	Female	62	II	N0	Mx	T2	0	unilateral	1	2	10	89.3	1.57	35	NA	NA	NA	Positive	IDC	not detected
+ccga_8636	Female	55	I	N0	M0	T1	Other/missing	unilateral	1	3	NA	89.4	1.75	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_8739	Female	53	II	Nx	Mx	T2	0	unilateral	1	2	NA	106.5	1.6	20	NA	NA	NA	Positive	IDC	not detected
+ccga_8770	Female	56	I	N0	M0	T1	0	unilateral	2	2	3	89.7	1.77	4	4	NA	NA	Positive	IDC	not detected
+ccga_8792	Female	48	I	N0	M0	T1	0	unilateral	1	3	NA	59	1.57	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_8810	Female	66	III	N2	M0	T4	1	unilateral	1	2	30	65.3	1.7	37	NA	NA	NA	Positive	IDC	detected
+ccga_8937	Female	52	II	N0	M0	T2	0	unilateral	1	2	15	89.7	1.65	15	NA	NA	NA	Positive	IDC	not detected
+ccga_9125	Female	60	I	N0	M0	T1	0	unilateral	1	3	25	78	1.7	7	NA	NA	NA	Positive	IDC	not detected
+ccga_9451	Female	55	III	N1	M0	T3	1	unilateral	1	Other/missing	75	74.8	1.68	NA	NA	NA	NA	Positive	IDC	detected
+ccga_9477	Female	73	I	N0	M0	T1	0	unilateral	1	2	NA	100.7	1.57	15	NA	NA	NA	Positive	IDC	not detected
+ccga_9559	Female	64	IV	N0	M1	Tx	Other/missing	unilateral	1	1	15	71.7	1.55	NA	NA	NA	NA	Positive	ILC	detected
+ccga_9967	Female	65	I	N0	M0	T1	Other/missing	unilateral	1	3	NA	96	1.53	12	NA	NA	NA	Positive	IDC	detected
+ccga_10251	Female	64	II	N1	M0	T2	1	unilateral	1	1	NA	62.1	1.68	21	NA	NA	NA	Positive	ILC	not detected
+ccga_12595	Female	29	III	N1	M0	T3	1	unilateral	1	3	85	68.9	1.66	46	NA	NA	NA	Negative	IDC	detected
+ccga_12686	Female	50	I	N0	M0	T1	0	unilateral	1	3	NA	103.9	1.63	8	NA	NA	NA	Negative	IDC	not detected
+ccga_13079	Female	69	I	N0	M0	T1	0	unilateral	1	3	30	114.3	1.7	37	NA	NA	NA	Negative	IDC	not detected
+ccga_13482	Female	34	II	N0	M0	T2	Other/missing	unilateral	1	3	70	73	1.68	NA	NA	NA	NA	Negative	IDC	detected
+ccga_13580	Female	48	I	N0	M0	T1	Other/missing,Other/missing	bilateral	2	3	85	111.6	1.73	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_14320	Female	42	II	N0	M0	T2	Other/missing	unilateral	1	2	54	79.7	1.61	NA	NA	NA	NA	Positive	IDC	detected
+ccga_14362	Female	56	II	N0	M0	T2	Other/missing	unilateral	1	Other/missing	NA	70.8	1.78	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_14824	Female	51	III	N2	M0	T4	1	unilateral	1	3	NA	94.3	1.57	NA	NA	NA	NA	Negative	IDC	detected
+ccga_15158	Female	30	III	N1	M0	T4	1	unilateral	1	Other/missing	NA	93	1.6	25	NA	NA	NA	Negative	IDC	detected
+ccga_1694	Female	45	II	N0	M0	T2	0	unilateral	3	2	10	69.1	1.8	30	19	NA	NA	Positive	ILC	not detected
+ccga_311	Female	65	II	N0	M0	T2	0	unilateral	1	1	5	69.9	1.57	30	NA	NA	NA	Positive	Other	not detected
+ccga_324	Female	56	II	N0	M0	T2	Other/missing	unilateral	1	2	30	59.4	1.65	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_3885	Female	30	II	N0	M0	T2	Other/missing	unilateral	1	2	19	98	1.69	21	NA	NA	NA	Positive	IDC	not detected
+ccga_3906	Female	77	I	N0	M0	T1	0	unilateral	1	2	19	61.7	1.6	10	NA	NA	NA	Positive	IDC	not detected
+ccga_4000	Female	61	I	N0	M0	T1	0	unilateral	1	1	NA	81.6	1.57	6	NA	NA	NA	Positive	IDC	not detected
+ccga_4138	Female	85	I	N0	M0	T1	0	unilateral	1	2	12	66.5	1.6	7	NA	NA	NA	Positive	ILC	detected
+ccga_4300	Female	47	II	N1	Mx	T2	1	unilateral	1	3	40	58.5	1.5	NA	NA	NA	NA	Positive	IDC	detected
+ccga_4572	Female	64	II	Nx	Mx	T4	Other/missing	unilateral	1	1	NA	72.6	1.52	23	NA	NA	NA	Positive	ILC	not detected
+ccga_5114	Female	68	I	N0	M0	T1	0	unilateral	1	1	NA	70.3	1.68	2	NA	NA	NA	Positive	IDC	not detected
+ccga_5128	Female	57	I	N0	M0	T1	3	unilateral	1	2	NA	78.5	1.7	18	NA	NA	NA	Positive	Other	not detected
+ccga_5235	Female	46	III	N2	M0	T2	1	unilateral	1	3	15	110.4	1.64	NA	NA	NA	NA	Negative	IDC	detected
+ccga_528	Female	63	I	N0	M0	T1	0	unilateral	1	1	4	78.9	1.64	14	NA	NA	NA	Positive	IDC	not detected
+ccga_6651	Female	48	I	N0	M0	T1	Other/missing	unilateral	1	2	30	87.3	1.57	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_6957	Female	65	I	N0	M0	T1	0	unilateral	1	1	5	66.9	1.56	13	NA	NA	NA	Positive	IDC	not detected
+ccga_6985	Female	52	I	N0	M0	T1	0	unilateral	1	3	40	105.4	1.6	12	NA	NA	NA	Positive	IDC	not detected
+ccga_7269	Female	60	II	N1	M0	T2	9	unilateral	1	3	2	68.5	1.52	51	NA	NA	NA	Positive	IDC	detected
+ccga_8537	Female	65	II	N0	M0	T2	0	unilateral	1	3	95	62	1.63	22	NA	NA	NA	Negative	IDC	detected
+ccga_8548	Female	73	II	N1	M0	T2	Other/missing	unilateral	1	3	93	64	1.52	NA	NA	NA	NA	Negative	IDC	detected
+ccga_8555	Female	67	I	N0	Mx	T1	1	unilateral	1	2	90	90.7	1.65	21	NA	NA	NA	Negative	IDC	not detected
+ccga_8977	Female	53	II	N0	M0	T2	1	unilateral	3	1	NA	92.5	1.68	70	25	17	NA	Positive	IDC	not detected
+ccga_9034	Female	84	I	N0	M0	T1	Other/missing	unilateral	1	2	13	113.4	1.68	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_9297	Female	46	II	Non-informative	Non-informative	Non-informative	0	unilateral	1	1	NA	105.3	1.73	31	NA	NA	NA	Positive	IDC	not detected
+ccga_9897	Female	73	II	N1	M0	T3	Other/missing	unilateral	1	1	30	92.1	1.7	NA	NA	NA	NA	Positive	ILC	detected
+ccga_9928	Female	54	II	N0	M0	T2	Other/missing	unilateral	1	3	60	74.8	1.63	21	NA	NA	NA	Negative	IDC	detected
+ccga_9947	Female	61	I	N0	M0	T1	0	unilateral	1	1	NA	93.9	1.7	7	NA	NA	NA	Positive	IDC	not detected
+ccga_9982	Female	65	I	N0	M0	T2	0	unilateral	1	2	NA	64.4	1.63	43	NA	NA	NA	Positive	Other	not detected
+ccga_515	Female	80	II	N1	M0	T1	1	unilateral	1	2	35	53.1	1.57	13	NA	NA	NA	Positive	Other	not detected
+ccga_451	Female	35	II	N0	M0	T2	Other/missing	unilateral	1	2	41	65.8	1.78	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_10250	Female	53	III	N2	M0	T2	1	unilateral	1	3	95	77.1	1.57	NA	NA	NA	NA	Negative	IDC	detected
+ccga_12699	Female	47	I	N0	M0	T1	0	unilateral	2	2	NA	50.8	1.52	13	7	NA	NA	Negative	IDC	not detected
+ccga_2778	Female	47	I	N0	M0	T1	0,0	bilateral	2	1	11	72.8	1.66	15	13	NA	NA	Positive	IDC	not detected
+ccga_3499	Female	64	III	N1	M0	T3	1	unilateral	1	2	NA	58.1	1.63	NA	NA	NA	NA	Negative	IDC	detected
+ccga_3864	Female	52	I	N0	M0	T1	0	unilateral	1	1	NA	90.7	1.73	16	NA	NA	NA	Positive	IDC	not detected
+ccga_3443	Female	64	I	N0	M0	T1	0	unilateral	1	2	16	126.9	1.77	14	NA	NA	NA	Positive	IDC	not detected
+ccga_2907	Female	35	II	N1	M0	T1	Other/missing	unilateral	1	Other/missing	NA	63	1.64	NA	NA	NA	NA	Positive	IDC	detected
+ccga_2799	Female	74	I	N0	M0	T1	0	unilateral	1	3	9	101.6	1.6	18	NA	NA	NA	Positive	IDC	not detected
+ccga_3957	Female	64	II	Nx	Mx	T2	Other/missing	unilateral	1	Other/missing	NA	75.7	1.68	NA	NA	NA	NA	Positive	ILC	not detected
+ccga_3941	Female	68	I	N0	M0	T1	0	unilateral	1	1	14	92.4	1.59	11	NA	NA	NA	Positive	IDC	not detected
+ccga_1525	Female	62	II	N0	M0	T2	Other/missing	unilateral	1	3	40	67.1	1.57	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_1374	Female	52	I	N0	M0	T1	0	unilateral	1	2	3	94.3	1.63	18	NA	NA	NA	Positive	IDC	not detected
+ccga_962	Female	40	I	N0	M0	T1	0	unilateral	1	3	32	72.6	1.55	11	NA	NA	NA	Positive	IDC	not detected
+ccga_14954	Female	59	I	N0	M0	T1	Other/missing	unilateral	1	3	NA	54	1.57	17	NA	NA	NA	Negative	IDC	detected
+ccga_15322	Female	62	III	N1	M0	T2	1	unilateral	1	Other/missing	NA	69.9	1.57	35	NA	NA	NA	Negative	IDC	detected
+ccga_14638	Female	54	II	N0	M0	T2	Other/missing	unilateral	1	3	60	80.7	1.57	NA	NA	NA	NA	Negative	Other	detected
+ccga_14995	Female	47	II	N0	M0	T2	0	unilateral	1	3	NA	93.9	1.57	21	NA	NA	NA	Negative	IDC	detected
+ccga_14863	Female	56	I	N0	M0	T1	0	unilateral	1	3	NA	95	1.75	20	NA	NA	NA	Negative	IDC	not detected
+ccga_14186	Female	64	III	N2	M0	T0	1	unilateral	1	Other/missing	95	83.6	1.57	NA	NA	NA	NA	Negative	Other	detected
+ccga_7304	Female	49	I	N0	M0	T1	0	unilateral	1	3	NA	61.7	1.66	18	NA	NA	NA	Positive	IDC	not detected
+ccga_7328	Female	41	I	N0	M0	T1	0	unilateral	1	2	21	117.4	1.65	8	NA	NA	NA	Positive	IDC	not detected
+ccga_7178	Female	51	I	N0	M0	T1	0	unilateral	3	Other/missing	NA	115.6	1.77	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_6974	Female	51	II	N0	M0	T2	Other/missing	unilateral	1	2	28	91.1	1.75	32	NA	NA	NA	Positive	IDC	not detected
+ccga_7073	Female	74	I	N0	M0	T1	0	unilateral	1	2	NA	54	1.52	12	NA	NA	NA	Positive	IDC	not detected
+ccga_7080	Female	53	II	N1	M0	T2	1	unilateral	1	3	99	73.7	1.65	NA	NA	NA	NA	Positive	IDC	detected
+ccga_7154	Female	40	II	N0	M0	T2	0	unilateral	1	2	NA	74.8	1.7	26	NA	NA	NA	Positive	ILC	not detected
+ccga_6664	Female	74	II	N0	M0	T3	Other/missing	unilateral	1	3	NA	68.5	1.52	60	NA	NA	NA	Negative	IDC	detected
+ccga_8634	Female	62	III	N1	M0	T4	Other/missing	unilateral	1	3	80	70.4	1.7	132	NA	NA	NA	Negative	Other	detected
+ccga_8589	Female	74	I	N0	M0	T1	0	unilateral	1	1	5	81.3	1.8	9	NA	NA	NA	Positive	IDC	not detected
+ccga_8688	Female	71	I	N0	M0	T1	0	unilateral	1	1	NA	65.8	1.5	14	NA	NA	NA	Positive	IDC	not detected
+ccga_8809	Female	67	I	N0	M0	T1	0	unilateral	1	2	NA	74.8	1.7	17	NA	NA	NA	Negative	IDC	not detected
+ccga_8495	Female	24	II	N0	M0	T2	Other/missing	unilateral	1	3	NA	57.2	1.75	24	NA	NA	NA	Positive	Other	not detected
+ccga_8533	Female	59	I	N0	M0	T1	Other/missing	unilateral	1	Other/missing	NA	78.9	1.75	NA	NA	NA	NA	Negative	IDC	not detected
+ccga_8528	Female	54	II	N1	Mx	T2	0,2	bilateral	2	2	15	86.2	1.52	35	9	NA	NA	Positive	IDC	detected
+ccga_8760	Female	71	II	N0	M0	T2	Other/missing	unilateral	1	2	40	115.7	1.65	NA	NA	NA	NA	Positive	IDC	detected
+ccga_8730	Female	64	II	N0	M0	T2	Other/missing	unilateral	1	3	15	61.2	1.7	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_8834	Female	43	II	N0	Mx	T2	0	unilateral	2	2	NA	68	1.7	24	7	NA	NA	Positive	IDC	not detected
+ccga_8808	Female	52	II	N0	Mx	T2	Other/missing,0	bilateral	2	1	5	95.3	1.65	35	NA	NA	NA	Positive	IDC	not detected
+ccga_8829	Female	75	III	N2	M0	T3	2	unilateral	1	3	NA	83.5	1.5	NA	NA	NA	NA	Positive	Other	detected
+ccga_9389	Female	64	III	N1	M0	T3	1	unilateral	1	3	68	58.7	1.59	48	NA	NA	NA	Positive	IDC	detected
+ccga_8740	Female	57	II	N1	M0	T2	Other/missing	unilateral	1	3	30	92.5	1.7	22	NA	NA	NA	Positive	IDC	detected
+ccga_9268	Female	54	I	N0	M0	T1	1	unilateral	1	1	9	80	1.66	11	NA	NA	NA	Positive	IDC	not detected
+ccga_9304	Female	59	II	N0	M0	T2	1	unilateral	1	2	19	69.4	1.7	24	NA	NA	NA	Positive	IDC	not detected
+ccga_8723	Female	44	II	N0	M0	T2	Other/missing	unilateral	1	2	20	69.9	1.55	NA	NA	NA	NA	Positive	IDC	detected
+ccga_9396	Female	67	I	Non-informative	Non-informative	Non-informative	0,Other/missing	bilateral	2	2	10	85.7	1.57	6	NA	NA	NA	Positive	IDC	not detected
+ccga_9041	Female	50	III	N2	M0	T2	1	unilateral	1	3	84	84.5	1.68	NA	NA	NA	NA	Positive	IDC	detected
+ccga_8938	Female	49	I	N0	M0	T1	0	unilateral	1	2	16	75.5	1.68	15	NA	NA	NA	Positive	IDC	not detected
+ccga_8952	Female	70	II	N0	M0	T2	Other/missing	unilateral	1	Other/missing	NA	58.9	1.57	15	NA	NA	NA	Negative	IDC	detected
+ccga_9043	Female	37	I	N0	M0	T1	Other/missing	unilateral	1	3	NA	66.2	1.52	NA	NA	NA	NA	Positive	IDC	not detected
+ccga_10603	Female	46	II	N1	M0	T2	1	unilateral	1	3	60	97.5	1.63	70	NA	NA	NA	Negative	IDC	detected
+ccga_10111	Female	42	II	N1	M0	T2	1	unilateral	1	3	85	72	1.6	56	NA	NA	NA	Positive	IDC	detected
+ccga_9957	Female	55	IV	N1	M1	T2	Other/missing,Other/missing	bilateral	2	3	54	79.9	1.63	NA	NA	NA	NA	Positive	IDC	detected
+ccga_9676	Female	75	I	N0	M0	T1	0	unilateral	1	2	30	61.7	1.64	8	NA	NA	NA	Positive	IDC	not detected
+ccga_9707	Female	68	I	N0	M0	T1	0	unilateral	1	2	16	63.5	1.57	15	NA	NA	NA	Positive	IDC	not detected
+ccga_9343	Female	40	II	N1	M0	T2	1	unilateral	1	2	30	90.3	1.63	13	NA	NA	NA	Positive	IDC	detected
+ccga_9399	Female	54	II	N1	M0	T2	1	unilateral	1	3	75	118.4	1.68	43	NA	NA	NA	Negative	IDC	detected
+ccga_9368	Female	55	I	N0	M0	T1	0	unilateral	1	1	NA	79.4	1.68	13	NA	NA	NA	Positive	IDC	not detected
+ccga_15244	Female	42	II	N0	M0	T2	Other/missing	unilateral	1	3	95	80.5	1.52	21	NA	NA	NA	Negative	Other	detected
+ccga_8128	Female	54	I	N0	M0	T1	0	unilateral	1	2	NA	62.1	1.73	18	NA	NA	NA	Positive	IDC	not detected
+ccga_8276	Female	52	I	Nx	M0	T1	0	unilateral	1	3	NA	73.9	1.51	44	NA	NA	NA	Positive	IDC	not detected
+ccga_13790	Female	28	IV	N2	M1	T4	1	unilateral	1	2	70	61.1	1.55	40	NA	NA	NA	Negative	IDC	detected
+ccga_8359	Female	39	II	N1	M0	T2	1	unilateral	1	3	60	66.5	1.48	30	NA	NA	NA	Positive	IDC	detected
+ccga_8336	Female	60	II	N0	M0	T2	0	unilateral	1	2	16	78.6	1.67	27	NA	NA	NA	Positive	IDC	not detected
+ccga_8314	Female	66	I	N0	M0	T1	0	unilateral	1	2	8	95.5	1.57	6	NA	NA	NA	Positive	IDC	not detected
+ccga_8095	Female	49	II	N1	M0	T2	3	unilateral	1	2	NA	64.9	1.65	33	NA	NA	NA	Positive	IDC	not detected
+ccga_8380	Female	33	III	N1	M0	T4	1	unilateral	1	3	14	75.7	1.59	25	NA	NA	NA	Negative	IDC	detected
+ccga_8454	Male	54	II	N0	M0	T2	Other/missing	unilateral	1	2	15	110	1.67	21	NA	NA	NA	Positive	IDC	detected
+ccga_7869	Female	38	III	N1	M0	T3	Other/missing	unilateral	1	3	70	67.7	1.7	22	NA	NA	NA	Negative	IDC	detected
+ccga_7591	Female	69	I	N0	M0	T1	Other/missing	unilateral	3	3	NA	83.9	1.52	4	NA	NA	NA	Positive	IDC	not detected
+ccga_7734	Female	64	IV	Nx	M1	Tx	Other/missing	unilateral	1	Other/missing	5	111.7	1.57	NA	NA	NA	NA	Positive	ILC	detected
+ccga_5339	Female	37	I	N0	M0	T1	1	unilateral	3	1	3	57.2	1.57	4.5	NA	NA	NA	Positive	IDC	not detected
+ccga_5358	Female	78	II	N1	M0	T2	0	unilateral	1	2	NA	45.4	1.55	23	NA	NA	NA	Positive	IDC	not detected
+ccga_4764	Female	59	II	N0	M0	T2	Other/missing	unilateral	1	3	NA	67.1	1.55	29	NA	NA	NA	Negative	IDC	not detected
+ccga_5540	Female	69	I	N0	M0	T1	Other/missing	unilateral	1	1	10	73	1.63	NA	NA	NA	NA	Positive	Other	not detected
+ccga_4980	Female	63	I	N0	M0	T1	0,0	bilateral	2	2	14	73.1	1.68	15	13	NA	NA	Positive	IDC	not detected
+ccga_4805	Female	82	I	N0	M0	T1	0	unilateral	1	2	NA	83	1.65	13	NA	NA	NA	Positive	Other	not detected
+ccga_4810	Female	41	II	N0	M0	T2	0	unilateral	1	3	NA	74.8	1.65	27	NA	NA	NA	Positive	IDC	not detected
+ccga_4630	Female	61	II	N0	M0	T3	0	unilateral	1	2	NA	73.5	1.7	62	NA	NA	NA	Positive	IDC	not detected
+ccga_4420	Female	62	II	Nx	Mx	T3	Other/missing	unilateral	1	Other/missing	NA	95.2	1.59	NA	NA	NA	NA	Positive	ILC	not detected
+ccga_12566	Female	52	I	N0	M0	T1	0	unilateral	1	3	NA	71.2	1.6	25	NA	NA	NA	Negative	IDC	not detected
+ccga_12155	Female	68	II	N1	M0	T2	1	unilateral	1	3	68	95.6	1.56	23	NA	NA	NA	Negative	IDC	detected
+ccga_12374	Female	84	II	N0	M0	T2	1	unilateral	1	3	25	61.6	1.6	28	NA	NA	NA	Negative	IDC	not detected
+ccga_13138	Female	55	II	N0	M0	T2	Other/missing	unilateral	1	Other/missing	NA	128.4	1.68	NA	NA	NA	NA	Negative	IDC	detected
+ccga_5886	Female	36	I	N0	M0	T1	0	unilateral	2	2	8	97.5	1.75	15	2	NA	NA	Positive	IDC	not detected
+ccga_12885	Female	35	II	N1	M0	T2	1	unilateral	1	3	75	66	1.65	26	NA	NA	NA	Negative	IDC	not detected
+ccga_6058	Female	48	II	N1	M0	T2	Other/missing	unilateral	1	3	NA	83.9	1.7	NA	NA	NA	NA	Negative	IDC	detected
+ccga_5896	Female	36	I	N0	M0	T1	0	unilateral	1	1	11	54	1.62	8	NA	NA	NA	Positive	IDC	not detected
+ccga_6131	Female	67	I	N0	M0	T1	0,0	bilateral	2	2	14	101.2	1.7	25	11	NA	NA	Positive	IDC	not detected
+ccga_5739	Female	75	I	N0	M0	T1	0	unilateral	1	1	NA	68	1.73	7	NA	NA	NA	Positive	IDC	not detected
+ccga_4041	Female	75	IV	N0	M1	T2	0	unilateral	1	1	NA	64.5	1.55	28	NA	NA	NA	Positive	ILC	detected
+ccga_6448	Female	38	II	N1	M0	T2	Other/missing	unilateral	1	3	90	71	1.7	32	NA	NA	NA	Negative	IDC	detected
+ccga_6108	Female	50	II	N0	M0	T2	Other/missing	unilateral	1	2	90	100.7	1.65	11	NA	NA	NA	Positive	IDC	detected
+ccga_12837	Female	42	I	N0	M0	T1	0	unilateral	1	3	90	108.9	1.7	1.2	NA	NA	NA	Negative	IDC	not detected
+ccga_15331	Female	28	III	Non-informative	Non-informative	Non-informative	Other/missing	unilateral	1	Other/missing	NA	71.7	1.63	NA	NA	NA	NA	Negative	Other	detected
+ccga_7447	Female	61	II	N1	M0	T1	1	unilateral	1	2	NA	65	1.68	11	NA	NA	NA	Positive	IDC	not detected
+ccga_7448	Female	53	II	N1	M0	T2	1	unilateral	1	3	NA	75.3	1.68	NA	NA	NA	NA	Positive	IDC	detected
+ccga_7613	Female	69	II	N0	M0	T2	Other/missing	unilateral	1	3	30	81	1.64	12	NA	NA	NA	Positive	IDC	not detected
+ccga_6721	Female	50	I	N0	M0	T1	0	unilateral	1	2	NA	97.5	1.73	3	NA	NA	NA	Positive	IDC	not detected
+ccga_6892	Female	62	III	N1	M0	T3	Other/missing	unilateral	1	2	34	79.8	1.55	NA	NA	NA	NA	Positive	IDC	detected
+ccga_6625	Female	66	I	N0	Mx	T1	0	unilateral	1	1	3	79.4	1.73	18	NA	NA	NA	Positive	ILC	not detected
+ccga_6805	Female	75	I	N0	M0	T1	0	unilateral	1	1	NA	81.8	1.68	1.1	NA	NA	NA	Positive	IDC	not detected
+ccga_6408	Female	53	II	N1	M0	T2	1	unilateral	1	Other/missing	NA	52.6	1.57	NA	NA	NA	NA	Negative	IDC	detected

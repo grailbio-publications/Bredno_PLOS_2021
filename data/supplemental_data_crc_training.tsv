@@ -1,0 +1,97 @@
+participant_id	sex	age	clinical_stage	t_stage	n_stage	m_stage	ln_involved	n_primary_lesions	histologic_grade	microinvasion	ectf	ectf_source	weight_kg	height_m	size_1	wgbs_classifier_score	cfdna_conc_ng_ml	wgbs_classifier_result
+ccga_1000	Male	56	IV	T4	N2	M1	Other/missing	1	3	Other/missing	NA	NA	131.1	1.8	NA	0.999185	14.860927152317881	detected
+ccga_1015	Female	61	IV	Non-informative	Non-informative	Non-informative	0	1	1	Muscularis propria	NA	NA	104.8	1.68	98	0.992572	10.099255583126551	detected
+ccga_1049	Female	81	III	Tx	N1	M0	6	1	3	Invades adjacent structures	NA	NA	64.4	1.65	80	0.988496	11.698218262806234	detected
+ccga_1096	Female	48	IV	Non-informative	Non-informative	Non-informative	2	1	1	Penetrates visceral peritoneum (serosa)	0.03451400112604855	measured	64.1	1.67	38	0.998842	8.3536585365853675	detected
+ccga_1203	Female	35	Non-informative	Non-informative	Non-informative	Non-informative	0	1	1	Lamina propria/muscularis mucosae (intramucosal carcinoma)	NA	NA	81.5	1.57	NA	0.451361	5.256776034236805	not detected
+ccga_135	Male	71	Non-informative	T3	N0	Mx	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.007939670554889176	measured	73.9	1.73	39	0.983347	4.762569832402234	detected
+ccga_1409	Male	62	II	T3	N0	M0	Other/missing	1	1	Other/missing	0.004938497874872519	imputed	137.2	1.85	NA	0.890222	6.984126984126984	detected
+ccga_1448	Male	69	I	T2	N0	M0	0	1	1	Muscularis propria	3.45e-4	measured	101.2	1.8	17	0.59051	12.33558178752108	not detected
+ccga_1454	Female	58	II	T3	N0	M0	4	1	3	Penetrates visceral peritoneum (serosa)	0.005351731940209951	imputed	102.1	1.7	52	0.913758	10.803571428571427	detected
+ccga_1461	Male	65	III	T3	N1	M0	Other/missing	1	1	Other/missing	4.61e-4	measured	94.8	1.74	NA	0.434164	4.558011049723757	not detected
+ccga_1504	Male	50	II	T3	N0	M0	Other/missing	1	3	Other/missing	NA	NA	133.8	1.8	NA	0.437437	5.53030303030303	not detected
+ccga_1616	Male	69	I	T2	N0	M0	0	1	1	Muscularis propria	5.94e-4	measured	82.1	1.66	19	0.49278	6.842923794712286	not detected
+ccga_1655	Female	64	IV	T4	N1	M1	1	1	1	Penetrates visceral peritoneum (serosa)	0.6865396578455695	measured	78.7	1.6	30	0.999762	27.410423452768725	detected
+ccga_1744	Female	67	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	Other/missing	NA	NA	83	1.6	NA	0.993387	9.716466739367505	detected
+ccga_1880	Male	73	III	T3	N1	M0	Other/missing	1	1	Other/missing	NA	NA	84.8	1.66	NA	0.446039	8.358208955223882	not detected
+ccga_1923	Male	75	II	T3	N0	M0	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.012862715435961132	measured	88.4	1.78	80	0.996949	5.103785103785103	detected
+ccga_1925	Male	51	III	T1	N1	M0	Other/missing	1	1	Other/missing	0.0019027563436951791	imputed	102.1	1.63	NA	0.703104	7.500000000000001	not detected
+ccga_1965	Male	67	Non-informative	Non-informative	Non-informative	Non-informative	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.00574191596315295	imputed	77.1	1.7	55	0.950631	11	detected
+ccga_2009	Female	49	IV	Non-informative	Non-informative	Non-informative	0	1	3	Penetrates visceral peritoneum (serosa)	0.4398023280733435	measured	73.5	1.57	130	0.999031	50.067264573991025	detected
+ccga_2042	Male	85	III	T3	N1	M0	Other/missing	1	3	Other/missing	1.02e-4	measured	78	1.74	NA	0.476124	11.516018306636155	not detected
+ccga_2078	Female	63	Non-informative	T3	N0	M0	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	2.05e-4	measured	59	1.61	16	0.59813	6.437037037037038	not detected
+ccga_2181	Male	65	III	T3	N2	M0	Other/missing	1	Other/missing	Other/missing	0.005470095049517281	measured	82.1	1.73	NA	0.766814	17.23203769140165	not detected
+ccga_2239	Female	57	IV	T3	N0	M1	Other/missing	1	1	Other/missing	1	measured	93	1.78	NA	0.997786	79.68033775633293	detected
+ccga_2381	Male	65	IV	T0	Nx	M1	2	1	3	Other/missing	0.30092779032094635	measured	74.4	1.7	NA	0.998823	12.795629820051413	detected
+ccga_2397	Male	76	III	T3	N2	M0	Other/missing	1	1	Other/missing	0.047267089045880596	measured	75.7	1.75	NA	0.997284	5.055370985603544	detected
+ccga_2440	Male	69	IV	T4	N1	M1	Other/missing	1	3	Other/missing	NA	NA	72.4	1.72	NA	0.997401	22.666174298375186	detected
+ccga_2508	Male	60	III	T3	N1	Mx	Other/missing	1	1	Other/missing	0.007367302620273544	imputed	98.9	1.78	NA	0.98542	7.223667100130038	detected
+ccga_2516	Male	71	IV	T4	N2	M1	4	1	1	Penetrates visceral peritoneum (serosa)	NA	NA	69.4	1.85	40	0.997377	12.175032175032175	detected
+ccga_2529	Female	56	III	T2	N1	M0	Other/missing	1	1	Other/missing	NA	NA	76.4	1.75	NA	0.418392	8.186738836265224	not detected
+ccga_2554	Male	49	III	T3	N2	M0	4	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	NA	NA	78.7	1.7	25	0.998468	13.006756756756756	detected
+ccga_2589	Female	73	I	T1	Nx	M0	Other/missing	1	1	Submucosa	0.0018023470840127028	measured	59.1	1.55	NA	0.694525	10.146886016451235	not detected
+ccga_2620	Female	72	III	T3	N1	M0	2	1	3	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.03891936947834007	measured	74.8	1.57	70	0.997569	10.357929515418501	detected
+ccga_2730	Male	68	Non-informative	T2	N0	M0	0	1	1	Submucosa	1.48e-4	measured	83.9	1.82	20	0.621636	6.774193548387096	not detected
+ccga_2761	Male	61	II	T3	N0	M0	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.006292397333505067	measured	68	1.75	57	0.970512	16.407263294422826	detected
+ccga_2771	Female	34	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	1	Other/missing	0.6399920161698708	measured	78.6	1.75	NA	0.998582	24.624846248462486	detected
+ccga_2772	Male	76	IV	T3	N1	M1	Other/missing	1	1	Other/missing	NA	NA	83.4	1.73	NA	0.999141	5.960591133004927	detected
+ccga_2810	Female	68	IV	T4	N2	M1	Other/missing	1	1	Other/missing	0.08837097935954705	measured	72.6	1.63	NA	0.999084	13.860759493670887	detected
+ccga_2901	Male	56	IV	Tx	Nx	M1	4	1	1	Penetrates visceral peritoneum (serosa)	0.9246113063970414	measured	76.2	1.75	45	0.997712	32.264150943396224	detected
+ccga_2969	Male	48	II	T3	N0	M0	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.028390532818668355	measured	96.8	1.75	60	0.998845	7.438848920863308	detected
+ccga_2977	Male	47	IV	Tx	Nx	M1	Other/missing	1	1	Other/missing	NA	NA	85.3	1.55	NA	0.998944	6.336405529953917	detected
+ccga_3062	Male	80	III	T3	N1	M0	1	1	3	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.004549537972071574	measured	68.3	1.75	40	0.985354	3.2155907429963455	detected
+ccga_3082	Female	72	II	Non-informative	Non-informative	Non-informative	0	1	1	Lamina propria/muscularis mucosae (intramucosal carcinoma)	0.0014651881179161684	measured	65.8	1.68	50	0.782424	7.137404580152672	not detected
+ccga_3234	Female	67	III	T3	N1	M0	1	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	NA	NA	47	1.57	27	0.477916	11.166456494325349	not detected
+ccga_3259	Female	57	I	T2	Nx	Mx	0	1	1	Penetrates visceral peritoneum (serosa)	2.08e-4	measured	100.7	1.57	46	0.4953	9.450904392764858	not detected
+ccga_3268	Male	70	I	T2	N0	M0	Other/missing	1	1	Other/missing	NA	NA	94	1.68	NA	0.994204	12.944890929965554	detected
+ccga_33	Male	46	II	T3	N0	M0	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.015509886902810636	measured	81.7	1.8	65	0.997068	8.508771929824562	detected
+ccga_332	Male	55	Non-informative	T3	N1	Non-informative	2	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.006225166287439604	measured	90.7	1.78	20	0.976336	6.174298375184638	detected
+ccga_335	Male	51	Non-informative	T3	N2	Non-informative	4	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.001961227401471375	imputed	76.7	1.7	35	0.654431	4.528443113772456	not detected
+ccga_344	Female	56	IV	T4	N2	Mx	7	1	1	Penetrates visceral peritoneum (serosa)	0.17050404717921622	measured	50.8	1.52	65	0.999799	10.620204603580563	detected
+ccga_3547	Female	68	III	T4	N1	M0	2	1	1	Penetrates visceral peritoneum (serosa)	0.01819540123651759	measured	65.8	1.63	38	0.992523	7.236842105263157	detected
+ccga_3662	Male	46	IV	T2	N2	M1	Other/missing	1	1	Other/missing	0.01665051356689069	measured	139.2	1.77	NA	0.993647	14.435695538057743	detected
+ccga_3748	Female	59	II	T3	N0	M0	0	1	1	Submucosa	NA	NA	54.4	1.63	7	0.492592	4.769647696476965	not detected
+ccga_3773	Male	51	III	T3	N1	M0	Other/missing	1	1	Other/missing	0.006453096255670207	imputed	77.1	1.75	NA	0.927005	7.720694645441389	detected
+ccga_3792	Female	51	II	T3	Nx	M0	Other/missing	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.006845748158434941	measured	124.5	1.82	70	0.928148	7.273402674591382	detected
+ccga_380	Male	58	Non-informative	Non-informative	Non-informative	Non-informative	0	1	1	Other/missing	5.44e-4	measured	92.1	1.7	NA	0.482403	2.846790890269151	not detected
+ccga_382	Female	45	III	T3	N1	M0	3	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.004274682221736723	measured	83.5	1.65	63	0.929919	5.644104803493449	detected
+ccga_3880	Female	64	III	T4	N1	M0	Other/missing	1	1	Other/missing	NA	NA	57.2	1.57	NA	0.998022	13.45565749235474	detected
+ccga_3918	Female	55	I	T2	N0	M0	1	1	3	Tumor penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures	0.003894568888891392	measured	54.4	1.55	55	0.893559	7.163173652694612	detected
+ccga_3934	Male	63	III	T4	N1	M0	Other/missing	1	1	Other/missing	NA	NA	98.4	1.9	NA	0.999421	15.770328102710412	detected
+ccga_4076	Female	71	IV	T4	Nx	M1	Other/missing	1	3	Other/missing	1	measured	54.9	1.55	NA	0.997858	50.021551724137936	detected
+ccga_4081	Female	64	III	T3	N1	Mx	Other/missing	1	1	Other/missing	NA	NA	94.3	1.68	NA	0.9961	10.792682926829269	detected
+ccga_4096	Male	82	II	T2	N0	M0	1	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	NA	NA	54.8	1.67	100	0.997668	8.297045101088647	detected
+ccga_418	Female	74	III	T3	N1	M0	1	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.0036915659641349394	measured	69.9	1.6	45	0.956451	9.665841584158414	detected
+ccga_4223	Female	58	IV	Non-informative	Non-informative	Non-informative	0	1	1	Penetrates visceral peritoneum (serosa)	NA	NA	55.4	1.61	120	0.998187	37.27373068432671	detected
+ccga_427	Male	64	II	T3	N0	M0	0	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.0019417871105319275	measured	81.6	1.75	35	0.450892	8.305084745762711	not detected
+ccga_4299	Female	53	IV	T4	N1	M1	Other/missing	1	1	Other/missing	NA	NA	55	1.68	NA	0.997886	92.53583241455347	detected
+ccga_4324	Female	67	II	T4	N0	M0	1	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.007296113356585392	measured	45.8	1.56	35	0.986871	7.591549295774648	detected
+ccga_4374	Female	66	IV	Tx	Nx	M1	Other/missing	1	1	Other/missing	NA	NA	80	1.64	NA	0.992747	6.18925831202046	detected
+ccga_4686	Male	78	IV	T3	N1	M1	Other/missing	1	1	Other/missing	0.5814884199058327	measured	106.5	1.76	NA	0.999675	35.25959367945824	detected
+ccga_4744	Male	73	II	T3	N0	M0	Other/missing	1	1	Other/missing	3.97e-4	measured	115.4	1.8	NA	0.434714	12.555831265508685	not detected
+ccga_4842	Male	55	III	T3	N2	M0	Other/missing	1	1	Other/missing	0.03221003026332786	measured	113.4	1.83	NA	0.994833	12.548543689320386	detected
+ccga_493	Female	48	III	T2	N1	M0	Other/missing	1	1	Other/missing	NA	NA	137.9	1.69	NA	0.444283	19.930015552099537	not detected
+ccga_5041	Female	59	IV	T3	N2	M1	11	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.11681751754567632	measured	71.7	1.55	57	0.999496	42.15397923875432	detected
+ccga_5094	Female	73	Non-informative	T1	N0	Mx	Other/missing	1	1	Submucosa	NA	NA	98.9	1.63	75	0.496951	13.530351437699679	not detected
+ccga_5121	Female	47	I	T2	N0	M0	19	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.005612178189189148	measured	119.7	1.7	65	0.975416	7.328190743338008	detected
+ccga_5264	Male	30	IV	T3	N2	M1	Other/missing	1	1	Other/missing	0.031096956677117572	measured	65.8	1.83	NA	0.99732	4.760432766615148	detected
+ccga_5378	Male	62	II	T3	N0	M0	Other/missing	1	1	Submucosa	NA	NA	96.8	1.87	NA	0.478049	8.495049504950495	not detected
+ccga_5514	Female	64	III	T2	N1	M0	Other/missing	1	1	Other/missing	0.003965017613278281	measured	68	1.59	NA	0.77367	8.670886075949369	not detected
+ccga_5620	Female	69	II	T3	N0	M0	Other/missing	1	3	Other/missing	0.009518725728724657	imputed	75.3	1.7	NA	0.984868	11.622198505869799	detected
+ccga_591	Female	64	IV	T3	N1	M1	3	1	1	Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues	0.04703099142087607	measured	64.4	1.71	35	0.997786	11	detected
+ccga_5996	Female	52	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	1	Other/missing	NA	NA	80	1.58	NA	0.996941	7.687420584498095	detected
+ccga_6201	Female	58	III	T3	N1	M0	Other/missing	1	1	Other/missing	0.019315240002278918	measured	53	1.63	NA	0.996027	6.683748169838945	detected
+ccga_6473	Female	74	IV	T4	N1	M1	1	1	1	Penetrates visceral peritoneum (serosa)	NA	NA	45.4	1.52	100	0.998063	26.14044943820225	detected
+ccga_6494	Female	46	III	T3	N1	M0	Other/missing	1	1	Other/missing	NA	NA	69.1	1.57	NA	0.993812	15.633561643835618	detected
+ccga_6821	Female	58	III	T3	N1	M0	Other/missing	1	1	Other/missing	0.002625221350854505	imputed	102.5	1.57	NA	0.740302	9.031862745098039	not detected
+ccga_6841	Male	62	III	T3	N2	M0	Other/missing	1	1	Other/missing	0.026658502323086662	measured	84.4	1.78	NA	0.997312	7.674418604651162	detected
+ccga_6881	Male	68	I	Non-informative	Non-informative	Non-informative	0	1	1	Submucosa	NA	NA	78.9	1.78	7	0.427287	10.332068311195448	not detected
+ccga_7069	Female	65	II	T3	N0	M0	Other/missing	1	1	Other/missing	0.0018500153957727204	imputed	98	1.57	NA	0.704695	45.833333333333336	not detected
+ccga_7263	Male	61	Non-informative	T1	N0	Mx	0	1	1	Submucosa	1.3099999999999999e-4	measured	106.8	1.88	7	0.562781	4.570200573065902	not detected
+ccga_740	Female	65	III	T3	N1	M0	Other/missing	1	Other/missing	Other/missing	0.0017963534025927368	measured	58	1.6	NA	0.66054	3.2083333333333335	not detected
+ccga_7924	Female	64	I	T1	N0	M0	0	1	1	Muscularis propria	1.38e-4	measured	61.3	1.57	20	0.46029	9.019495412844035	not detected
+ccga_794	Female	52	IV	T4	N1	M1	Other/missing	1	Other/missing	Other/missing	0.051856221842263954	measured	68.9	1.56	NA	0.994946	6.727616645649433	detected
+ccga_8347	Male	39	IV	T3	N2	Mx	Other/missing	1	1	Other/missing	NA	NA	106.1	1.78	NA	0.988608	3.758333333333333	detected
+ccga_87	Female	56	III	T3	N0	M0	Other/missing	1	1	Other/missing	NA	NA	62.6	1.68	NA	0.456402	5.2631578947368425	not detected
+ccga_907	Female	60	II	T3	N0	M0	Other/missing	1	1	Other/missing	0.008536355596042633	measured	60.3	1.65	NA	0.848283	2.971264367816092	detected
+ccga_944	Male	51	III	T2	N2	M0	5	1	1	Muscularis propria	6.72e-4	measured	149.8	1.89	45	0.45483	5.160044150110375	not detected

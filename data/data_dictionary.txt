@@ -1,0 +1,30 @@
+Column name	Availability	Description
+participant_id		Study-specific participant ID assigned at enrollment
+sex		Participant sex, "Female" or "Male"
+age		Participant age at enrollment
+weight_kg		Participant weight in kg
+height_m		Participant height in m
+clinical_stage		Clinical stage reported by enrolling site
+t_stage		Clinical T-stage reported by enrolling site
+n_stage		Clinical N-stage reported by enrolling site
+m_stage		Clinical M-stage reported by enrolling site
+ln_involved		Number of tumor-involved lymph nodes from path report. Results from multiple primary lesions reports are separated by comma.
+laterality	(breast cancer only)	`"bilateral" or "unilateral"`
+n_primary_lesions		Derived number of primary lesion foci. Information is accumulated for bilateral disease, and one primary focus per side is assumed when information on lesion focality is not reported by enrolling site or path report.
+size_1		Maximum extent of largest primary tumor focus in mm
+size_2, size_3, size_4		Maximum extent of 2nd and 3rd, 4th largest primary tumor focus, if reported.
+histologic_grade		Grade from path report
+histologic_type	(breast and lung cancers only)	Histologic type. For breast cancers, this is "IDC" for invasive ductal carcinoma, "ILC" for invasive lobular carcinoma, or "Other" for breast cancers that are neither ILC or IDC. For lung cancers, this is "ADC" for adenocarcinomas, "SCC" for squamous cell carcinomas, "SCLC" for small cell lung cancer and "Other" for all other cancer types including NSCLC NOS. This column is not provided for colorectal cancers as only  adenocarcinomas were included in that analysis
+ki67_pos	(breast cancer only)	%positive Ki-67 reported by enrolling site or result of additional IHC testing
+hr_status	(breast cancer only)	Hormone receptor status. "Negative" if at least one of possibly multiple lesions is hormone-receptor negative. A lesion is hormone-receptor negative if it is negative for estrogen and progesterone receptor overexpression.
+fdg_suv	(lung cancer only)	FDP PET Standardized uptake value of the index lesion
+microinvasion	(colorectal cancer only)	Depth of microscopic microinvasion from path report.
+ectf	(training data only)	Estimated cfDNA tumor fraction
+ectf_source	(training data only)	Either "measured" or "imputed". ECTF was measured as presented in Venn, et al. [5]. Imputed data was determined from a WGBS classifier score (Figures 4B, 7B, 10C, resp.)
+wgbs_classifier_score	(training data only)	Cancer score from the classifier trained from abnormally methylated fragments in a WGBS assay [26]
+tm_classifier_result	(validation data only)	Cancer signal detection from targeted methylation assay and classifier [9]
+wgbs_classifier_result	(training data only)	Cancer signal detection from WGBS assay and classifier [26]
+cfdna_conc_ng_ml	(training data only)	cfDNA concentration in plasma in ng / ml
+
+
+A value is set to NA for numerical values and "Non-informative" or "Other/missing" for categorical values if the information could not be determined from clinical data, pathology and radiology reports submitted to the study EDC.

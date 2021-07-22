@@ -1,0 +1,489 @@
+---
+title: "Biophysical model of estimated cfDNA tumor fraction for colorectal cancer"
+author: "J. Bredno"
+date: '`r format(Sys.time(), "%Y-%m-%d")`'
+output:
+  html_document:
+    fig.width: 12
+---
+
+This markdown creates tables, lists, and figures to create and validate the
+biophysical model of colorectal cancer.
+
+```{r setup, include = FALSE}
+# Basic setup. Setup markdown properties, source dependent functions,
+# confirm availability of required packages
+requireNamespace("knitr")
+requireNamespace("tidyverse")
+`%>%` <- magrittr::`%>%`
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+options(digits = 4)
+source("../R/biophysical_modeling.R")
+```
+
+```{r load_data_for_modeling, include = FALSE}
+df_crc_in <- readr::read_tsv("../data/supplemental_data_crc_training.tsv")
+df_crc <- df_crc_in
+```
+
+### Figure 10c
+
+WGBS classifier score by ECTF for colorectal cancer. Samples are colored by clinical
+stage and samples with imputed ECTF are shown as triangles.
+
+
+```{r impute_tumor_fraction}
+# For simpler re-use, imputed ECTF is already part of the shared data.
+# The previously imputed data is removed and re-created here for complete
+# reproducibility
+set.seed(0)
+df_crc <- df_crc %>%
+  dplyr::mutate(ectf_check = ectf,
+                ectf = ifelse(ectf_source == "imputed",
+                              NA, ectf)) %>%
+  dplyr::select(-ectf_source)
+
+lret <- impute_ectf(df_crc,
+                    replace_with_imputed = TRUE,
+                    draw_or_fixed = "draw",
+                    score_frac_min = 0.02,
+                    score_frac_max = 0.98)
+df_crc <- lret$df_model
+print(lret$hPlot %>%
+        assign_figure_style(axis_x = "ECTF",
+                            axis_y = "WGBS classifier score",
+                            color_legend = "Clinical stage",
+                            shape_legend = "Tumor fraction source",
+                            legend_position = c(0.8, 0.4),
+                            color_points = TRUE,
+                            export = "Fig_10c_crc_impute_ectf"))
+```
+
+```{r derive_depth_of_invasion}
+# nolint start
+lookup_microinvasion <- tibble::tribble(
+  ~microinvasion, ~quant_invasion, ~display_microinvasion, ~score_invasion,
+  "Other/missing", -1, "Other/missing", NA,
+  "Not stated", -1,  "Other/missing", NA,
+  "Lamina propria/muscularis mucosae (intramucosal carcinoma)", 1, "Intramucosal", 0,
+  "Submucosa", 2, "Submucosa", 0,
+  "Muscularis propria", 3, "Muscularis propria", 0,
+  "Into the subserosal adipose tissue or the nonperitonealized pericolic or perirectal soft tissues",
+  4, "Subserosa", 1,
+  "Penetrates visceral peritoneum (serosa)", 5, "Penetrates serosa", 1,
+  "Tumor penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures",
+  5, "Penetrates serosa", 1,
+  "Invades adjacent structures", 6, "Invades adjacent", 1)
+# nolint end
+df_crc <- df_crc %>%
+  dplyr::left_join(lookup_microinvasion, by = "microinvasion") %>%
+  dplyr::mutate(quant_invasion = as.integer(quant_invasion),
+                imputed_invasion = dplyr::case_when(
+                  !is.na(score_invasion) ~ score_invasion,
+                  t_stage %in% c("T0", "T1", "T2") ~ 0,
+                  t_stage %in% c("T3", "T4") ~ 1,
+                  TRUE ~ NA_real_),
+                display_microinvasion = factor(display_microinvasion,
+                                                  c("Other/missing",
+                                                    "Intramucosal",
+                                                    "Submucosa",
+                                                    "Muscularis propria",
+                                                    "Subserosa",
+                                                    "Penetrates serosa",
+                                                    "Invades adjacent")))
+```
+
+```{r derive_size_ln_assay}
+set.seed(0)
+l_ret <- derive_primary_size(df_crc,
+                             l_imputation = NULL,
+                             draw_or_fixed = "draw",
+                             dimension = 2)
+df_crc <- l_ret$df_model
+l_imputation <- l_ret$l_imputation
+
+df_crc <- df_crc %>%
+  get_ln_status() %>%
+  assay_quant()
+```
+
+### Figures 10A and B
+
+Estimated cfDNA tumor fraction is shown for all invasive cancers (not stage 0) with
+known clinical stage in the stage breakdown and for all cases with reported T-stage
+in the T-stage breakdown
+
+```{r display_tf}
+print(basic_violin(df_crc %>%
+                     dplyr::filter(clinical_stage %in% c("I", "II", "III", "IV")),
+                   "clinical_stage", "ectf",
+                   shape = "ectf_source") %>%
+        assign_figure_style(log_y = TRUE,
+                            axis_x = "Clinical stage",
+                            axis_y = "ECTF",
+                            shape_legend = "Tumor fraction source",
+                            legend_position = c(0.15, 0.85),
+                            export = "Fig_10a_crc_stage_ectf"))
+print(basic_violin(df_crc %>%
+                     dplyr::filter(quant_invasion != -1),
+                   "display_microinvasion", "ectf",
+                   shape = "ectf_source") %>%
+        assign_figure_style(log_y = TRUE,
+                            axis_x = "Depth of microinvasion",
+                            axis_y = "ECTF",
+                            x_axis_vertical = TRUE,
+                            shape_legend = "Tumor fraction source",
+                            legend_position = c(0.15, 0.85),
+                            export = "Fig_10b_crc_depth_ectf"))
+```
+
+### Table 3
+
+Analytical Model for Colorectal Cancer.
+
+```{r modeling}
+df_crc <- df_crc %>%
+  dplyr::mutate(area_shallow = ifelse(imputed_invasion == 0, primary_area, 0),
+                area_deep = ifelse(imputed_invasion == 1, primary_area, 0),
+                score_histograde = dplyr::case_when(
+                  histologic_grade == "1" ~ -1,
+                  histologic_grade == "2" ~ 0,
+                  histologic_grade == "3" ~ 1,
+                  histologic_grade == "4" ~ 1,
+                  TRUE ~ 0))
+
+v_variables <- c("area_shallow", "area_deep", "ln_status", "score_histograde")
+v_targets <- c("ectf", "ctdna_amount_ge")
+
+modeling <- create_model(df_crc %>%
+                           dplyr::filter(clinical_stage %in% c("I", "II", "III")),
+                         v_targets = v_targets,
+                         v_variables = v_variables,
+                         v_constraints = c(TRUE, TRUE, TRUE, TRUE))
+```
+
+```{r display_analytical_model}
+knitr::kable(modeling$df_analysis_model)
+summary(modeling$analysis_model)
+```
+
+Non-negativity constraints affected `r modeling$violate_constraints`.
+
+```{r create_prediction_and_quant_models}
+predict_deep <- lm(data = df_crc %>%
+                     dplyr::filter(clinical_stage %in% c("I", "II", "III"),
+                                   score_invasion == 1),
+                   ectf ~ 0 + area_deep)
+
+predict_shallow <- lm(data = df_crc %>%
+                        dplyr::filter(clinical_stage %in% c("I", "II", "III"),
+                                      score_invasion == 0),
+                      ectf ~ 0 + area_shallow)
+
+quantify_deep <- lm(data = df_crc %>%
+                      dplyr::filter(clinical_stage %in% c("I", "II", "III"),
+                                    score_invasion == 1),
+                    ctdna_amount_ge ~ 0 + area_deep)
+
+quantify_shallow <- lm(data = df_crc %>%
+                         dplyr::filter(clinical_stage %in% c("I", "II", "III"),
+                                       score_invasion == 0),
+                       ctdna_amount_ge ~ 0 + area_shallow)
+```
+
+
+```{r save models for command line prediction tool}
+saveRDS(predict_deep, file = "../cmd/crc_deep_prediction_model.Rds")
+saveRDS(predict_shallow, file = "../cmd/crc_shallow_prediction_model.Rds")
+saveRDS(quantify_deep, file = "../cmd/crc_deep_quantitative_model.Rds")
+saveRDS(quantify_shallow, file = "../cmd/crc_shallow_quantitative_model.Rds")
+saveRDS(l_imputation, file = "../cmd/crc_impute_size.Rds")
+```
+
+
+Quantitative model for deep invasion.
+
+```{r summary_predict_deep}
+summary(quantify_deep)
+```
+
+Quantitative model for shallow invasion.
+
+```{r summary_quantify_shallow}
+summary(quantify_shallow)
+```
+
+### Figure 11
+
+```{r visualize prediction model}
+df_plot <- df_crc %>%
+  dplyr::filter(clinical_stage %in% c("I", "II", "III")) %>%
+  dplyr::mutate(invasion = ifelse(score_invasion == 1, "deep", "shallow"))
+
+hPlot <- ggplot2::ggplot() +
+  ggplot2::geom_point(data = df_plot %>% dplyr::filter(score_invasion == 1),
+                      ggplot2::aes(x = area_deep, y = ectf,
+                                   color = clinical_stage, shape = invasion)) +
+  ggplot2::geom_smooth(data = df_plot %>% dplyr::filter(score_invasion == 1),
+                       ggplot2::aes(x = area_deep, y = ectf), color = "black",
+                       method = lm, formula = y ~ x) +
+  ggplot2::geom_point(data = df_plot %>% dplyr::filter(score_invasion == 0),
+                      ggplot2::aes(x = area_shallow, y = ectf,
+                                   color = clinical_stage, shape = invasion)) +
+  ggplot2::geom_smooth(data = df_plot %>% dplyr::filter(score_invasion == 0),
+                       ggplot2::aes(x = area_shallow, y = ectf), color = "red",
+                       method = lm, formula = y ~ x)
+
+assign_figure_style(hPlot,
+                    axis_x = "Tumor surface area",
+                    axis_y = "ECTF", log_x = TRUE, log_y = TRUE,
+                    color_legend = "Clinical stage",
+                    shape_legend = "Microinvasion",
+                    color_points = TRUE,
+                    export = "Fig_11_crc_model")
+```
+
+### Figure 3B (right)
+
+These case numbers are used in the Consort diagrams in Figure 3.
+
+```{r breakdown_training}
+invasive_adenocarcinoma <-
+  df_crc$clinical_stage != "0"
+measured_ectf <-
+  df_crc$ectf_source == "measured" & !is.na(df_crc$ectf)
+imputed_ectf <-
+  df_crc$ectf_source == "imputed" & !is.na(df_crc$ectf)
+has_ectf <-
+  !is.na(df_crc$ectf)
+stage_i_ii_iii <-
+  df_crc$clinical_stage %in% c("I", "II", "III")
+has_size <-
+  !is.na(df_crc$primary_area)
+has_invasion <-
+  !is.na(df_crc$imputed_invasion)
+has_ln <-
+  !is.na(df_crc$ln_status)
+
+df_population <- tibble::tribble(
+  ~population, ~n,
+  "Invasive ADC of colon",
+  sum(invasive_adenocarcinoma),
+  "~ with measured ECTF",
+  sum(invasive_adenocarcinoma & measured_ectf),
+  "~ with imputed ECTF",
+  sum(invasive_adenocarcinoma & imputed_ectf),
+  "~ with any ECTF",
+  sum(invasive_adenocarcinoma & has_ectf),
+  "Stages I, II, III",
+  sum(has_ectf & stage_i_ii_iii),
+  "~ with size information",
+  sum(has_ectf & stage_i_ii_iii & has_size),
+  "~ with microinvasion information",
+  sum(has_ectf & has_size & stage_i_ii_iii & has_invasion),
+  "~ with LN information",
+  sum(has_ectf & stage_i_ii_iii & has_ln & has_size & has_invasion),
+  "Validation",
+  sum(has_ectf & stage_i_ii_iii & has_ln & has_invasion & has_size),
+  "~ Stage I",
+  sum(has_ectf & has_ln & has_invasion & has_size &
+          df_crc$clinical_stage == "I"),
+  "~ Stage II",
+  sum(has_ectf & has_ln & has_invasion & has_size &
+          df_crc$clinical_stage == "II"),
+  "~ Stage III",
+  sum(has_ectf & has_ln & has_invasion & has_size &
+          df_crc$clinical_stage == "III"))
+knitr::kable(df_population)
+```
+
+### Training data imputation status
+
+```{r report_training_imputation}
+df_analytical_model <-
+  df_crc[has_ectf & stage_i_ii_iii & has_ln & has_invasion & has_size, ]
+l_report_imputation <- report_imputation(df_analytical_model)
+data.frame(data_source = stringr::str_sub(names(l_report_imputation), 3),
+           n_samples = as.integer(l_report_imputation)) %>%
+  knitr::kable()
+```
+
+```{r read validation data}
+df_validation <- readr::read_tsv("../data/supplemental_data_crc_validation.tsv")
+```
+
+```{r repeat_derivations}
+set.seed(0)
+l_ret <- df_validation %>%
+  derive_primary_size(l_imputation = l_imputation,
+                      draw_or_fixed = "draw",
+                      dimension = 2)
+df_validate_crc <- l_ret$df_model %>%
+  get_ln_status() %>%
+  dplyr::left_join(lookup_microinvasion, by = "microinvasion") %>%
+  dplyr::mutate(imputed_invasion = dplyr::case_when(
+    !is.na(score_invasion) ~ score_invasion,
+    t_stage %in% c("T0", "T1", "T2") ~ 0,
+    t_stage %in% c("T3", "T4") ~ 1,
+    TRUE ~ NA_real_))
+```
+
+```{r model_predictions}
+predict_crc <- function(df_data) {
+  v_predict_deep <- predict(predict_deep, df_data)
+  v_predict_shallow <- predict(predict_shallow, df_data)
+  df_data$ectf_predicted <- NA
+  is_shallow <- df_data$imputed_invasion == 0 & !is.na(df_data$imputed_invasion)
+  is_deep <- df_data$imputed_invasion == 1 & !is.na(df_data$imputed_invasion)
+  df_data$ectf_predicted[is_deep] <- v_predict_deep[is_deep]
+  df_data$ectf_predicted[is_shallow] <- v_predict_shallow[is_shallow]
+  df_data
+}
+
+df_validate_crc <- df_validate_crc %>%
+  dplyr::mutate(area_shallow = ifelse(score_invasion == 0, primary_area, 0),
+                area_deep = ifelse(score_invasion == 1, primary_area, 0))
+df_validate_crc <- predict_crc(df_validate_crc)
+v_correction <- df_validate_crc$ectf_predicted
+```
+
+### Figure 12A and B
+
+```{r validation result plots}
+df_results <- df_validate_crc %>%
+  dplyr::filter(clinical_stage %in% c("I", "II", "III"),
+                !is.na(ectf_predicted)) %>%
+  dplyr::mutate(ectf_visualize = pmin(1.0, ectf_predicted))
+
+hPlot <- waterfall_plot(df_results %>%
+                          dplyr::mutate(detected = (tm_classifier_result == "detected")),
+                        name_y = "ectf_visualize",
+                        color_1 = "detected",
+                        color_2 = "clinical_stage") +
+  ggplot2::scale_fill_manual(labels = c("I", "II", "III",
+                                        "not detected", "detected"),
+                             values = c("black", "gray", "white",
+                                        "yellow", "blue")) +
+  ggplot2::ylab("ECTF")
+print(hPlot)
+ggplot2::ggsave(filename = "../figures/Fig_12a_crc_waterfall.eps",
+                plot = hPlot,
+                dpi = 600, device = "eps")
+ggplot2::ggsave(filename = "../figures/Fig_12a_crc_waterfall.svg",
+                plot = hPlot,
+                dpi = 600, device = "svg")
+
+l_ret <- simple_roc(df_results %>%
+                      dplyr::mutate(detected = (tm_classifier_result == "detected")),
+                    "detected", "ectf_predicted")
+
+print(l_ret$hPlot %>%
+        assign_figure_style(axis_x = "False positive rate",
+                                axis_y = "True positive rate",
+                                export = "Fig_12b_crc_roc"))
+```
+
+Model-predicted ECTF explains detection with TM assay with an AUC of `r l_ret$auc`
+(95% CI `r as.numeric(l_ret$auc_ci[c(1,3)])`).
+Detected cases have higher model-predicted ECTF than undetected cases with one-sided two-sample Wilcoxon Rank Sum test p-Value `r l_ret$wilcoxon_p`.
+
+```{r validation_participants}
+df_validate_crc %>%
+  dplyr::count(clinical_stage, tm_classifier_result) %>%
+  tidyr::pivot_wider(names_from = "tm_classifier_result",
+                     values_from = "n", values_fill = 0) %>%
+  dplyr::mutate(n = detected + `not detected`) %>%
+  dplyr::select(clinical_stage, n, detected) %>%
+  knitr::kable()
+
+df_validate_crc %>%
+  dplyr::filter(!is.na(area_deep)) %>%
+  dplyr::count(clinical_stage, tm_classifier_result) %>%
+  tidyr::pivot_wider(names_from = "tm_classifier_result",
+                     values_from = "n", values_fill = 0) %>%
+  dplyr::mutate(n = detected + `not detected`) %>%
+  dplyr::select(clinical_stage, n, detected) %>%
+  knitr::kable()
+```
+
+### Figure 3c (right)
+
+These case numbers are used in the Consort diagrams in Figure 3.
+
+```{r breakdown_validation_population}
+invasive_adenocarcinoma <-
+  df_validate_crc$clinical_stage != "0"
+stage_i_ii_iii <-
+  df_validate_crc$clinical_stage %in% c("I", "II", "III")
+has_size <-
+  !is.na(df_validate_crc$primary_area)
+has_invasion <-
+  !is.na(df_validate_crc$imputed_invasion)
+has_ln <-
+  !is.na(df_validate_crc$ln_status)
+
+df_population <- tibble::tribble(
+  ~population, ~n,
+  "Invasive ADC of colon",
+  sum(invasive_adenocarcinoma),
+  "Stages I, II, III",
+  sum(stage_i_ii_iii),
+  "~ with size information",
+  sum(stage_i_ii_iii & has_size),
+  "~ with microinvasion information",
+  sum(has_size & stage_i_ii_iii & has_invasion),
+  "~ with LN information",
+  sum(stage_i_ii_iii & has_ln & has_size & has_invasion),
+  "~ Stage I",
+  sum(has_ln & has_invasion & has_size &
+          df_validate_crc$clinical_stage == "I"),
+  "~ Stage II",
+  sum(has_ln & has_invasion & has_size &
+          df_validate_crc$clinical_stage == "II"),
+  "~ Stage III",
+  sum(has_ln & has_invasion & has_size &
+          df_validate_crc$clinical_stage == "III"))
+knitr::kable(df_population)
+```
+
+### Validation data imputation status
+
+```{r report_validation_imputation}
+df_used_in_validation <-
+  df_validate_crc[stage_i_ii_iii & has_invasion & has_size, ]
+l_report_imputation <- report_imputation(df_used_in_validation)
+data.frame(data_source = stringr::str_sub(names(l_report_imputation), 3),
+           n_samples = as.integer(l_report_imputation),
+           stringsAsFactors = FALSE) %>%
+  # ectf is always model-predicted for validation
+  dplyr::filter(!endsWith(data_source, "ectf")) %>%
+  knitr::kable()
+```
+
+### Supplemental figure 3: ROC broken down by stage
+
+```{r roc_by_stage}
+lret <- combined_roc(df_results %>%
+                       dplyr::mutate(detected = (tm_classifier_result == "detected")),
+                     "detected", "ectf_predicted", "clinical_stage")
+print(lret$hPlot %>%
+        assign_figure_style(axis_x = "False positive rate",
+                            axis_y = "True positive rate",
+                            color_legend = "Clinical stage",
+                            legend_position = c(0.8, 0.3),
+                            color_points = TRUE,
+                            export = "Fig_Sup3_crc_ROC"))
+knitr::kable(tibble::tribble(
+  ~stage, ~auc, ~ci, ~wilcoxon_p,
+  "I", as.numeric(lret$auc_I), lret$auc_ci_I, lret$wilcoxon_p_I,
+  "II", as.numeric(lret$auc_II), lret$auc_ci_II, lret$wilcoxon_p_II,
+  "III", as.numeric(lret$auc_III), lret$auc_ci_III,  lret$wilcoxon_p_III,
+  "all", as.numeric(lret$auc_all), lret$auc_ci_all,  lret$wilcoxon_p_all)
+)
+```
+
+### Reproducibility information
+
+```{r reproducibility_info}
+sessionInfo()
+```

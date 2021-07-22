@@ -1,0 +1,172 @@
+participant_id	sex	age	clinical_stage	t_stage	n_stage	m_stage	ln_involved	n_primary_lesions	histologic_grade	histologic_type	fdg_suv	ectf	ectf_source	weight_kg	height_m	size_1	size_2	size_3	wgbs_classifier_score	cfdna_conc_ng_ml	wgbs_classifier_result
+ccga_1016	Male	70	Non-informative	T2	N2	Non-informative	1	1	Other/missing	SCLC	9.3	NA	NA	86.3	1.73	17	NA	NA	0.998608	22.441471571906355	detected
+ccga_1023	Male	82	I	T1	N0	M0	Other/missing	1	Other/missing	SCC	6.1	NA	NA	89.8	1.75	16	NA	NA	0.451519	6.165371809100999	not detected
+ccga_1033	Male	69	IV	Tx	Nx	M1	Other/missing	1	Other/missing	SCLC	NA	NA	NA	67.3	1.8	NA	NA	NA	0.999901	48.979729729729726	detected
+ccga_1084	Male	75	III	T1	N2	M0	Other/missing	1	2	SCC	NA	2.06e-4	measured	102.1	1.85	NA	NA	NA	0.481996	19.075949367088608	not detected
+ccga_1101	Female	76	IV	T3	N3	M1	1	1	Other/missing	Other	NA	NA	NA	41.8	1.5	69	NA	NA	0.996988	13.385236447520183	detected
+ccga_1107	Female	70	III	T1	N2	M0	0	1	Other/missing	SCLC	NA	NA	NA	89.8	1.57	28	NA	NA	0.996317	10.302359882005899	detected
+ccga_1117	Male	75	III	T4	N0	M0	Other/missing	1	3	Other	28.7	NA	NA	89.8	1.73	48	NA	NA	0.997548	6.001283697047497	detected
+ccga_116	Male	63	II	T2	N1	Mx	1	1	2	SCC	8.8	0.006374410811315665	measured	82.6	1.73	31	NA	NA	0.952332	13.591433278418451	detected
+ccga_1180	Female	70	IV	T3	N2	M1	5	1	3	Other	NA	NA	NA	61	1.64	78	NA	NA	0.998975	35.45787545787547	detected
+ccga_1181	Female	73	III	T2	N2	M0	Other/missing	1	3	ADC	26.9	NA	NA	57.6	1.59	66	NA	NA	0.998762	23.244803695150118	detected
+ccga_1207	Female	64	II	T1	N1	M0	1	1	Other/missing	SCC	NA	NA	NA	68.5	1.5	20	NA	NA	0.480963	10.85897435897436	not detected
+ccga_1210	Female	62	III	T3	N2	M0	Other/missing	1	Other/missing	SCLC	27	0.002144374957460882	imputed	86.2	1.65	39	NA	NA	0.727661	6.171393341553639	not detected
+ccga_1211	Male	72	IV	T0	N2	M1	Other/missing	1	Other/missing	SCLC	NA	NA	NA	88.7	1.8	23	NA	NA	0.998049	26.528417818740404	detected
+ccga_1235	Male	60	IV	T2	N2	M1	1	1	Other/missing	ADC	NA	NA	NA	48.8	1.8	20	NA	NA	0.998195	36.48514851485148	detected
+ccga_1239	Female	64	III	T1	N2	M0	1	1	Other/missing	Other	14.6	0.016453144672830353	measured	87.5	1.73	34	NA	NA	0.996719	6.261319534282017	detected
+ccga_1241	Female	73	IV	T2	N1	M1	Other/missing	1	Other/missing	ADC	14.9	NA	NA	73.5	1.7	36	NA	NA	0.999091	64.97113163972286	detected
+ccga_1249	Female	67	I	T1	N0	M0	0	1	2	ADC	1.8	8.8e-5	measured	60.1	1.6	10	NA	NA	0.409046	10.483028720626631	not detected
+ccga_1264	Male	66	III	T4	N1	M0	Other/missing	1	3	SCC	NA	0.00473310735941704	imputed	79.6	1.83	59	NA	NA	0.786954	5.5	detected
+ccga_1313	Male	46	III	T3	N3	M1	1	1	3	SCC	11.6	0.1733113247628666	measured	85.2	1.78	78	NA	NA	0.998658	14.864864864864865	detected
+ccga_1351	Male	70	IV	T3	Nx	M1	Other/missing	1	3	Other	NA	NA	NA	83.6	1.73	NA	NA	NA	0.997342	55.83123425692695	detected
+ccga_1361	Male	81	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	NA	NA	NA	64.4	1.85	74	NA	NA	0.998795	18.554945054945055	detected
+ccga_14	Female	63	I	T1	N0	M0	0	1	1	Other	2.1	0.0010831903967612733	measured	64	1.6	12	NA	NA	0.39757	9.73076923076923	not detected
+ccga_1426	Male	56	IV	Tx	Nx	M1	1	1	3	ADC	NA	0.1942485805193352	measured	93.9	1.83	11	NA	NA	0.998016	51.94783573806882	detected
+ccga_1475	Male	70	IV	Tx	Nx	M1	Other/missing	1	Other/missing	ADC	NA	0.04760891650294582	imputed	77.1	1.75	NA	NA	NA	0.973281	13.086816720257236	detected
+ccga_1494	Female	59	IV	T2	N1	M1	1	1	Other/missing	Other	8	NA	NA	44.8	1.57	27	NA	NA	0.996941	5.648267008985879	detected
+ccga_1536	Male	74	IV	Tis	N2	M1	Other/missing	1	3	Other	11.3	NA	NA	80.6	1.68	39	NA	NA	0.998261	28.590033975084935	detected
+ccga_1548	Male	73	II	T3	N0	M0	Other/missing	1	Other/missing	Other	NA	0.004902003939703839	imputed	113.2	1.83	103	NA	NA	0.875136	8.574610244988865	detected
+ccga_1549	Female	84	I	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	Other	16	NA	NA	65	1.6	26	NA	NA	0.472232	8.976486860304286	not detected
+ccga_1588	Male	77	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	7.8	NA	NA	97.5	1.86	NA	NA	NA	0.999051	16.222587719298247	detected
+ccga_1597	Female	54	II	T3	N0	M0	0	1	3	SCLC	16	0.22310078788808702	measured	74.9	1.6	50	NA	NA	0.999528	4.1299165673420735	detected
+ccga_1610	Female	79	IV	T2	N3	M1	Other/missing	1	3	Other	10.9	0.009156992422434302	imputed	78.5	1.71	36	NA	NA	0.894866	4.966799468791502	detected
+ccga_1697	Male	70	IV	T2	N3	M1	Other/missing	1	Other/missing	ADC	10.7	NA	NA	73	1.7	NA	NA	NA	0.999057	12.392566782810686	detected
+ccga_1758	Male	48	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	Other	NA	NA	NA	67.6	1.73	80	NA	NA	0.998167	17.274647887323944	detected
+ccga_1780	Female	69	I	T2	N0	M0	0	1	1	ADC	7.8	1.7999999999999998e-4	measured	105.7	1.59	30	NA	NA	0.463256	9.339622641509434	not detected
+ccga_1856	Male	65	IV	T3	N2	M1	Other/missing	1	3	SCC	21	0.09498715884295622	measured	100.2	1.65	NA	NA	NA	0.998002	18.70928829915561	detected
+ccga_1903	Female	65	IV	T2	Nx	M1	Other/missing	1	3	ADC	13.1	0.0037814405800837697	imputed	40.6	1.52	30	NA	NA	0.721778	4.723163841807909	not detected
+ccga_1953	Male	64	IV	T3	N2	M1	Other/missing	1	3	SCC	NA	0.16209046234864746	measured	136	1.8	34	NA	NA	0.999404	10.05298013245033	detected
+ccga_1955	Female	63	IV	T2	N2	Mx	Other/missing	1	2	ADC	6.3	NA	NA	59.8	1.52	40	NA	NA	0.989961	8.036053130929792	detected
+ccga_1995	Male	70	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	16.8	NA	NA	96.2	1.83	NA	NA	NA	0.998284	27.36541598694943	detected
+ccga_200	Female	55	IV	T3	N0	M1	Other/missing	1	Other/missing	ADC	18.2	0.023367055062698993	measured	90.3	1.68	60	NA	NA	0.987789	4.518613607188704	detected
+ccga_2004	Female	54	I	T2	N0	M0	0	1	3	SCC	NA	0.0037044572535703483	measured	87.5	1.6	25	NA	NA	0.762018	8.335694050991503	not detected
+ccga_2006	Female	55	III	T2	N2	M0	Other/missing	1	Other/missing	Other	18.5	NA	NA	56.7	1.63	38	NA	NA	0.995057	9.624999999999998	detected
+ccga_2025	Male	77	I	T1	N0	M0	Other/missing	1	1	ADC	4.6	NA	NA	72.8	1.65	23	NA	NA	0.468309	13.139686684073107	not detected
+ccga_2068	Female	70	IV	T2	N2	M1	Other/missing	1	2	SCC	NA	NA	NA	92.9	1.52	69	NA	NA	0.997624	36.48454746136865	detected
+ccga_2114	Male	71	III	Non-informative	Non-informative	Non-informative	1	1	Other/missing	Other	2.2	0.011019056416676467	imputed	102.5	1.8	19	NA	NA	0.806731	3.8095238095238093	detected
+ccga_2149	Female	61	Non-informative	T1	N2	M0	Other/missing	1	Other/missing	SCLC	11.4	0.00119890341257961	imputed	70.3	1.65	30	NA	NA	0.617592	5.010976948408342	not detected
+ccga_2176	Female	78	I	T1	N0	M0	Other/missing	1	Other/missing	ADC	3.9	0.0011711114728429227	imputed	65.8	1.65	21	NA	NA	0.525144	13.298507462686569	not detected
+ccga_2260	Male	74	III	T2	N2	M0	Other/missing	1	2	Other	17.5	NA	NA	107.8	1.85	30	NA	NA	0.44969	21.979553903345725	not detected
+ccga_2275	Male	59	IV	T1	N1	M1	0	1	2	ADC	4.3	NA	NA	91.3	1.83	31	NA	NA	0.999703	10.23936170212766	detected
+ccga_2320	Female	65	IV	Tx	Nx	M1	1	1	3	ADC	NA	0.012160340444201431	imputed	50.3	1.65	NA	NA	NA	0.870379	5.597345132743362	detected
+ccga_2323	Female	67	IV	T4	N0	M1	Other/missing	1	2	ADC	7.3	NA	NA	44.4	1.63	25	NA	NA	0.997957	27.686651583710407	detected
+ccga_246	Male	65	II	T2	N0	M0	0	1	Other/missing	SCC	NA	0.003116831506720167	measured	104.3	1.85	30	NA	NA	0.626874	6.552878179384204	not detected
+ccga_2477	Female	73	IV	T4	N3	M1	Other/missing	1	Other/missing	Other	16.9	NA	NA	98.1	1.71	75	NA	NA	0.997798	13.821989528795811	detected
+ccga_2480	Male	56	Non-informative	Non-informative	Non-informative	Non-informative	Other/missing	1	3	ADC	12	NA	NA	77.1	1.68	23	NA	NA	0.994866	14.210810810810813	detected
+ccga_2483	Male	67	II	Non-informative	Non-informative	Non-informative	Other/missing	1	2	SCC	19	0.012017507811109223	imputed	64.9	1.6	34	NA	NA	0.781591	11.14457831325301	detected
+ccga_2552	Female	63	IV	T3	N3	M1	2	1	Other/missing	ADC	9.8	NA	NA	90.7	1.56	71	NA	NA	0.999404	29.297163995067823	detected
+ccga_2563	Female	75	IV	T2	N2	M1	Other/missing	1	3	SCC	14.8	0.10745034731258415	measured	113.4	1.7	56	NA	NA	0.999033	14.734567901234568	detected
+ccga_2597	Female	56	III	T4	N2	Mx	Other/missing	1	3	SCC	NA	0.028515084289064966	measured	48.9	1.65	80	NA	NA	0.986812	8.582417582417582	detected
+ccga_2644	Female	49	I	T1	N0	M0	0	1	1	ADC	NA	6.578597118335063e-4	imputed	48.1	1.57	22	NA	NA	0.516776	4.488341968911917	not detected
+ccga_267	Male	61	II	T1	N1	M0	Other/missing	1	2	SCC	6	0.0022697094327897523	imputed	80.7	1.73	NA	NA	NA	0.692932	9.878980891719745	not detected
+ccga_2678	Male	58	III	T1	N3	M0	1	1	2	ADC	8.3	0.06406919460204938	imputed	101.6	1.9	32	NA	NA	0.987756	10.345659163987138	detected
+ccga_2690	Male	62	IV	T3	N1	M1	Other/missing	1	Other/missing	ADC	8.6	NA	NA	113.9	1.83	NA	NA	NA	0.99062	42.03893442622951	detected
+ccga_275	Female	72	II	T2	N0	M0	0	1	Other/missing	Other	NA	NA	NA	68	1.65	12	NA	NA	0.452324	9.967866323907455	not detected
+ccga_2802	Male	56	III	T3	N2	M0	1	1	2	SCC	23.4	NA	NA	56.2	1.73	64	NA	NA	0.995924	5.981873111782478	detected
+ccga_2828	Female	74	IV	Non-informative	Non-informative	Non-informative	3	1	Other/missing	ADC	NA	NA	NA	85.3	1.57	119	NA	NA	0.99703	26.177558569667077	detected
+ccga_2838	Male	74	IV	T2	N2	M1	2	1	3	Other	15.6	0.34570086963118174	measured	93.9	1.8	NA	NA	NA	0.999484	14.285714285714285	detected
+ccga_2855	Female	63	III	T3	N2	M0	Other/missing	1	3	SCC	NA	NA	NA	68	1.57	49	NA	NA	0.99835	3.4982332155477036	detected
+ccga_2862	Male	69	III	T4	N2	M0	Other/missing	1	2	SCC	17.2	NA	NA	85.3	1.83	112	NA	NA	0.999901	12.282135076252722	detected
+ccga_293	Male	73	I	T1	N0	Mx	0	1	2	ADC	5.8	1.27e-4	measured	65.8	1.75	17	NA	NA	0.388564	7.390180878552972	not detected
+ccga_2942	Female	62	III	T2	N3	M0	Other/missing	1	Other/missing	SCLC	NA	NA	NA	91.2	1.57	44	NA	NA	0.999077	26.7984693877551	detected
+ccga_3008	Female	56	IV	T4	N3	M1	Other/missing	1	Other/missing	SCLC	9.9	0.4087833901486493	measured	46.3	1.47	33	NA	NA	0.999079	32.05817782656421	detected
+ccga_3031	Male	72	III	T4	N1	M0	1	1	3	SCC	30	0.0024223572217377644	imputed	111.6	1.83	44	NA	NA	0.565698	13.153846153846153	not detected
+ccga_3049	Male	77	I	T1	N0	M0	Other/missing	1	2	SCC	NA	0.003343077690785102	imputed	79.6	1.78	30	NA	NA	0.735529	8.875476493011435	not detected
+ccga_3066	Male	66	III	T4	N2	M0	0	1	3	ADC	12.5	NA	NA	73	1.79	NA	NA	NA	0.999658	9.262295081967212	detected
+ccga_31	Male	65	I	T1	N0	M0	0	1	1	ADC	2.2	0.008467131911570934	measured	83.9	1.8	14	NA	NA	0.542398	4.356435643564357	not detected
+ccga_312	Female	49	I	T1	N0	M0	0	1	2	ADC	NA	1.53e-4	measured	64.9	1.63	12	NA	NA	0.49275	8.91139240506329	not detected
+ccga_3147	Female	57	IV	T1	N2	M1	Other/missing	1	2	ADC	7.7	0.010470907653546087	measured	69.9	1.63	21	NA	NA	0.818706	15.101918465227818	detected
+ccga_3207	Female	75	III	T2	N2	M0	Other/missing	1	2	SCC	17.1	7.337238246814818e-4	imputed	78.7	1.77	31	NA	NA	0.528726	17.360114777618367	not detected
+ccga_3317	Female	74	IV	T3	N3	M1	1	1	3	Other	NA	NA	NA	104	1.71	69	NA	NA	0.997877	42.0012706480305	detected
+ccga_3359	Male	78	IV	T0	N0	M1	Other/missing	1	2	ADC	NA	NA	NA	80.7	1.73	NA	NA	NA	0.996793	16.783754116355652	detected
+ccga_3417	Male	70	III	T3	N3	M0	Other/missing	1	3	ADC	16.9	1	measured	83.3	1.68	87	NA	NA	0.997375	60.41518386714117	detected
+ccga_3420	Female	44	IV	T3	Nx	M1	Other/missing	1	3	ADC	NA	NA	NA	57.4	1.52	NA	NA	NA	0.997396	44.38699360341151	detected
+ccga_352	Female	53	III	T2	N2	M0	Other/missing	1	3	Other	17	NA	NA	67.6	1.74	58	NA	NA	0.999494	15.769682726204465	detected
+ccga_3522	Male	59	I	T1	N0	M0	Other/missing	1	2	SCC	NA	0.005469663783732504	imputed	147.4	1.73	31	NA	NA	0.873261	7.195488721804511	detected
+ccga_3587	Female	66	III	T1	N3	M0	Other/missing	1	3	ADC	14.5	NA	NA	46.1	1.55	30	NA	NA	0.973466	9.037227214377408	detected
+ccga_3683	Male	58	III	T1	N2	M0	5	1	Other/missing	SCLC	NA	0.10483912838765795	measured	63	1.75	8	NA	NA	0.996923	14.45619335347432	detected
+ccga_3732	Female	58	III	T2	N2	M0	Other/missing	1	2	SCC	NA	NA	NA	85.9	1.63	NA	NA	NA	0.996816	15.566037735849058	detected
+ccga_3799	Male	74	II	T3	N0	M0	0	3	3	ADC	NA	1.97e-4	measured	100.7	1.75	103	30	NA	0.445071	7.876213592233008	not detected
+ccga_3814	Female	61	III	T1	N2	M0	Other/missing	1	Other/missing	ADC	18.6	NA	NA	89.4	1.62	24	NA	NA	0.494772	8.955223880597014	not detected
+ccga_3847	Female	70	III	T1	N2	M0	1	1	Other/missing	ADC	17.3	0.004602506562286557	imputed	52.2	1.52	14	NA	NA	0.741486	9.810393258426965	not detected
+ccga_3869	Male	73	III	T2	N2	M0	Other/missing	1	2	SCC	25.7	0.011777417498498251	measured	141.2	1.78	51	NA	NA	0.988412	4.759615384615385	detected
+ccga_3915	Female	78	IV	T2	N2	M1	4	1	2	ADC	5.1	1.0499999999999999e-4	measured	47.2	1.56	34	NA	NA	0.767918	18.98576512455516	not detected
+ccga_393	Male	77	III	T2	N2	M0	Other/missing	1	3	ADC	10	NA	NA	84.4	1.78	NA	NA	NA	0.998369	22.18232044198895	detected
+ccga_394	Female	70	II	T3	N0	M0	0	1	1	ADC	6.9	2.92e-4	measured	59	1.55	80	NA	NA	0.469789	10.399467376830891	not detected
+ccga_3951	Male	67	IV	T2	N3	M1	0	1	3	SCC	21.5	NA	NA	72.1	1.8	43	NA	NA	0.998044	22.249403341288783	detected
+ccga_4004	Female	63	II	T1	N1	M0	1	1	Other/missing	Other	10.9	NA	NA	97.4	1.63	21	NA	NA	0.99496	14.005813953488373	detected
+ccga_4052	Female	70	II	T2	N0	M0	Other/missing	1	Other/missing	Other	NA	0.008158904919016436	imputed	59	1.55	58	NA	NA	0.960597	26.354166666666668	detected
+ccga_4069	Female	68	I	T1	N0	M0	0	1	2	ADC	3.7	0.004777577751254728	imputed	85.7	1.71	19	NA	NA	0.611793	9.216621253405995	not detected
+ccga_4262	Male	56	III	T4	N2	M0	Other/missing	1	Other/missing	SCC	11	NA	NA	70.3	1.73	NA	NA	NA	0.998876	6.384928716904277	detected
+ccga_4284	Female	74	III	T2	N2	M0	1	1	Other/missing	ADC	NA	0.015736498775764624	measured	47.2	1.5	43	NA	NA	0.995998	10.999999999999998	detected
+ccga_4315	Male	72	I	T1	N0	Mx	2	1	2	ADC	NA	0.011878394840170791	measured	107.5	1.6	25	NA	NA	0.987039	6.084070796460177	detected
+ccga_4379	Male	84	II	T2	N1	Mx	Other/missing	1	2	SCC	21.7	NA	NA	99.4	1.7	50	NA	NA	0.996318	17.69230769230769	detected
+ccga_4419	Female	65	III	Non-informative	Non-informative	Non-informative	3	1	Other/missing	ADC	12.9	0.0028879619473137744	imputed	71.7	1.55	22	NA	NA	0.617289	17.895728643216078	not detected
+ccga_4422	Male	70	I	T1	N0	M0	Other/missing	1	Other/missing	Other	3.8	NA	NA	99.8	1.8	20	NA	NA	0.434028	11.54320987654321	not detected
+ccga_4441	Female	74	IV	T2	N2	M1	Other/missing	1	Other/missing	ADC	NA	NA	NA	58.1	1.63	65	NA	NA	0.997755	84.31561996779388	detected
+ccga_4465	Female	52	III	T3	N2	M0	3	3	2	ADC	NA	0.0035321888538775983	measured	78	1.63	70	NA	NA	0.82421	18.824921135646687	detected
+ccga_453	Female	77	I	T2	N0	M0	2	1	Other/missing	Other	NA	0.005900577196750727	measured	43.1	1.5	33	NA	NA	0.550251	3.3259587020648964	not detected
+ccga_4584	Female	71	I	T1	N0	M0	Other/missing	1	2	SCC	NA	0.004438273480743002	imputed	123.4	1.59	NA	NA	NA	0.726969	11.738382099827884	not detected
+ccga_4653	Male	61	III	T3	N2	M0	Other/missing	1	3	SCC	22.7	0.9534624550296554	measured	94.8	1.73	113	NA	NA	0.997826	18.06728232189974	detected
+ccga_468	Male	72	II	T2	N0	M0	Other/missing	1	2	SCC	NA	0.0012910545789005883	imputed	131.1	1.8	40	NA	NA	0.687306	29.57831325301205	not detected
+ccga_4681	Male	75	III	T2	N2	M0	Other/missing	1	2	SCC	14.4	0.0038930504628523596	imputed	76.4	1.65	38	NA	NA	0.694409	8.984547461368653	not detected
+ccga_4687	Male	83	II	T2	N1	M0	Other/missing	1	Other/missing	SCC	NA	6.73e-4	measured	103.9	1.66	28	NA	NA	0.482608	20.91225626740947	not detected
+ccga_4700	Female	68	I	T2	N0	M0	0	1	2	SCC	17.2	4.54e-4	measured	89.4	1.68	27	NA	NA	0.507694	8.810679611650487	not detected
+ccga_4736	Male	78	IV	T2	N2	M1	Other/missing	1	Other/missing	ADC	NA	0.0361702332921362	measured	113.4	1.78	56	NA	NA	0.987592	11.600294985250736	detected
+ccga_483	Female	63	IV	T3	N2	M1	3	1	Other/missing	ADC	NA	0.02311809759477916	imputed	78.5	1.69	NA	NA	NA	0.960439	15.578034682080924	detected
+ccga_5016	Female	70	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	24.3	NA	NA	68	1.55	NA	NA	NA	0.440361	18.086797066014668	not detected
+ccga_503	Male	73	IV	T3	N0	M1	Other/missing	1	1	ADC	4.4	NA	NA	71.5	1.73	NA	NA	NA	0.995698	4.25	detected
+ccga_5064	Female	64	I	T1	N0	M0	0	1	2	ADC	3.1	NA	NA	74.4	1.63	50	NA	NA	0.427874	4.104477611940299	not detected
+ccga_5116	Female	75	IV	T2	N2	M1	Other/missing	1	Other/missing	ADC	16.8	0.01824505987835717	imputed	42.2	1.61	NA	NA	NA	0.960282	12.27848101265823	detected
+ccga_5131	Female	72	IV	Tx	Nx	M1	Other/missing	1	Other/missing	ADC	10.1	NA	NA	99.2	1.63	37	NA	NA	0.998567	53.333333333333336	detected
+ccga_5162	Female	68	IV	T4	N1	M1	Other/missing	1	Other/missing	ADC	NA	NA	NA	50.3	1.55	85	NA	NA	0.998176	22.948275862068968	detected
+ccga_5174	Male	81	I	T2	N0	M0	Other/missing	1	Other/missing	ADC	NA	0.0011366068553996357	imputed	78.8	1.7	34	NA	NA	0.597134	13.90967741935484	not detected
+ccga_5186	Female	54	III	Non-informative	Non-informative	Non-informative	4	1	Other/missing	Other	17.4	0.0019475320645931295	imputed	79.4	1.65	NA	NA	NA	0.52068	62.883747178329585	not detected
+ccga_521	Female	71	IV	T2	Nx	M1	Other/missing	1	1	ADC	NA	9.7e-5	measured	83.5	1.7	34	NA	NA	0.428169	12.325301204819278	not detected
+ccga_5296	Female	57	I	T2	N0	M0	Other/missing	1	3	ADC	8.4	NA	NA	65.8	1.57	46	NA	NA	0.995625	3.128306878306878	detected
+ccga_541	Male	74	II	T2	N0	M0	Other/missing	1	Other/missing	ADC	5.9	NA	NA	91.2	1.9	36	NA	NA	0.461921	5.021739130434782	not detected
+ccga_5427	Female	67	I	T2	Nx	Mx	0	3	3	ADC	2.6	0.0020255883169368705	imputed	86.2	1.7	48	16	10	0.694274	9.75369458128079	not detected
+ccga_545	Male	69	IV	T3	N3	M1	Other/missing	1	3	Other	18.9	0.001266	measured	79	1.73	55	NA	NA	0.309728	34.26229508196722	not detected
+ccga_5457	Male	79	IV	T4	N1	M1	Other/missing	1	2	ADC	14.4	0.0014994015892866649	measured	68	1.9	78	NA	NA	0.726275	22.294455066921607	not detected
+ccga_555	Male	67	III	T2	N2	M0	Other/missing	1	Other/missing	SCLC	NA	0.010617723993633959	imputed	92.4	1.75	19	NA	NA	0.973947	9.607594936708859	detected
+ccga_559	Male	85	III	T1	N2	M0	Other/missing	1	2	ADC	2.1	7.7e-4	measured	73.3	1.7	13	NA	NA	0.43978	7.324290998766956	not detected
+ccga_563	Female	85	Non-informative	T3	N0	Mx	0	1	2	SCC	NA	0.0045828559435906234	imputed	58.5	1.65	NA	NA	NA	0.801792	8.313253012048191	detected
+ccga_5637	Female	77	IV	T4	N3	M1	Other/missing	1	2	SCC	18.4	0.020609040989343217	imputed	47	1.6	65	NA	NA	0.982223	26.361355081555836	detected
+ccga_5700	Female	79	IV	T2	N0	M1	Other/missing	1	Other/missing	ADC	4.7	0.013084357058757864	imputed	63	1.7	30	NA	NA	0.934106	13.562925170068027	detected
+ccga_5764	Female	59	IV	Non-informative	Non-informative	Non-informative	1	1	Other/missing	SCLC	NA	NA	NA	75.8	1.61	NA	NA	NA	0.997992	32.982731554160125	detected
+ccga_5770	Male	57	III	T4	N1	Mx	5	1	2	SCC	12.1	0.012600464855165059	measured	74.4	1.78	30	NA	NA	0.984689	8.123306233062332	detected
+ccga_5903	Female	58	I	T2	N0	M0	0	1	2	ADC	4.7	0.012771778271034078	measured	94.6	1.63	35	NA	NA	0.967584	4.671814671814673	detected
+ccga_597	Male	72	IV	Tx	N2	M1	5	1	3	SCC	9.6	NA	NA	65.8	1.78	40	NA	NA	0.994935	9.422005571030642	detected
+ccga_613	Female	83	I	T1	N0	M0	Other/missing	1	3	SCC	9.5	NA	NA	74.4	1.6	18	NA	NA	0.412937	4.552572706935123	not detected
+ccga_614	Male	73	III	T2	N2	M0	Other/missing	1	Other/missing	SCC	14.9	NA	NA	83.5	1.73	28	NA	NA	0.995958	13.301462317210348	detected
+ccga_6189	Female	73	III	T2	N2	M0	1	1	3	SCLC	9	NA	NA	55.3	1.57	NA	NA	NA	0.998006	8.428290766208251	detected
+ccga_648	Male	65	IV	T2	N2	M1	Other/missing	1	2	ADC	NA	0.16058861303462987	measured	76.4	1.68	NA	NA	NA	0.999562	75.32756489493201	detected
+ccga_712	Male	85	IV	T2	N2	M1	Other/missing	1	Other/missing	ADC	7	NA	NA	63.8	1.57	39	NA	NA	0.998106	14.95879120879121	detected
+ccga_7127	Female	62	IV	T2	N1	M1	Other/missing	1	Other/missing	ADC	11.3	NA	NA	64.4	1.61	46	NA	NA	0.47747	15.901126408010011	not detected
+ccga_7201	Female	67	III	Non-informative	Non-informative	Non-informative	3	1	Other/missing	SCLC	NA	0.4365881195911493	measured	55.3	1.57	27	NA	NA	0.99739	20.9	detected
+ccga_724	Male	56	IV	T1	N2	M1	Other/missing	1	Other/missing	Other	NA	NA	NA	74.8	1.69	57	NA	NA	0.997839	6.816901408450704	detected
+ccga_7250	Male	70	I	Non-informative	Non-informative	Non-informative	0	1	2	SCC	2.6	NA	NA	83	1.63	14	NA	NA	0.425707	14.298584298584299	not detected
+ccga_743	Female	77	II	T3	N0	M0	Other/missing	1	Other/missing	ADC	NA	0.002755669733289622	measured	55.4	1.52	NA	NA	NA	0.867297	9.334862385321102	detected
+ccga_778	Female	65	I	T1	N0	M0	Other/missing	1	2	SCC	15.3	NA	NA	49.4	1.5	26	NA	NA	0.99936	6.773897058823529	detected
+ccga_7847	Female	69	III	T3	N3	M0	Other/missing	1	Other/missing	Other	NA	NA	NA	44.9	1.55	100	NA	NA	0.997799	40.44902912621359	detected
+ccga_820	Female	62	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	SCLC	NA	NA	NA	76.7	1.63	57	NA	NA	0.997735	25.28376844494892	detected
+ccga_822	Male	73	I	T1	N0	M0	Other/missing	1	2	ADC	3.8	0.008858094699539187	imputed	91.7	1.68	14	NA	NA	0.889261	11.861263736263737	detected
+ccga_8244	Female	68	I	Non-informative	Non-informative	Non-informative	0	1	Other/missing	ADC	9.4	NA	NA	60.3	1.57	27	NA	NA	0.438693	4.46607341490545	not detected
+ccga_8327	Male	53	III	T2	N3	M0	Other/missing	1	2	SCC	6.4	NA	NA	68.8	1.7	33	NA	NA	0.997971	4.148044692737431	detected
+ccga_836	Male	74	I	T1	Nx	Mx	0	1	3	SCC	NA	NA	NA	110.2	1.68	40	NA	NA	0.997828	14.688922610015174	detected
+ccga_8477	Female	67	IV	T2	N1	M1	Other/missing	1	3	ADC	7	NA	NA	84.6	1.68	47	NA	NA	0.997447	8.29954954954955	detected
+ccga_861	Female	70	I	T1	N0	M0	0	1	Other/missing	ADC	15	1.08e-4	measured	68.5	1.68	19	NA	NA	0.580655	10.454545454545453	not detected
+ccga_869	Female	55	IV	T3	N3	M1	4	1	3	ADC	8.8	0.1979939872766354	measured	62.1	1.52	105	NA	NA	0.999209	28.675213675213673	detected
+ccga_870	Female	67	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	SCLC	NA	NA	NA	50.3	1.5	56	NA	NA	0.999155	80.90056285178235	detected
+ccga_873	Female	72	III	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	Other	NA	NA	NA	57.5	1.6	20	NA	NA	0.997875	84.27190721649485	detected
+ccga_884	Female	68	I	T1	N0	M0	0	1	2	ADC	1.2	6.63e-4	measured	65.8	1.52	6	NA	NA	0.853925	3.431001890359169	detected
+ccga_889	Female	70	II	T2	N1	M0	0	1	3	ADC	26.9	0.008422681385654497	measured	93	1.57	45	NA	NA	0.97883	12.39637305699482	detected
+ccga_896	Male	60	IV	T1	Nx	M1	Other/missing	1	2	SCC	NA	NA	NA	65.2	1.73	21	NA	NA	0.999265	7.279411764705882	detected
+ccga_914	Male	55	I	T2	N0	M0	0	1	3	ADC	NA	NA	NA	64.9	1.83	30	NA	NA	0.40477	5.013020833333334	not detected
+ccga_927	Male	85	I	T2	N0	M0	Other/missing	1	Other/missing	ADC	5.6	NA	NA	79.8	1.6	NA	NA	NA	0.444579	9.867109634551497	not detected
+ccga_938	Female	68	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	SCC	NA	NA	NA	91.5	1.61	46	NA	NA	0.998959	66.02409638554217	detected
+ccga_954	Female	68	II	T1	N1	Mx	1	1	2	ADC	NA	1.43e-4	measured	79.8	1.57	18	NA	NA	0.430799	10.708722741433021	not detected
+ccga_969	Male	57	III	T3	N1	M0	0	1	3	ADC	16.9	0.03858812055388905	measured	59	1.78	86	NA	NA	0.996188	7.322485207100592	detected
+ccga_984	Female	74	III	T1	N2	M0	Other/missing	1	Other/missing	SCLC	16	0.14942753142532259	measured	63.5	1.6	38	NA	NA	0.999725	11.655629139072847	detected
+ccga_994	Female	74	IV	T2	N1	M1	Other/missing	1	2	ADC	11.6	NA	NA	63.5	1.64	49	NA	NA	0.998468	6.396882494004797	detected
+ccga_996	Female	78	III	Non-informative	Non-informative	Non-informative	5	1	Other/missing	Other	NA	0.0010469228067572357	measured	65.5	1.57	31	NA	NA	0.446268	14.396863691194211	not detected

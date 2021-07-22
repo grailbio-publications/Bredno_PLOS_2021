@@ -1,0 +1,372 @@
+participant_id	sex	age	clinical_stage	n_stage	m_stage	t_stage	ln_involved	n_primary_lesions	histologic_grade	histologic_type	fdg_suv	weight_kg	height_m	size_1	size_2	size_3	size_4	tm_classifier_result
+ccga_10158	Female	74	I	N0	M0	T1	1	1	1	ADC	NA	81.6	1.75	25	NA	NA	NA	not detected
+ccga_10290	Male	58	IV	N3	M1	T2	1	1	Other/missing	ADC	NA	72.6	1.69	NA	NA	NA	NA	detected
+ccga_10371	Female	63	I	N0	M0	T1	3	1	3	ADC	7.2	87	1.59	17	NA	NA	NA	not detected
+ccga_10426	Male	73	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	2	ADC	8.7	66.6	1.66	14	NA	NA	NA	detected
+ccga_10514	Female	76	III	N1	M0	T4	1	1	3	ADC	15.9	63	1.65	NA	NA	NA	NA	detected
+ccga_11457	Male	64	III	N3	M0	T4	1	1	Other/missing	Other	NA	78.3	1.75	NA	NA	NA	NA	detected
+ccga_11489	Male	67	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	Other	NA	84.4	1.75	NA	NA	NA	NA	not detected
+ccga_11562	Female	58	I	N0	M0	T1	1	1	3	ADC	11	80.1	1.66	26	NA	NA	NA	not detected
+ccga_11746	Male	70	III	N3	M0	T1	Other/missing	1	Other/missing	Other	10.9	47.1	1.6	NA	NA	NA	NA	detected
+ccga_11896	Male	67	IV	N0	M1	T2	Other/missing	1	Other/missing	SCC	18.5	88.9	1.8	36	NA	NA	NA	detected
+ccga_11928	Female	79	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	5.5	64	1.71	NA	NA	NA	NA	detected
+ccga_11951	Female	48	I	Nx	Mx	T1	0	1	Other/missing	Other	3.2	49	1.63	13	NA	NA	NA	not detected
+ccga_11993	Female	78	I	N0	M0	T1	Other/missing	1	Other/missing	SCC	13.4	70.2	1.6	20	NA	NA	NA	not detected
+ccga_11996	Female	62	IV	N3	M1	T2	2	1	Other/missing	ADC	NA	67.3	1.61	32	NA	NA	NA	not detected
+ccga_12338	Male	51	III	N2	M0	T4	Other/missing	1	3	SCLC	10.8	60.3	1.83	173	NA	NA	NA	detected
+ccga_12466	Male	75	IV	N1	M1	T3	Other/missing	1	3	Other	9.4	104.8	1.78	63	NA	NA	NA	detected
+ccga_12486	Female	79	IV	N3	M1	T2	2	1	Other/missing	ADC	14.3	67.1	1.6	33	NA	NA	NA	detected
+ccga_12538	Male	40	III	N0	M0	T4	Other/missing	1	3	ADC	13.1	63.3	1.88	92	NA	NA	NA	detected
+ccga_12628	Female	68	III	Non-informative	Non-informative	Non-informative	5	1	2	SCC	24.7	71.2	1.57	55	NA	NA	NA	detected
+ccga_12728	Female	65	I	Nx	M0	T1	Other/missing	1	2	ADC	NA	93.4	1.69	23	NA	NA	NA	not detected
+ccga_12787	Male	65	I	N0	M0	T2	0	1	2	SCC	4.8	78	1.8	32	NA	NA	NA	not detected
+ccga_13024	Female	48	IV	N1	M1	T2	Other/missing	1	Other/missing	SCLC	9.8	120.2	1.7	47	NA	NA	NA	detected
+ccga_13061	Female	73	III	N2	M0	T4	Other/missing	1	2	ADC	11.7	60	1.63	NA	NA	NA	NA	detected
+ccga_13071	Male	76	IV	N2	M1	T1	Other/missing	1	Other/missing	ADC	3.7	91	1.8	NA	NA	NA	NA	detected
+ccga_13217	Male	63	IV	N3	M1	T3	Other/missing	1	3	ADC	NA	54.4	1.74	30	NA	NA	NA	detected
+ccga_13224	Female	69	IV	N3	M1	T4	Other/missing	1	3	ADC	39.6	50.8	1.6	110	NA	NA	NA	detected
+ccga_13240	Male	77	I	Nx	M0	T1	0	1	Other/missing	ADC	5.8	86	1.71	19	NA	NA	NA	not detected
+ccga_13354	Female	65	IV	N2	M1	T1	Other/missing	1	Other/missing	Other	15	67.3	1.6	29	NA	NA	NA	detected
+ccga_1344	Female	50	IV	N2	M1	T1	Other/missing	1	1	ADC	6.6	61.6	1.63	32	NA	NA	NA	detected
+ccga_14470	Male	71	III	N0	M0	T2	4	1	2	ADC	18.7	81.9	1.71	78	NA	NA	NA	detected
+ccga_14641	Male	81	II	N1	M0	T1	1	1	Other/missing	SCLC	10.9	80.7	1.71	73	NA	NA	NA	detected
+ccga_3487	Male	53	IV	Nx	M1	T1	Other/missing	1	Other/missing	ADC	NA	64.5	1.83	19	NA	NA	NA	detected
+ccga_4492	Male	70	IV	Nx	M1	Tx	Other/missing	1	3	ADC	4.3	72.9	1.7	NA	NA	NA	NA	detected
+ccga_5728	Male	57	III	N2	Mx	T2	Other/missing,Other/missing	2	Other/missing	SCC	7	88.6	1.7	30	NA	NA	NA	detected
+ccga_6334	Male	75	I	N0	M0	T1	0	1	2	ADC	9	90.7	1.73	23	NA	NA	NA	not detected
+ccga_634	Female	62	I	N0	M0	T1	1	1	3	ADC	6.7	78.1	1.66	19	NA	NA	NA	detected
+ccga_6671	Male	68	II	N0	M0	T3	Other/missing	1	Other/missing	Other	11.6	86.4	1.75	35	NA	NA	NA	detected
+ccga_6945	Female	67	IV	N2	M1	T2	Other/missing	1	Other/missing	ADC	10.2	71.3	1.68	42	NA	NA	NA	detected
+ccga_7333	Male	68	III	N2	M0	T1	Other/missing	1	1	ADC	21.4	55.3	1.68	28	NA	NA	NA	not detected
+ccga_8386	Female	71	I	N0	M0	T1	0	1	2	ADC	7.2	69.4	1.73	25	NA	NA	NA	not detected
+ccga_9192	Male	60	II	N0	M0	T3	0	1	3	SCC	29.3	128.8	1.93	65	NA	NA	NA	not detected
+ccga_9215	Female	73	II	N3	Mx	T2	2	1	Other/missing	Other	20.9	67	1.69	39	NA	NA	NA	detected
+ccga_9252	Female	71	IV	N3	M1	T2	Other/missing	1	3	ADC	10.8	54.2	1.57	58	NA	NA	NA	detected
+ccga_9921	Female	65	III	N2	M0	T2	Other/missing	1	Other/missing	ADC	6.5	87.5	1.47	30	NA	NA	NA	not detected
+ccga_10082	Female	62	IV	Non-informative	M1	Non-informative	4	1	Other/missing	Other	8.9	53.1	1.65	92	NA	NA	NA	detected
+ccga_10278	Male	60	III	N0	M0	T4	Other/missing	1	Other/missing	SCC	16.1	106	1.73	50	NA	NA	NA	detected
+ccga_10302	Female	78	III	N3	M0	T2	Other/missing	1	Other/missing	SCLC	5	76	1.65	50	NA	NA	NA	detected
+ccga_10410	Female	83	I	N0	M0	T1	Other/missing	1	1	ADC	3.1	46.3	1.55	53	NA	NA	NA	not detected
+ccga_10575	Female	65	IV	N1	M1	T2	Other/missing,Other/missing	2	3	ADC	NA	77	1.65	NA	NA	NA	NA	detected
+ccga_11347	Male	70	III	N2	M0	T1	1	1	Other/missing	SCC	15.8	118	1.83	25	NA	NA	NA	detected
+ccga_11416	Male	82	III	N3	M0	T1	Other/missing	1	Other/missing	SCLC	10.8	73.4	1.74	NA	NA	NA	NA	detected
+ccga_11460	Male	85	II	N1	M0	T1	Other/missing	1	Other/missing	SCC	19.8	93.4	1.78	50	NA	NA	NA	detected
+ccga_11485	Male	76	III	Non-informative	Non-informative	Non-informative	1	1	Other/missing	Other	NA	87	1.8	39	NA	NA	NA	detected
+ccga_11498	Female	73	I	N0	M0	T1	0	1	Other/missing	ADC	2.1	61.2	1.55	NA	NA	NA	NA	not detected
+ccga_11678	Male	71	IV	N2	M1	T4	1	1	2	ADC	4.7	92.2	1.89	NA	NA	NA	NA	detected
+ccga_11944	Male	59	III	N2	M0	T3	Other/missing	1	3	SCC	12.6	89.1	2.01	27	NA	NA	NA	detected
+ccga_12194	Male	67	IV	N0	M1	T4	Other/missing	1	3	ADC	22.1	57.4	1.73	94	NA	NA	NA	detected
+ccga_12275	Male	55	III	N2	M0	T2	Other/missing	1	Other/missing	ADC	11.9	103	1.78	30	NA	NA	NA	detected
+ccga_12401	Male	70	I	N0	M0	T1	3	2	Other/missing	ADC	NA	128.3	1.73	15	10	NA	NA	not detected
+ccga_12462	Female	62	IV	N2	M1	T2	Other/missing	1	1	ADC	NA	50.3	1.55	40	NA	NA	NA	detected
+ccga_12540	Female	78	III	N2	M0	T3	1	1	3	SCC	9.1	47.1	1.52	29	NA	NA	NA	detected
+ccga_1258	Male	60	I	N0	M0	T1	Other/missing	1	2	ADC	1.8	74.6	1.7	45	NA	NA	NA	not detected
+ccga_12599	Female	62	I	N0	M0	Tx	0	1	Other/missing	ADC	9.8	96.2	1.65	36	NA	NA	NA	not detected
+ccga_12600	Female	51	IV	N1	M1	T3	Other/missing	1	3	SCLC	9.1	105.2	1.82	71	NA	NA	NA	detected
+ccga_12894	Female	62	III	N2	M0	T2	1	1	Other/missing	SCLC	3.5	94.4	1.6	31	NA	NA	NA	detected
+ccga_12967	Male	59	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	SCC	9.9	66.7	1.63	23	NA	NA	NA	not detected
+ccga_13082	Male	85	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	NA	92.4	1.78	32	NA	NA	NA	detected
+ccga_13140	Female	65	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	SCC	NA	49	1.6	NA	NA	NA	NA	detected
+ccga_13198	Female	65	I	N0	M0	T1	Other/missing	1	2	ADC	6.7	58.1	1.68	27	NA	NA	NA	not detected
+ccga_13702	Female	76	I	N0	M0	T1	0	1	2	ADC	15.2	63	1.57	22	NA	NA	NA	not detected
+ccga_13832	Female	81	III	N3	M0	T2	1	1	1	ADC	NA	64	1.66	35	NA	NA	NA	detected
+ccga_13863	Male	76	I	N0	M0	T2	0	1	2	ADC	6.2	70	1.68	59	NA	NA	NA	not detected
+ccga_14553	Male	66	II	N0	M0	T2	0	2	3	SCC	13.8	112.5	1.78	47	NA	NA	NA	detected
+ccga_2137	Male	64	I	N0	M0	T1	0	1	2	ADC	3.4	94.3	1.78	27	NA	NA	NA	not detected
+ccga_2534	Male	72	IV	N0	M1	T3	Other/missing	1	Other/missing	Other	NA	63.6	1.66	12	NA	NA	NA	detected
+ccga_2920	Male	75	II	N0	M0	T3	Other/missing	1	2	SCC	6.1	66.7	1.7	13	NA	NA	NA	detected
+ccga_3975	Male	51	IV	N2	Mx	T1	1	1	3	Other	24.2	113.1	1.8	92	NA	NA	NA	detected
+ccga_4255	Male	63	III	N2	M0	T3	Other/missing	1	3	ADC	NA	122	1.68	71	NA	NA	NA	not detected
+ccga_4473	Male	63	I	Non-informative	Non-informative	Non-informative	0	1	2	SCC	NA	84.8	1.78	18	NA	NA	NA	not detected
+ccga_4610	Male	85	IV	N2	M1	T1	Other/missing	1	Other/missing	Other	2.4	85.7	1.73	NA	NA	NA	NA	detected
+ccga_5166	Male	73	I	N0	M0	T1	0	1	3	SCC	7.2	115.2	1.9	29	NA	NA	NA	not detected
+ccga_6317	Male	62	IV	N2	M1	T2	Other/missing	1	3	ADC	5.7	56.7	1.83	26	NA	NA	NA	detected
+ccga_6318	Male	71	IV	N3	M1	T4	Other/missing	1	Other/missing	ADC	NA	86.8	1.73	70	NA	NA	NA	detected
+ccga_665	Female	63	IV	N1	M1	T2	Other/missing	1	3	ADC	NA	61.8	1.59	58	NA	NA	NA	detected
+ccga_6916	Male	50	IV	N3	M1	T1	1	1	Other/missing	ADC	NA	91.2	1.73	NA	NA	NA	NA	detected
+ccga_7223	Male	68	IV	N2	M1	T3	Other/missing	1	Other/missing	SCLC	NA	86.9	1.75	52	NA	NA	NA	detected
+ccga_7490	Male	68	III	N1	Mx	T3	Other/missing	1	3	SCC	16.8	70.9	1.75	80	NA	NA	NA	detected
+ccga_7983	Male	65	IV	N1	M1	T4	Other/missing	1	3	ADC	14	93.3	1.75	37	NA	NA	NA	detected
+ccga_8925	Male	70	II	N0	M0	T2	0	1	Other/missing	Other	NA	73	1.78	50	NA	NA	NA	detected
+ccga_9047	Male	53	IV	N2	M1	T2	Other/missing	1	Other/missing	ADC	NA	64.4	1.9	68	NA	NA	NA	detected
+ccga_9262	Female	85	I	N0	M0	T1	0	1	Other/missing	SCLC	2.8	86.3	1.61	NA	NA	NA	NA	not detected
+ccga_9287	Female	45	I	N0	M0	T1	0	1	1	SCLC	2.3	72.6	1.7	18	NA	NA	NA	not detected
+ccga_9466	Male	72	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	17.9	78.9	1.78	31	NA	NA	NA	detected
+ccga_10231	Female	61	III	N1	M0	T4	0	1	3	SCC	19.8	54.9	1.63	92	NA	NA	NA	detected
+ccga_10246	Male	60	IV	N3	M1	T4	2	1	3	Other	22.9	73.3	1.68	82	NA	NA	NA	detected
+ccga_10630	Female	71	II	N0	M0	T3	1	1	3	ADC	NA	89.4	1.55	48	NA	NA	NA	detected
+ccga_10650	Male	67	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	ADC	17.8	63.5	1.75	23	NA	NA	NA	detected
+ccga_10858	Male	74	IV	N2	M1	T3	Other/missing	1	3	Other	14.6	84.8	1.78	48	NA	NA	NA	detected
+ccga_10964	Female	74	II	N0	M0	T2	1	1	Other/missing	ADC	11.6	84.4	1.63	40	NA	NA	NA	not detected
+ccga_11088	Male	61	II	N1	M0	T2	Other/missing	1	Other/missing	SCLC	6	109.8	1.83	16	NA	NA	NA	not detected
+ccga_11090	Female	62	III	N2	M0	T3	Other/missing	1	3	ADC	27.8	88.4	1.68	28	NA	NA	NA	detected
+ccga_11304	Male	61	I	N0	Mx	T1	0	1	2	SCC	5.1	77	1.7	40	NA	NA	NA	not detected
+ccga_11688	Male	59	I	N0	M0	T2	2	1	2	SCC	30.6	91.6	1.71	37	NA	NA	NA	detected
+ccga_11865	Male	83	IV	Non-informative	Non-informative	Non-informative	1	1	Other/missing	Other	12.4	50.3	1.7	NA	NA	NA	NA	detected
+ccga_11905	Female	85	I	N0	M0	T1	Other/missing	1	Other/missing	Other	NA	74.8	1.47	2	NA	NA	NA	detected
+ccga_11925	Female	31	II	N0	M0	T2	0	1	2	ADC	10.6	90.3	1.62	50	NA	NA	NA	not detected
+ccga_12036	Male	76	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	7.2	82.8	1.9	27	NA	NA	NA	detected
+ccga_12385	Male	77	IV	N3	M1	T1	2	1	3	Other	10.7	94.8	1.83	18	NA	NA	NA	detected
+ccga_12549	Male	69	I	N0	M0	T1	0	1	3	ADC	2.6	96.2	1.83	15	NA	NA	NA	not detected
+ccga_12634	Male	57	IV	Nx	M1	T2	Other/missing	1	Other/missing	ADC	14.4	108	1.7	78	NA	NA	NA	detected
+ccga_12637	Female	72	I	N0	M0	T1	0	1	1	ADC	1.1	54.4	1.57	15	NA	NA	NA	not detected
+ccga_12643	Female	51	IV	Nx	M1	Tx	Other/missing	1	Other/missing	ADC	NA	73	1.6	NA	NA	NA	NA	detected
+ccga_12705	Female	70	III	N1	Mx	T2	Other/missing	1	Other/missing	ADC	NA	48.1	1.68	NA	NA	NA	NA	detected
+ccga_12823	Male	54	III	N2	M0	T3	2	1	Other/missing	ADC	14.5	139.9	1.78	70	NA	NA	NA	not detected
+ccga_13278	Female	70	I	N0	M0	T1	Other/missing	1	Other/missing	SCC	15.3	119.7	1.73	27	NA	NA	NA	detected
+ccga_13499	Female	47	III	Non-informative	Non-informative	Non-informative	Other/missing	1	3	Other	NA	73.7	1.61	NA	NA	NA	NA	detected
+ccga_13693	Female	82	IV	Non-informative	Non-informative	Non-informative	2	1	Other/missing	SCLC	9	64.2	1.55	40	NA	NA	NA	detected
+ccga_13812	Female	68	IV	N2	M1	T2	2	1	3	Other	NA	95.3	1.57	NA	NA	NA	NA	detected
+ccga_14589	Female	80	I	N0	M0	T1	Other/missing	1	3	ADC	6.3	80	1.51	13	NA	NA	NA	not detected
+ccga_2577	Male	69	III	N2	M0	T3	Other/missing	1	3	SCC	11	50.3	1.64	36	NA	NA	NA	detected
+ccga_2927	Male	68	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	SCLC	NA	92.2	1.69	NA	NA	NA	NA	detected
+ccga_321	Male	59	III	N2	M0	T2	2	1	Other/missing	SCLC	13	116	1.77	44	NA	NA	NA	detected
+ccga_5305	Male	83	I	N0	M0	T1	Other/missing	1	Other/missing	Other	5	93.3	1.73	24	NA	NA	NA	not detected
+ccga_5307	Male	59	IV	N2	M1	T3	Other/missing	1	Other/missing	SCC	13.3	105.1	1.81	39	NA	NA	NA	detected
+ccga_5591	Female	66	IV	N3	M1	T2	1	1	Other/missing	SCLC	NA	82.6	1.69	38	NA	NA	NA	detected
+ccga_6125	Male	62	III	N0	M0	T4	Other/missing	1	Other/missing	ADC	16.2	66.7	1.73	72	NA	NA	NA	detected
+ccga_6209	Female	68	I	N0	M0	T1	Other/missing	1	Other/missing	SCLC	NA	92.1	1.65	10	NA	NA	NA	not detected
+ccga_6266	Male	70	II	N1	M0	T2	1	1	3	Other	8.7	88.5	1.75	35	NA	NA	NA	detected
+ccga_7385	Male	71	III	N3	M0	T2	Other/missing	1	3	SCC	13.4	93.9	1.8	43	NA	NA	NA	detected
+ccga_8058	Female	57	IV	N3	M1	T2	1	1	Other/missing	ADC	16	71.2	1.68	50	NA	NA	NA	detected
+ccga_8358	Female	54	IV	N0	M1	T2	Other/missing	1	3	ADC	21.8	57.2	1.63	58	NA	NA	NA	detected
+ccga_8480	Male	68	IV	N2	M1	T3	Other/missing	1	3	SCC	NA	114.3	1.7	108	NA	NA	NA	detected
+ccga_8626	Male	74	III	N3	M0	T1	Other/missing	1	Other/missing	ADC	13.9	110	1.88	14	NA	NA	NA	detected
+ccga_8678	Male	36	IV	Nx	M1	T2	Other/missing	1	Other/missing	ADC	6.7	77.6	1.83	NA	NA	NA	NA	not detected
+ccga_9978	Male	75	II	N0	M0	T3	Other/missing	1	3	Other	NA	142.4	1.88	NA	NA	NA	NA	detected
+ccga_10048	Female	55	III	N2	M0	T4	Other/missing	1	3	ADC	16.6	56	1.6	78	NA	NA	NA	detected
+ccga_10267	Female	72	III	N2	M0	T2	1	1	Other/missing	SCC	15	139.7	1.65	36	NA	NA	NA	not detected
+ccga_10525	Female	76	IV	N0	M1	T2	Other/missing	1	Other/missing	SCC	94	113.3	1.63	30	NA	NA	NA	detected
+ccga_10590	Male	69	III	N3	M0	T2	Other/missing	1	3	SCC	NA	76.7	1.78	NA	NA	NA	NA	detected
+ccga_10875	Male	63	III	N1	M0	T4	4	1	Other/missing	SCLC	NA	88	1.76	25	NA	NA	NA	detected
+ccga_10962	Female	80	I	N0	M0	T1	Other/missing	1	2	ADC	6.7	53.3	1.68	19	NA	NA	NA	not detected
+ccga_11537	Male	49	IV	N3	M1	T3	Other/missing	1	4	Other	NA	87.3	1.73	56	NA	NA	NA	detected
+ccga_12066	Male	58	IV	N0	M1	T1	Other/missing	1	Other/missing	ADC	7.2	143.3	1.85	23	NA	NA	NA	not detected
+ccga_12394	Female	70	IV	N2	M1	T2	Other/missing	1	Other/missing	Other	22.1	72.6	1.47	NA	NA	NA	NA	detected
+ccga_12433	Female	67	I	N0	Mx	T1	Other/missing	1	Other/missing	SCLC	5.1	61.7	1.65	12	NA	NA	NA	detected
+ccga_12619	Female	73	III	N2	M0	T2	Other/missing	1	Other/missing	SCC	7.8	95.7	1.49	NA	NA	NA	NA	detected
+ccga_12632	Male	56	II	N1	M0	T1	12	1	3	SCC	6.5	82	1.7	24	NA	NA	NA	detected
+ccga_12663	Female	67	IV	N3	M1	T2	1	1	Other/missing	SCLC	NA	61.2	1.63	NA	NA	NA	NA	detected
+ccga_12670	Male	77	IV	N2	M1	T2	1	1	Other/missing	SCLC	NA	92	1.68	77	NA	NA	NA	detected
+ccga_12771	Female	80	IV	N3	M1	T4	Other/missing	1	Other/missing	SCC	NA	80.7	1.65	NA	NA	NA	NA	detected
+ccga_13078	Male	69	IV	N3	M1	T3	Other/missing	1	Other/missing	ADC	NA	76	1.61	NA	NA	NA	NA	detected
+ccga_13109	Female	54	III	N3	M0	T4	Other/missing	1	3	SCC	12.8	112	1.68	90	NA	NA	NA	detected
+ccga_13270	Male	84	IV	N3	M1	T3	1	1	3	SCLC	9.3	76.7	1.75	67	NA	NA	NA	detected
+ccga_13363	Male	73	II	N0	M0	T3	0	3	Other/missing	ADC	3.8	90.3	1.9	36	NA	NA	NA	not detected
+ccga_13388	Female	56	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	ADC	NA	56.3	1.69	50	NA	NA	NA	detected
+ccga_13569	Male	81	I	N0	M0	T2	4	1	Other/missing	ADC	7.2	68	1.73	15	NA	NA	NA	not detected
+ccga_13757	Male	57	IV	N1	M1	T2	Other/missing	1	3	ADC	6.4	83	1.78	NA	NA	NA	NA	detected
+ccga_14230	Male	85	IV	N2	M1	T1	Other/missing	1	Other/missing	ADC	3.4	85.5	1.78	NA	NA	NA	NA	detected
+ccga_14502	Male	76	I	N0	M0	T1	0	1	2	ADC	2.9	88	1.78	24	NA	NA	NA	not detected
+ccga_14577	Female	65	I	N0	M0	T2	Other/missing	1	1	SCC	NA	50.3	1.7	40	NA	NA	NA	detected
+ccga_15059	Male	84	II	N0	M0	T2	0	1	3	ADC	11.2	94.4	1.71	41	NA	NA	NA	detected
+ccga_15178	Female	65	IV	N1	M1	T3	Other/missing	1	Other/missing	SCC	4.5	47	1.42	16	NA	NA	NA	detected
+ccga_4460	Female	67	IV	N0	M1	T1	Other/missing	1	3	Other	4.1	102.1	1.69	19	NA	NA	NA	not detected
+ccga_4551	Male	51	III	N3	M0	T1	Other/missing	1	3	ADC	3	69.2	1.73	10	NA	NA	NA	detected
+ccga_5035	Female	73	III	N3	M0	T2	2	1	Other/missing	SCLC	20.8	60.8	1.55	29	NA	NA	NA	detected
+ccga_5583	Male	63	IV	N3	M1	T2	Other/missing	1	3	Other	6.6	73.9	1.75	32	NA	NA	NA	detected
+ccga_6071	Male	72	III	N2	M0	T2	Other/missing	1	3	ADC	26.3	67.4	1.76	34	NA	NA	NA	detected
+ccga_6844	Female	55	IV	N2	M1	T2	1	1	Other/missing	ADC	NA	57.2	1.63	NA	NA	NA	NA	detected
+ccga_7059	Male	54	I	N0	M0	T1	0	1	2	ADC	1.5	99	1.8	21	NA	NA	NA	not detected
+ccga_7371	Female	73	I	N0	M0	T1	Other/missing	1	3	SCC	5.5	85	1.75	25	NA	NA	NA	not detected
+ccga_7783	Male	62	IV	N3	M1	T4	Other/missing	1	2	SCC	NA	86.7	1.57	75	NA	NA	NA	detected
+ccga_8620	Male	65	I	N0	M0	T1	0	1	2	ADC	1.3	71	1.8	15	NA	NA	NA	not detected
+ccga_8681	Female	80	III	N2	M0	T1	Other/missing	1	Other/missing	Other	10.8	48.1	1.63	20	NA	NA	NA	not detected
+ccga_9013	Male	61	IV	Nx	M1	T4	Other/missing	1	Other/missing	Other	9.2	71.3	1.75	50	NA	NA	NA	detected
+ccga_9353	Male	66	III	N3	M0	T2	1	1	3	ADC	10.8	115.7	1.88	59	NA	NA	NA	detected
+ccga_950	Male	84	III	N2	M0	T1	1	1	3	ADC	6	72.1	1.83	20	NA	NA	NA	detected
+ccga_9684	Male	55	III	N2	M0	T3	2	1	3	ADC	9.8	84	1.78	64	NA	NA	NA	detected
+ccga_10300	Female	53	IV	N2	M1	T2	Other/missing	1	3	SCC	10.1	68	1.65	44	NA	NA	NA	detected
+ccga_11184	Male	74	I	N0	M0	T1	0	1	Other/missing	Other	NA	68.5	1.8	25	NA	NA	NA	not detected
+ccga_11522	Male	55	IV	N2	M1	T1	Other/missing	1	3	Other	9.7	47.6	1.73	24	NA	NA	NA	detected
+ccga_11577	Female	59	IV	N0	M1	T2	Other/missing	1	Other/missing	ADC	13.6	84.9	1.69	NA	NA	NA	NA	detected
+ccga_11651	Male	77	III	N0	M0	T4	2	2	2	SCC	19.8	75	1.83	70	18	NA	NA	detected
+ccga_12300	Male	56	IV	N3	M1	T3	Other/missing	1	3	Other	21	66	1.74	71	NA	NA	NA	detected
+ccga_12313	Male	71	IV	N3	M1	T4	1	1	Other/missing	SCLC	9.8	110	1.8	32	NA	NA	NA	detected
+ccga_12428	Male	59	I	N0	M0	T1	0	1	2	SCC	4.6	100.6	1.79	27	NA	NA	NA	detected
+ccga_12613	Male	60	III	N2	M0	T1	Other/missing	1	4	Other	21.7	64	1.65	NA	NA	NA	NA	detected
+ccga_12642	Female	75	I	N0	M0	T1	Other/missing	1	2	SCC	9	70	1.61	22	NA	NA	NA	detected
+ccga_12796	Male	82	II	Non-informative	Non-informative	Non-informative	0	1	3	SCC	14.7	81	1.7	41	NA	NA	NA	detected
+ccga_12844	Female	70	III	N2	M0	T1	Other/missing	1	2	ADC	12.9	93	1.75	19	NA	NA	NA	detected
+ccga_12900	Female	70	I	N0	M0	T2	Other/missing	1	Other/missing	ADC	9	49.8	1.6	29	NA	NA	NA	not detected
+ccga_13003	Male	85	IV	N1	M1	T3	Other/missing	1	3	SCC	11	79.4	1.8	75	NA	NA	NA	detected
+ccga_13026	Male	65	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	Other	NA	86.9	1.82	41	NA	NA	NA	detected
+ccga_13259	Female	55	I	N0	M0	T2	0	1	2	ADC	NA	63.7	1.49	3.6	NA	NA	NA	not detected
+ccga_13333	Male	60	IV	Nx	M1	T4	1	1	Other/missing	ADC	0.5	71	1.78	25	NA	NA	NA	not detected
+ccga_13408	Male	47	III	N1	M0	T3	Other/missing	1	Other/missing	ADC	23.4	84.5	1.84	55	NA	NA	NA	detected
+ccga_13518	Female	63	I	N0	M0	T2	Other/missing	1	Other/missing	ADC	3.9	95	1.65	NA	NA	NA	NA	not detected
+ccga_13546	Female	66	III	N1	M0	T4	Other/missing	1	Other/missing	SCLC	13.4	63.5	1.64	51	NA	NA	NA	detected
+ccga_13562	Male	62	IV	N1	M1	T2	Other/missing	1	2	SCC	16.3	89.4	1.83	44	NA	NA	NA	detected
+ccga_13649	Female	85	III	N2	M0	T2	Other/missing	1	3	ADC	23	63.2	1.54	46	NA	NA	NA	detected
+ccga_14508	Male	78	I	N0	M0	T1	Other/missing	1	3	SCC	8.3	73.5	1.64	30	NA	NA	NA	detected
+ccga_14528	Male	68	IV	N2	M1	T3	Other/missing	1	3	Other	46.9	80.3	1.67	63	NA	NA	NA	detected
+ccga_14616	Female	78	I	N0	M0	T1	0	1	2	ADC	NA	74.8	1.6	16	NA	NA	NA	not detected
+ccga_3569	Female	55	III	N3	M0	T1	Other/missing	1	3	SCLC	3.8	63	1.57	10	NA	NA	NA	detected
+ccga_5224	Male	62	IV	N0	M1	T3	Other/missing	1	3	Other	15.9	84.2	1.93	112	NA	NA	NA	detected
+ccga_5864	Female	52	III	N2	Mx	T3	1	1	3	ADC	NA	93.4	1.65	82	NA	NA	NA	detected
+ccga_7092	Female	81	I	N0	Mx	T1	0	1	2	ADC	NA	61.2	1.51	15	NA	NA	NA	not detected
+ccga_7161	Female	63	IV	N2	M1	T2	Other/missing	1	1	ADC	5.5	46.4	1.6	30	NA	NA	NA	detected
+ccga_7637	Female	64	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	Other	NA	95.7	1.65	NA	NA	NA	NA	detected
+ccga_7961	Male	59	III	N2	M0	T2	1	1	Other/missing	SCC	15.7	82.6	1.68	58	NA	NA	NA	detected
+ccga_8133	Male	83	IV	N2	M1	Tx	Other/missing	1	Other/missing	SCLC	NA	85.3	1.85	27	NA	NA	NA	detected
+ccga_8262	Female	68	III	N2	M0	T1	1	1	Other/missing	SCLC	2.8	73.9	1.5	13	NA	NA	NA	not detected
+ccga_829	Male	62	III	N2	M0	T3	4	1	3	ADC	18.2	73.5	1.8	114	NA	NA	NA	detected
+ccga_8449	Male	71	II	N1	M0	T2	1	1	3	Other	10	85.7	1.78	37	NA	NA	NA	detected
+ccga_8699	Male	68	IV	N2	M1	T2	Other/missing	1	3	ADC	10.5	63	1.8	37	NA	NA	NA	detected
+ccga_8772	Male	58	III	N3	M0	T2	1	1	3	ADC	11.8	102.2	1.82	40	NA	NA	NA	detected
+ccga_8987	Male	66	III	N2	M0	T2	2	1	3	SCC	17.5	81.6	1.8	46	NA	NA	NA	detected
+ccga_9072	Male	71	III	N2	M0	T3	2	1	Other/missing	Other	11.5	84.6	1.78	NA	NA	NA	NA	detected
+ccga_9430	Female	64	IV	N1	M1	T2	Other/missing	1	Other/missing	SCLC	NA	84.4	1.56	49	NA	NA	NA	detected
+ccga_9596	Female	78	IV	Nx	M1	T3	Other/missing	1	Other/missing	SCLC	7.8	53.2	1.7	24	NA	NA	NA	detected
+ccga_10269	Male	77	I	N0	M0	T1	1	1	2	ADC	4.9	96	1.74	14	NA	NA	NA	not detected
+ccga_10280	Male	69	IV	Nx	M1	Tx	Other/missing	1	Other/missing	SCLC	8.8	88.9	1.79	NA	NA	NA	NA	detected
+ccga_10556	Female	54	III	N2	M0	T2	1	1	3	ADC	11.6	46.4	1.52	NA	NA	NA	NA	detected
+ccga_10944	Female	75	II	N1	Mx	T2	3	1	Other/missing	SCLC	NA	75.3	1.65	NA	NA	NA	NA	detected
+ccga_10948	Female	65	IV	N2	M1	Tx	1	1	Other/missing	SCLC	NA	101.4	1.8	36	NA	NA	NA	detected
+ccga_11131	Male	75	IV	N0	M1	T1	Other/missing	1	3	Other	21.6	122	1.83	27	NA	NA	NA	detected
+ccga_1148	Male	68	III	N2	M0	T4	Other/missing	1	Other/missing	SCLC	NA	98.9	1.75	NA	NA	NA	NA	detected
+ccga_11541	Male	73	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	Other	NA	83.9	1.8	42	NA	NA	NA	detected
+ccga_11692	Male	73	II	N0	M0	T3	Other/missing	1	Other/missing	SCC	17.1	78.5	1.78	60	NA	NA	NA	detected
+ccga_11793	Male	58	III	N3	Mx	T2	1	1	3	Other	12.2	75.7	1.78	42	NA	NA	NA	detected
+ccga_11981	Female	69	IV	N3	M1	Tx	1	1	2	ADC	17.8	60	1.63	NA	NA	NA	NA	detected
+ccga_12007	Female	69	I	N0	M0	T1	0	1	1	SCLC	7	91	1.66	19	NA	NA	NA	not detected
+ccga_12226	Male	53	IV	N1	M1	T2	Other/missing	1	3	ADC	9.1	68.5	1.88	41	NA	NA	NA	detected
+ccga_12289	Female	84	IV	N3	M1	T2	Other/missing	1	Other/missing	SCLC	12.7	66.5	1.68	NA	NA	NA	NA	detected
+ccga_12363	Female	67	IV	N3	M1	T2	Other/missing	1	Other/missing	ADC	NA	59	1.57	4	NA	NA	NA	detected
+ccga_12683	Female	71	I	N0	Non-informative	T2	0	2	Other/missing	ADC	NA	52.2	1.55	35	27	NA	NA	not detected
+ccga_12863	Female	65	III	N2	M0	T2	Other/missing	1	Other/missing	SCLC	NA	45	1.55	36	NA	NA	NA	detected
+ccga_13072	Male	65	II	N0	M0	T2	Other/missing	1	Other/missing	SCC	35	91.9	1.78	43	NA	NA	NA	detected
+ccga_13207	Male	63	III	N2	M0	T3	Other/missing	1	Other/missing	SCLC	NA	67.6	1.76	53	NA	NA	NA	detected
+ccga_13331	Male	72	I	N0	M0	T1	0	1	2	SCC	11.9	75.5	1.83	20	NA	NA	NA	detected
+ccga_13718	Male	75	III	N2	M0	T1	4	1	1	ADC	NA	88	1.78	26	NA	NA	NA	not detected
+ccga_13747	Female	75	IV	N2	M1	T3	Other/missing	1	3	Other	NA	59	1.52	NA	NA	NA	NA	detected
+ccga_13912	Male	52	III	N2	M0	T3	1	1	Other/missing	ADC	13.6	81.1	1.82	NA	NA	NA	NA	detected
+ccga_13991	Female	53	II	N1	M0	T2	Other/missing	1	Other/missing	SCLC	NA	104.6	1.61	NA	NA	NA	NA	detected
+ccga_13998	Male	85	IV	N0	M1	T3	Other/missing	1	Other/missing	ADC	12.3	115	1.7	NA	NA	NA	NA	not detected
+ccga_14029	Female	71	III	N2	M0	T2	1	1	Other/missing	SCLC	6.9	74	1.65	25	NA	NA	NA	not detected
+ccga_14598	Female	49	III	N0	M0	T4	Other/missing	1	3	ADC	10	50.3	1.7	69	NA	NA	NA	detected
+ccga_14945	Female	83	I	N0	M0	T1	0	1	2	ADC	1.6	54.4	1.52	22	NA	NA	NA	not detected
+ccga_15014	Female	49	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	NA	58.5	1.6	NA	NA	NA	NA	detected
+ccga_15038	Male	82	I	N0	Mx	T2	0	1	2	SCC	NA	85.3	1.78	35	NA	NA	NA	detected
+ccga_4169	Male	77	IV	N3	M1	T1	Other/missing	1	2	SCC	11.5	74.4	1.66	35	NA	NA	NA	detected
+ccga_4303	Female	76	III	N2	M0	T2	Other/missing	1	Other/missing	SCC	20.9	80.7	1.6	51	NA	NA	NA	detected
+ccga_5586	Male	64	IV	N1	M1	T1	Other/missing	1	Other/missing	ADC	10	65	1.75	20	NA	NA	NA	detected
+ccga_5742	Female	76	I	N0	M0	T1	0	1	3	ADC	16.6	84.4	1.6	24	NA	NA	NA	not detected
+ccga_5807	Female	69	I	N0	M0	T1	0	1	Other/missing	SCLC	NA	45.8	1.49	1.5	NA	NA	NA	not detected
+ccga_5827	Female	65	III	N2	M0	T1	2	1	Other/missing	ADC	6.1	66.2	1.73	NA	NA	NA	NA	detected
+ccga_5918	Male	62	IV	N0	M1	T4	Other/missing	1	Other/missing	ADC	14.3	54.8	1.64	15	NA	NA	NA	not detected
+ccga_7245	Male	55	IV	N2	M1	Non-informative	3	1	Other/missing	SCLC	9.3	81.6	1.74	38	NA	NA	NA	detected
+ccga_7368	Female	59	IV	N2	M1	T3	1	1	Other/missing	SCLC	17.4	66.8	1.64	120	NA	NA	NA	detected
+ccga_7709	Male	62	III	N2	M0	T4	Other/missing	1	3	SCC	11.5	90.5	1.78	56	NA	NA	NA	detected
+ccga_9442	Male	72	I	N0	M0	T1	Other/missing	1	Other/missing	ADC	8.3	69.4	1.65	25	NA	NA	NA	not detected
+ccga_10340	Male	68	IV	N3	M1	T3	Other/missing	1	Other/missing	SCLC	19.2	98.9	1.85	90	NA	NA	NA	detected
+ccga_10552	Male	85	IV	N3	M1	T1	Other/missing	1	Other/missing	Other	4.2	74.8	1.68	18	NA	NA	NA	detected
+ccga_10403	Male	85	III	N2	M0	T1	1	1	Other/missing	ADC	2.7	89.8	1.63	25	NA	NA	NA	detected
+ccga_10321	Male	70	I	N0	M0	T1	0	1	3	SCC	11.2	98.4	1.73	22	NA	NA	NA	not detected
+ccga_10326	Female	84	I	Non-informative	Non-informative	Non-informative	0	1	2	ADC	1.4	64.9	1.7	15	NA	NA	NA	not detected
+ccga_13356	Female	56	IV	Nx	M1	T4	Other/missing	1	Other/missing	ADC	NA	94.3	1.65	33	NA	NA	NA	detected
+ccga_13305	Female	65	I	N0	M0	T1	1	1	Other/missing	SCLC	NA	86.5	1.58	11	NA	NA	NA	not detected
+ccga_13310	Female	85	IV	N0	M1	T2	Other/missing	1	3	ADC	10.6	73	1.57	36	NA	NA	NA	detected
+ccga_13265	Male	70	I	Non-informative	Non-informative	Non-informative	0	1	Other/missing	ADC	NA	87.1	1.8	36	NA	NA	NA	not detected
+ccga_13258	Female	52	III	N2	M0	T4	Other/missing	1	Other/missing	ADC	NA	124	1.78	95	NA	NA	NA	detected
+ccga_13361	Male	79	I	Nx	M0	T1	0	1	Other/missing	ADC	7.9	93.9	1.69	35	NA	NA	NA	not detected
+ccga_13425	Male	63	II	N1	M0	T2	2	1	2	SCC	17.6	119	1.8	45	NA	NA	NA	detected
+ccga_12817	Female	66	IV	N2	M1	T4	Other/missing	1	3	ADC	13.3	76.3	1.63	35	NA	NA	NA	detected
+ccga_12685	Female	68	III	N2	M0	T2	Other/missing	1	Other/missing	ADC	8.3	86.2	1.68	35	NA	NA	NA	not detected
+ccga_3517	Male	64	II	N0	M0	T2	0	1	Other/missing	SCC	9.1	55.8	1.65	63	NA	NA	NA	detected
+ccga_3508	Male	60	III	N2	M0	T2	2	1	3	SCC	NA	77.1	1.78	43	NA	NA	NA	detected
+ccga_4151	Male	70	IV	N3	M1	T3	Other/missing	1	3	SCC	NA	126.8	1.8	60	NA	NA	NA	detected
+ccga_11693	Male	79	IV	Nx	M1	T3	Other/missing	1	Other/missing	ADC	NA	72.5	1.78	NA	NA	NA	NA	detected
+ccga_11636	Male	79	IV	N2	M1	T4	Other/missing	1	Other/missing	SCC	NA	93	1.78	38	NA	NA	NA	detected
+ccga_11775	Female	75	I	N0	M0	T1	0	1	2	ADC	4.3	67.3	1.63	29	NA	NA	NA	not detected
+ccga_11482	Male	59	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	Other	NA	81.6	1.75	13	NA	NA	NA	detected
+ccga_11283	Female	45	I	N0	M0	T1	0	1	2	ADC	10.3	56.7	1.55	25	NA	NA	NA	detected
+ccga_11737	Male	76	III	N0	M0	T4	Other/missing	1	Other/missing	SCC	NA	91.7	1.75	NA	NA	NA	NA	detected
+ccga_2296	Female	70	IV	N2	M1	T1	Other/missing	1	3	ADC	NA	83.4	1.74	18	NA	NA	NA	detected
+ccga_2479	Male	72	I	N0	M0	T1	0	1	4	SCLC	1.9	140.2	1.85	18	NA	NA	NA	detected
+ccga_2374	Female	76	II	Nx	Mx	T2	Other/missing	1	Other/missing	SCLC	2	64.3	1.68	13	NA	NA	NA	not detected
+ccga_1160	Male	65	I	N0	M0	T2	0	1	3	ADC	NA	59	1.5	24	NA	NA	NA	not detected
+ccga_1135	Male	62	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	ADC	NA	152	1.93	23	NA	NA	NA	detected
+ccga_1875	Female	69	IV	N0	M1	T2	0	1	Other/missing	ADC	6.5	47.4	1.57	53	NA	NA	NA	detected
+ccga_1029	Male	79	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	Other/missing	Other	NA	70.3	1.75	NA	NA	NA	NA	detected
+ccga_862	Male	49	III	N0	M0	T4	Other/missing	1	Other/missing	SCC	11.4	64	1.7	40	NA	NA	NA	detected
+ccga_853	Male	56	IV	N2	M1	T3	Other/missing	1	3	Other	NA	88.2	1.6	69	NA	NA	NA	detected
+ccga_11984	Male	74	IV	N2	M1	T3	Other/missing	1	Other/missing	Other	NA	104.8	1.6	NA	NA	NA	NA	detected
+ccga_11813	Male	70	III	N2	M0	T2	1	1	Other/missing	SCC	12.9	66	1.8	25	NA	NA	NA	detected
+ccga_14721	Female	67	I	N0	M0	T1	0	1	1	ADC	NA	77.1	1.55	37	NA	NA	NA	not detected
+ccga_15188	Male	65	I	N0	M0	T1	Other/missing	1	3	ADC	4.7	79.4	1.78	12	NA	NA	NA	not detected
+ccga_14865	Male	74	I	N0	M0	T1	0	1	3	SCC	17.1	76.4	1.73	31	NA	NA	NA	detected
+ccga_14267	Male	64	I	N0	M0	T1	0	1	2	ADC	9.3	74.3	1.7	10	NA	NA	NA	not detected
+ccga_7294	Male	72	IV	N3	M1	T4	Other/missing	1	Other/missing	ADC	NA	65.3	1.83	68	NA	NA	NA	detected
+ccga_7045	Male	67	III	N3	M0	T2	Other/missing	1	Other/missing	ADC	6.9	92.1	1.8	32	NA	NA	NA	detected
+ccga_7392	Female	75	IV	Nx	M1	T3	Other/missing	1	3	Other	NA	126.9	1.7	120	NA	NA	NA	detected
+ccga_7088	Male	47	IV	N3	M1	T4	Other/missing	1	Other/missing	SCLC	12.5	124.7	1.8	36	NA	NA	NA	detected
+ccga_8577	Male	64	II	N1	M0	T2	Other/missing	1	Other/missing	SCC	NA	66.2	1.75	NA	NA	NA	NA	detected
+ccga_8656	Male	79	I	N0	M0	T2	Other/missing	1	Other/missing	SCLC	NA	91.6	1.75	NA	NA	NA	NA	detected
+ccga_8382	Female	78	III	N1	M0	T4	Other/missing	1	2	ADC	17.3	57.3	1.59	50	NA	NA	NA	not detected
+ccga_8468	Male	60	III	N2	M0	T2	Other/missing	1	Other/missing	ADC	15.7	122.5	1.78	49	NA	NA	NA	detected
+ccga_8787	Male	61	IV	N3	M1	T2	3	1	3	SCC	NA	88.9	1.75	NA	NA	NA	NA	detected
+ccga_9253	Male	82	IV	N2	M1	T3	Other/missing	1	3	Other	13.5	84.5	1.7	72	NA	NA	NA	detected
+ccga_9322	Female	62	III	N3	M0	T3	Other/missing	1	3	ADC	14.9	59.4	1.64	NA	NA	NA	NA	detected
+ccga_11334	Female	62	III	Non-informative	Non-informative	Non-informative	1	1	Other/missing	Other	9.2	66	1.57	NA	NA	NA	NA	detected
+ccga_11309	Female	68	IV	N3	M1	Tx	Other/missing	1	Other/missing	SCLC	12.1	75	1.65	61	NA	NA	NA	detected
+ccga_11367	Female	56	IV	N2	M1	T4	2	1	Other/missing	SCLC	13.4	69.4	1.52	57	NA	NA	NA	detected
+ccga_11281	Male	47	IV	N1	M1	T4	Other/missing	1	Other/missing	SCLC	64.9	109.8	1.75	64	NA	NA	NA	detected
+ccga_11092	Female	76	I	N0	M0	T2	0	1	2	ADC	11.8	68.5	1.55	25	NA	NA	NA	not detected
+ccga_11089	Male	57	III	N0	M0	T2	0	1	2	SCC	13	145.1	1.78	35	NA	NA	NA	not detected
+ccga_11005	Male	70	IV	N2	M1	T3	Other/missing	1	3	ADC	16	105.7	1.8	NA	NA	NA	NA	detected
+ccga_10937	Male	47	I	N0	M0	T1	0	1	1	SCLC	1.9	101.6	1.78	19	NA	NA	NA	not detected
+ccga_10926	Female	49	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	1	SCLC	6.6	127	1.75	40	NA	NA	NA	not detected
+ccga_10835	Male	61	IV	N3	M1	T2	3	1	Other/missing	SCLC	NA	99.9	1.86	NA	NA	NA	NA	detected
+ccga_10789	Female	65	II	N0	M0	T3	0	1	1	ADC	2.1	69.2	1.6	9	NA	NA	NA	not detected
+ccga_10626	Female	72	III	N2	M0	T2	1	1	3	SCC	31.4	72.1	1.55	50	NA	NA	NA	detected
+ccga_10653	Female	72	IV	N0	M1	T4	Other/missing	1	Other/missing	ADC	8.6	84	1.5	27	NA	NA	NA	not detected
+ccga_10647	Female	60	III	N3	M0	T4	1	1	Other/missing	SCLC	11.5	98	1.73	106	NA	NA	NA	detected
+ccga_10518	Male	67	I	Nx	M0	T2	Other/missing	1	Other/missing	SCLC	3.1	85	1.7	14	NA	NA	NA	not detected
+ccga_10464	Male	33	III	N2	M0	T2	0	1	1	SCLC	NA	122.9	1.85	22	NA	NA	NA	not detected
+ccga_10140	Female	80	IV	N2	M1	T1	Other/missing	1	3	ADC	39.2	79	1.6	111	NA	NA	NA	detected
+ccga_9984	Male	68	III	N2	M0	T3	Other/missing	1	Other/missing	Other	28.9	58.2	1.8	90	NA	NA	NA	detected
+ccga_9705	Female	78	III	N2	M0	T1	1	1	3	SCC	16.8	56.7	1.57	NA	NA	NA	NA	detected
+ccga_9929	Male	85	III	N3	M0	T3	Other/missing	1	3	ADC	NA	82	1.73	63	NA	NA	NA	detected
+ccga_9693	Female	63	I	N0	M0	T1	0	1	Other/missing	ADC	NA	99.8	1.71	28	NA	NA	NA	not detected
+ccga_9718	Female	56	III	N3	M0	T3	1	1	2	SCC	31.3	81.1	1.7	72	NA	NA	NA	detected
+ccga_7923	Male	78	IV	N3	M1	T2	1	1	Other/missing	ADC	10.8	40.5	1.66	95	NA	NA	NA	detected
+ccga_7972	Female	77	III	N0	M0	T4	0	2	2	SCC	15.2	57.6	1.6	39	33	NA	NA	detected
+ccga_8261	Male	68	IV	N0	M1	T1	Other/missing	1	3	ADC	2.6	79	1.88	NA	NA	NA	NA	detected
+ccga_13856	Female	58	IV	N3	M1	T3	Other/missing	1	3	Other	13.9	96.6	1.65	28	NA	NA	NA	detected
+ccga_13885	Female	69	III	N1	M0	T3	Other/missing	1	2	SCC	31.8	66	1.5	63	NA	NA	NA	not detected
+ccga_13631	Female	78	I	Non-informative	Non-informative	Non-informative	0	1	Other/missing	ADC	NA	69.4	1.57	10	NA	NA	NA	not detected
+ccga_13627	Male	72	IV	Non-informative	Non-informative	Non-informative	Other/missing	1	3	Other	15.5	132.9	1.7	48	NA	NA	NA	detected
+ccga_15180	Male	69	I	N0	M0	T1	0	1	Other/missing	Other	2.8	66.2	1.73	15	NA	NA	NA	not detected
+ccga_8566	Female	79	III	N1	M0	T4	Other/missing	1	2	ADC	27.7	83.5	1.74	41	NA	NA	NA	detected
+ccga_7920	Female	55	IV	N0	M1	T1	Other/missing	1	1	ADC	5.4	59.3	1.54	NA	NA	NA	NA	detected
+ccga_7702	Female	62	IV	N3	M1	T1	1	1	Other/missing	ADC	9.5	74.3	1.63	18	NA	NA	NA	detected
+ccga_5354	Male	85	II	N0	M0	T2	0	1	1	ADC	3.2	76.5	1.7	NA	NA	NA	NA	not detected
+ccga_5168	Female	85	III	N1	M0	T3	1	1	2	ADC	14.1	50.9	1.55	62	NA	NA	NA	detected
+ccga_5215	Female	44	III	N0	M0	T4	Other/missing	1	Other/missing	ADC	15	111.1	1.63	NA	NA	NA	NA	detected
+ccga_12532	Female	63	III	N1	M0	T3	2	1	Other/missing	SCLC	NA	66.7	1.68	67	NA	NA	NA	detected
+ccga_12116	Female	50	I	N0	M0	T1	0	1	1	SCLC	NA	75	1.5	16	NA	NA	NA	not detected
+ccga_12216	Male	75	IV	N3	M1	T2	1	1	Other/missing	SCLC	12.2	78.5	1.78	NA	NA	NA	NA	detected
+ccga_12366	Female	66	IV	N3	M1	T1	Other/missing	1	Other/missing	ADC	NA	61.7	1.55	NA	NA	NA	NA	detected
+ccga_12499	Female	75	I	N0	M0	T2	0	1	2	ADC	14.2	56.2	1.63	31	NA	NA	NA	not detected
+ccga_13326	Male	76	II	N0	M0	T3	Other/missing	1	Other/missing	ADC	NA	62.6	1.88	61	NA	NA	NA	not detected
+ccga_13184	Female	55	IV	N2	M1	Tx	Other/missing	1	Other/missing	ADC	17.2	141.3	1.65	24	NA	NA	NA	not detected
+ccga_13209	Female	62	III	N2	M0	T1	1	1	Other/missing	ADC	14.1	83	1.57	17	NA	NA	NA	not detected
+ccga_12991	Male	69	III	N3	M0	T3	1	1	Other/missing	SCLC	NA	67.4	1.61	NA	NA	NA	NA	detected
+ccga_12855	Female	63	II	N0	M0	T2	0	1	1	SCLC	4.9	70.8	1.44	47	NA	NA	NA	not detected
+ccga_12861	Male	76	III	N2	M0	T2	1	1	Other/missing	SCC	30	58.8	1.74	50	NA	NA	NA	detected
+ccga_12859	Male	66	IV	N3	M1	T3	Other/missing	1	Other/missing	SCLC	NA	98.9	1.65	NA	NA	NA	NA	detected
+ccga_12881	Female	56	IV	N2	M1	T1	Other/missing	1	Other/missing	SCLC	2.2	61.9	1.57	10	NA	NA	NA	not detected
+ccga_5947	Female	70	II	N0	M0	T2	2	2	Other/missing	ADC	6	59.9	1.52	32	8	NA	NA	not detected
+ccga_6034	Male	52	IV	Nx	M1	Tx	Other/missing	1	3	Other	12.1	83.3	1.83	42	NA	NA	NA	detected
+ccga_5984	Male	64	I	N0	M0	T1	Other/missing	1	2	ADC	NA	127	1.73	20	NA	NA	NA	not detected
+ccga_12225	Male	81	I	N0	M0	T1	Other/missing	1	2	ADC	3.7	106.1	1.83	15	NA	NA	NA	detected
+ccga_12305	Male	59	III	N3	M0	T1	3	1	Other/missing	ADC	7.2	109.4	1.79	11	NA	NA	NA	detected
+ccga_12162	Male	74	III	N2	M0	T1	Other/missing	1	Other/missing	SCLC	9.8	96.2	1.83	17	NA	NA	NA	detected
+ccga_11918	Male	70	I	N0	M0	T2	6	1	3	SCC	21.1	58	1.65	45	NA	NA	NA	detected
+ccga_14147	Male	57	IV	N0	M1	T1	Other/missing	1	Other/missing	SCC	7.8	73	1.75	NA	NA	NA	NA	detected
+ccga_13597	Male	65	II	N1	M0	T1	0	1	Other/missing	Other	7.2	77.6	1.73	24	NA	NA	NA	detected
+ccga_13564	Female	85	I	N0	M0	T1	Other/missing	1	Other/missing	ADC	2.3	56.2	1.64	11	NA	NA	NA	not detected
+ccga_7366	Male	79	IV	N3	M1	T4	Other/missing	1	Other/missing	ADC	2.9	118.5	1.8	NA	NA	NA	NA	not detected
+ccga_6919	Male	68	II	N0	M0	T2	Other/missing	1	Other/missing	SCLC	15.9	71.9	1.75	47	NA	NA	NA	detected
+ccga_6284	Male	70	I	N0	M0	T1	Other/missing	1	Other/missing	SCC	NA	78	1.73	16	NA	NA	NA	not detected
