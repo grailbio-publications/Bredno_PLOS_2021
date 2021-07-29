@@ -25,36 +25,36 @@ requireNamespace("svglite", quietly = TRUE)
 #' @param score_frac_min, score_frac_max: Valid WGBS classifier score range to
 #'   allow imputation of tumor fraction
 #' @return list with two items:
-#'   df_model: incoming df_model with additional columns imputed_ectf,
-#'   ectf_source set to "imputed" or "measured", and optionally updated column
-#'   ectf
+#'   df_model: incoming df_model with additional columns imputed_ctf,
+#'   ctf_source set to "imputed" or "measured", and optionally updated column
+#'   ctf
 #'   hPlot: ggplot2 figure plot that visualizes the imputation process
 #'
-#' This function fits a sigmoid function to wgbs_classifier_score over log(ectf).
+#' This function fits a sigmoid function to wgbs_classifier_score over log(ctf).
 #' The fitted function's value range is then used to identify a range of classifier
 #' scores for which a lookup using the inverse sigmoid function can be used to
-#' impute ectf. The range of valid imputation is
+#' impute ctf. The range of valid imputation is
 #' [min + score_frac_min * (max-min), min + score_frac_max * (max-min)]. For samples without
-#' ectf measurement and a classifier score in this range, tumor fraction is imputed via
+#' cTF measurement and a classifier score in this range, tumor fraction is imputed via
 #' this fitted function. When the parameter draw_or_fixed is set to "draw", then for the imputation
-#' of each ECTF, the parameters of the sigmoid are drawn from individuall Gaussian distributions
+#' of each cRF, the parameters of the sigmoid are drawn from individuall Gaussian distributions
 #' with center and width estimated from the confidence interval of the fitting parameters.
-impute_ectf <- function(
+impute_ctf <- function(
   df_model,
   replace_with_imputed = TRUE,
   draw_or_fixed = c("fixed", "draw"),
   score_frac_min = 0.1,
   score_frac_max = 0.9) {
   draw_or_fixed <- match.arg(draw_or_fixed)
-  ectf_model <- nls(data = df_model,
-                    wgbs_classifier_score ~ a / (1 + exp(-b * (log(ectf) - c))) + d,
+  ctf_model <- nls(data = df_model,
+                    wgbs_classifier_score ~ a / (1 + exp(-b * (log(ctf) - c))) + d,
                     start=list(a = 0.5, b = 1, c = log(5e-3), d = 0.5),
                     control = list(maxiter = 500))
-  fp <- ectf_model$m$getPars() %>% as.list
+  fp <- ctf_model$m$getPars() %>% as.list
   # For imputation with a random draw, the 95% confidence interval is requested
   # from the nls model fit for each parameter and assumed to span 2 * 1.96
   # standard deviations of that parameter for a random draw from a normal distribution
-  ci_params <- confint(ectf_model, level = 0.95, control = list(maxiter = 500))
+  ci_params <- confint(ctf_model, level = 0.95, control = list(maxiter = 500))
   sigma <- as.list((ci_params[, 2] - ci_params[, 1]) / 2 / 1.96)
   # local function to plot the fit, uses the list fp (fitting parameters) from
   # the caller namespace (defined above)
@@ -63,12 +63,12 @@ impute_ectf <- function(
   }
   # local function to estimate tf from wgbs classifier score, uses fitting
   # parameters from the caller namespace
-  impute_ectf <- function(wgbs_classifier_score) {
+  impute_ctf <- function(wgbs_classifier_score) {
     exp(-1/fp$b * log(fp$a / (wgbs_classifier_score - fp$d) - 1) + fp$c)
   }
   # local function to draw tf from wgbs classifier score with fitting parameters
   # and estimated standard deviation of fitting parameters for a random draw
-  impute_ectf_with_draw <- function(wgbs_classifier_score, fp, sigma) {
+  impute_ctf_with_draw <- function(wgbs_classifier_score, fp, sigma) {
     a <- rnorm(1, mean = fp$a, sd = sigma$a)
     b <- rnorm(1, mean = fp$b, sd = sigma$b)
     c <- rnorm(1, mean = fp$c, sd = sigma$c)
@@ -79,40 +79,40 @@ impute_ectf <- function(
   impute_wgbs_classifier_score_max <- fp$d + score_frac_max * fp$a
 
   if (draw_or_fixed == "fixed") {
-    df_model$imputed_ectf <- sapply(df_model$wgbs_classifier_score,
-                                    impute_ectf)
+    df_model$imputed_ctf <- sapply(df_model$wgbs_classifier_score,
+                                    impute_ctf)
   } else {
-    df_model$imputed_ectf <- sapply(df_model$wgbs_classifier_score,
-                                    impute_ectf_with_draw,
+    df_model$imputed_ctf <- sapply(df_model$wgbs_classifier_score,
+                                    impute_ctf_with_draw,
                                     fp, sigma)
   }
-  no_imputation <- !is.na(df_model$ectf) |
+  no_imputation <- !is.na(df_model$ctf) |
     df_model$wgbs_classifier_score < impute_wgbs_classifier_score_min |
     df_model$wgbs_classifier_score > impute_wgbs_classifier_score_max
-  df_model$imputed_ectf[no_imputation] <- NA
+  df_model$imputed_ctf[no_imputation] <- NA
 
   df_plot <- df_model %>%
-    dplyr::mutate(ectf_source = factor(ifelse(is.na(ectf),
+    dplyr::mutate(ctf_source = factor(ifelse(is.na(ctf),
                                               "imputed", "measured"),
                                        levels = c("measured", "imputed")),
-                  tf_plot = ifelse(is.na(ectf),
-                                   imputed_ectf, ectf))
+                  tf_plot = ifelse(is.na(ctf),
+                                   imputed_ctf, ctf))
 
   hPlot <- ggplot2::ggplot(df_plot) +
-    ggplot2::stat_function(ggplot2::aes(x = ectf),
+    ggplot2::stat_function(ggplot2::aes(x = ctf),
                            fun = fitted_func) +
     ggplot2::geom_point(ggplot2::aes(x = tf_plot, y = wgbs_classifier_score,
-                                     color = clinical_stage, shape = ectf_source)) +
+                                     color = clinical_stage, shape = ctf_source)) +
     ggplot2::scale_x_log10()
 
   if(replace_with_imputed) {
     df_model <- df_model %>%
       dplyr::mutate(
-        ectf_source = factor(ifelse(is.na(ectf),
+        ctf_source = factor(ifelse(is.na(ctf),
                                     "imputed", "measured"),
                              levels = c("measured", "imputed")),
-        ectf = ifelse(is.na(ectf) & !is.na(imputed_ectf),
-                      imputed_ectf, ectf))
+        ctf = ifelse(is.na(ctf) & !is.na(imputed_ctf),
+                      imputed_ctf, ctf))
   }
   list(df_model = df_model, hPlot = hPlot)
 }
@@ -346,7 +346,7 @@ derive_primary_size <- function(
 }
 
 #' Create a figure showing violin plots separated by a category.
-#' Typical example is ECTF over clinical stage.
+#' Typical example is cTF over clinical stage.
 #' @param df_data: Data frame with at least a column name_x with a categorical
 #'   variable and a column name_y with a numerical variable.
 #' @param name_x: Categorical variable that defines data sets for which violin plots
@@ -441,7 +441,7 @@ get_ln_status <- function(df_data) {
 #'   violate_constraints: Vector of input variables that are not part of the
 #'     analysis model because they violated a non-negativity constraint.
 create_model <-function(df_model,
-                        v_targets = c("ectf", "ctdna_amount_ge"),
+                        v_targets = c("ctf", "ctdna_amount_ge"),
                         v_variables,
                         v_constraints,
                         data_name = NULL) {
@@ -515,7 +515,9 @@ summarize_model <- function(model) {
                     p_value < 0.01 ~ "**",
                     p_value < 0.05 ~ "*",
                     p_value < 0.1 ~ ".",
-                    TRUE ~ " "))
+                    TRUE ~ " "),
+                  estimate = sprintf("%.3g", estimate),
+                  print_p_value = sprintf("%.4g", p_value))
   # additional column from relaimpo package, which requires the model to have an intercept
   if ("(Intercept)" %in% names(model$coefficients)) {
     relative_importance <- relaimpo::calc.relimp.lm(model,
@@ -525,17 +527,19 @@ summarize_model <- function(model) {
       dplyr::left_join(data.frame(variable = names(relative_importance$lmg),
                                   rel_importance = relative_importance$lmg),
                        by = "variable") %>%
-      dplyr::select(variable, estimate, p_value, significance, rel_importance)
+      dplyr::mutate(rel_importance = sprintf("%.3f", rel_importance)) %>%
+      dplyr::select(variable, estimate, p_value, print_p_value,
+                    significance, rel_importance)
   } else {
     df_summary <- df_summary %>%
-      dplyr::select(variable, estimate, p_value, significance)
+      dplyr::select(variable, estimate, p_value, print_p_value, significance)
   }
   df_summary
 }
 
 #' Derive assay quantitation information.
 #' @param df_model: Data frame with at least the columns weight_kg, height_m,
-#'   sex, ectf, cfdna_conc_ng_ml
+#'   sex, ctf, cfdna_conc_ng_ml
 #' @return updated df_model data frame with additional columns:
 #'   blood_volume_l: Estimated patient whole blood volume in liters
 #'   plasma_volume_l: Estimated patient plasma volume in liters
@@ -555,7 +559,7 @@ assay_quant <- function(df_model, df_assay) {
                                           0.3561 * height_m^3 + 0.03308 * weight_kg + 0.1833,
                                           0.3669 * height_m^3 + 0.03219 * weight_kg + 0.6041),
                   plasma_volume_l = blood_volume_l * 0.55,
-                  ctdna_conc_ng_ml = cfdna_conc_ng_ml * ectf,
+                  ctdna_conc_ng_ml = cfdna_conc_ng_ml * ctf,
                   ctdna_amount_ng = ctdna_conc_ng_ml * plasma_volume_l * 1e3,
                   cfdna_conc_ge_ml = cfdna_conc_ng_ml / 6.5 * 1000,  # [Pio19]
                   ctdna_conc_ge_ml = ctdna_conc_ng_ml / 6.5 * 1000,
@@ -638,7 +642,7 @@ waterfall_plot <-function(df_data, name_y, color_1, color_2) {
 #'  }
 simple_roc <- function(df_data,
                        detected = "detected",
-                       feature = "ectf_predicted") {
+                       feature = "ctf_predicted") {
   controls <- df_data %>%
     dplyr::filter(!!rlang::sym(detected) == FALSE) %>%
     dplyr::pull(!!rlang::sym(feature))
@@ -736,16 +740,16 @@ combined_roc <- function(df_data,
 }
 
 
-#' Count the number of cases that require imputation of ECTF, tumor size of a
+#' Count the number of cases that require imputation of cTF, tumor size of a
 #' non-index lesion in multifocal disease, or presence of tumor-involved lymph
 #' nodes
-#' @param df_data: Data frame with at least the columns ectf, ectf_source,
+#' @param df_data: Data frame with at least the columns ctf, ctf_source,
 #'   size_1...size_6, n_primary_lesions, n_ln, n_stage, clinical_stage that are
-#'   used in the functions impute_ectf, derive_primary_size, and get_ln_status,
+#'   used in the functions impute_ctf, derive_primary_size, and get_ln_status,
 #'   resp.
 #' @return list with counts of cases with measured or imputed data:
-#'   n_measured_ectf: Number of cases with measured ECTF.
-#'   n_imputed_ectf: Number of cases with imputed ECTF.
+#'   n_measured_ctf: Number of cases with measured cTF.
+#'   n_imputed_ctf: Number of cases with imputed cTF.
 #'   n_complete_size: Number of cases with complete size information (size for
 #'     all lesions when multifocal disease is reported)
 #'   n_imputed_size: Number of cases with multifocal disease where at least one
@@ -758,10 +762,10 @@ combined_roc <- function(df_data,
 #'       imputed from clinical stage.
 report_imputation <- function(df_data) {
   l_ret <- list()
-  l_ret$n_measured_ectf <-
-    sum(!is.na(df_data$ectf) & df_data$ectf_source == "measured")
-  l_ret$n_imputed_ectf <-
-    sum(!is.na(df_data$ectf) & df_data$ectf_source == "imputed")
+  l_ret$n_measured_ctf <-
+    sum(!is.na(df_data$ctf) & df_data$ctf_source == "measured")
+  l_ret$n_imputed_ctf <-
+    sum(!is.na(df_data$ctf) & df_data$ctf_source == "imputed")
   v_all_size_columns <- c("size_1", "size_2", "size_3",
                           "size_4", "size_5", "size_6")
   df_data[, setdiff(v_all_size_columns, colnames(df_data))] <- NA

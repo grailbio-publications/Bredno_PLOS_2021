@@ -76,9 +76,6 @@ main <- function() {
     stopifnot(fdg_suv >= 1)
     df_case$fdg_suv <- fdg_suv
     df_case$elg <- df_case$primary_volume * (df_case$fdg_suv - 1.0)
-    ectf_prediction <- predict(prediction_model,
-                               df_case,
-                               interval = "confidence")
   }
   if (cancer_type == "c") {
     lookup_microinvasion <- tibble::tribble(
@@ -123,15 +120,15 @@ main <- function() {
 
   # Model prediction and confidence intervals for estimated tumor fraction and
   # estimated number of GEs in patient circulation
-  ectf_prediction <- predict(prediction_model,
-                             df_case,
-                             interval = "confidence")
+  ctf_prediction <- predict(prediction_model,
+                            df_case,
+                            interval = "confidence")
   quantitative_prediction <- predict(quantitative_model,
                                      df_case,
                                      interval = "confidence")
   cat(sprintf(
-    "The model predicts a cfDNA tumor fraction of %f\n  (95%% CI [%f; %f])\n",
-    ectf_prediction[1], ectf_prediction[2], ectf_prediction[3]))
+    "The model predicts a circulating tumor fraction of %f\n  (95%% CI [%f; %f])\n",
+    ctf_prediction[1], ctf_prediction[2], ctf_prediction[3]))
   cat(sprintf(
     "Estimated number of tumor-derived GEs in circulation: %.1f\n  (95%% CI [%.1f; %.1f])\n",
     quantitative_prediction[1],

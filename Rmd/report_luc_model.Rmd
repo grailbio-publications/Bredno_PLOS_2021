@@ -28,34 +28,34 @@ df_luc <- df_luc_in
 
 ### Figure 7B
 
-WGBS classifier score by ECTF for lung cancer. Samples are colored by clinical
-stage and samples with imputed ECTF are shown as triangles.
+WGBS classifier score by cTF for lung cancer. Samples are colored by clinical
+stage and samples with imputed cTF are shown as triangles.
 
 ```{r impute_tumor_fraction}
-# For simpler re-use, imputed ECTF is already part of the shared data.
+# For simpler re-use, imputed cTF is already part of the shared data.
 # The previously imputed data is removed and re-created here for complete
 # reproducibility
 set.seed(0)
 df_luc <- df_luc %>%
-  dplyr::mutate(ectf_check = ectf,
-                ectf = ifelse(ectf_source == "imputed",
-                              NA, ectf)) %>%
-  dplyr::select(-ectf_source)
+  dplyr::mutate(ctf_check = ctf,
+                ctf = ifelse(ctf_source == "imputed",
+                              NA, ctf)) %>%
+  dplyr::select(-ctf_source)
 
-lret <- impute_ectf(df_luc,
+lret <- impute_ctf(df_luc,
                     replace_with_imputed = TRUE,
                     draw_or_fixed = "draw",
                     score_frac_min = 0.02,
                     score_frac_max = 0.98)
 df_luc <- lret$df_model
 print(lret$hPlot %>%
-        assign_figure_style(axis_x = "ECTF",
+        assign_figure_style(axis_x = "cTF",
                             axis_y = "WGBS classifier score",
                             color_legend = "Clinical stage",
                             shape_legend = "Tumor fraction source",
                             legend_position = c(0.8, 0.4),
                             color_points = TRUE,
-                            export = "Fig_7b_luc_impute_ectf"))
+                            export = "Fig_7b_luc_impute_ctf"))
 ```
 
 ```{r derive_size_ln_assay}
@@ -81,14 +81,14 @@ all invasive cancers (not stage 0) with known clinical stage.
 print(basic_violin(df_data = df_luc %>%
                      dplyr::filter(clinical_stage %in% c("I", "II", "III", "IV")),
                    name_x = "clinical_stage",
-                   name_y = "ectf",
-                   shape = "ectf_source") %>%
+                   name_y = "ctf",
+                   shape = "ctf_source") %>%
         assign_figure_style(log_y = TRUE,
                             axis_x = "Clinical stage",
-                            axis_y = "ECTF",
+                            axis_y = "cTF",
                             shape_legend = "Tumor fraction source",
                             legend_position = c(0.15, 0.85),
-                            export = "Fig_7a_luc_stage_ectf"))
+                            export = "Fig_7a_luc_stage_ctf"))
 ```
 
 ### Table 2
@@ -107,7 +107,7 @@ df_luc <- df_luc %>%
                 is_scc = as.numeric(histologic_type == "SCC"),
                 is_sclc = as.numeric(histologic_type == "SCLC"))
 v_variables <- c("elg", "ln_status", "score_histograde", "is_adc", "is_scc", "is_sclc")
-v_targets <- c("ectf", "ctdna_amount_ge")
+v_targets <- c("ctf", "ctdna_amount_ge")
 
 modeling <- create_model(df_luc %>%
                            dplyr::filter(clinical_stage %in% c("I", "II", "III")),
@@ -123,11 +123,20 @@ saveRDS(l_imputation, file = "../cmd/luc_impute_size.Rds")
 ```
 
 ```{r modeling_result}
-knitr::kable(modeling$df_analysis_model)
-summary(modeling$analysis_model)
+knitr::kable(modeling$df_analysis_model %>%
+               dplyr::select(-p_value) %>%
+               dplyr::mutate(variable = dplyr::case_when(
+                               variable == "elg" ~ "ELG",
+                               variable == "ln_status" ~ "Lymph node status",
+                               variable == "score_histograde" ~ "Histologic grade",
+                               variable == "is_adc" ~ "Adenocarcinoma",
+                               variable == "is_scc" ~ "Squamous cell carcinoma",
+                               variable == "is_sclc" ~ "Small cell lung cancer",
+                               TRUE ~ variable)))
 ```
 
-Non-negativity constraints affected `r modeling$violate_constraints`.
+Non-negativity constraints affected (can be empty):
+`r modeling$violate_constraints`
 
 Quantitative model for Lung Cancer.
 
@@ -142,13 +151,13 @@ hPlot <- ggplot2::ggplot(data = df_luc %>%
                            dplyr::filter(clinical_stage %in%
                                            c("I", "II", "III"))) +
   ggplot2::geom_point(mapping = ggplot2::aes(x = elg,
-                                             y = ectf,
+                                             y = ctf,
                                              color = clinical_stage)) +
-  ggplot2::geom_smooth(mapping = ggplot2::aes(x = elg, y = ectf),
+  ggplot2::geom_smooth(mapping = ggplot2::aes(x = elg, y = ctf),
                        method = lm,
                        formula = y ~ x)
 assign_figure_style(hPlot,
-                    axis_x = "ELG", axis_y = "ECTF", log_x = TRUE, log_y = TRUE,
+                    axis_x = "ELG", axis_y = "cTF", log_x = TRUE, log_y = TRUE,
                     color_legend = "Clinical stage",
                     legend_position = c(0.85, 0.2),
                     color_points = TRUE,
@@ -162,12 +171,12 @@ These case numbers are used in the Consort diagrams in Figure 3.
 ```{r training_population}
 invasive_luc <-
   df_luc$clinical_stage != "0"
-measured_ectf <-
-  df_luc$ectf_source == "measured" & !is.na(df_luc$ectf)
-imputed_ectf <-
-  df_luc$ectf_source == "imputed" & !is.na(df_luc$ectf)
-has_ectf <-
-  !is.na(df_luc$ectf)
+measured_ctf <-
+  df_luc$ctf_source == "measured" & !is.na(df_luc$ctf)
+imputed_ctf <-
+  df_luc$ctf_source == "imputed" & !is.na(df_luc$ctf)
+has_ctf <-
+  !is.na(df_luc$ctf)
 stage_i_ii_iii <-
   df_luc$clinical_stage %in% c("I", "II", "III")
 has_size <-
@@ -181,30 +190,30 @@ df_population <- tibble::tribble(
   ~population, ~n,
   "Invasive lung cancer",
   sum(invasive_luc),
-  "~ with measured ECTF",
-  sum(invasive_luc & measured_ectf),
-  "~ with imputed ECTF",
-  sum(invasive_luc & imputed_ectf),
-  "~ with any ECTF",
-  sum(invasive_luc & has_ectf),
+  "~ with measured cTF",
+  sum(invasive_luc & measured_ctf),
+  "~ with imputed cTF",
+  sum(invasive_luc & imputed_ctf),
+  "~ with any cTF",
+  sum(invasive_luc & has_ctf),
   "Stages I, II, III",
-  sum(has_ectf & stage_i_ii_iii),
+  sum(has_ctf & stage_i_ii_iii),
   "~ with size information",
-  sum(has_ectf & stage_i_ii_iii & has_size),
+  sum(has_ctf & stage_i_ii_iii & has_size),
   "~ with PET SUV information",
-  sum(has_ectf & has_size & stage_i_ii_iii & has_suv),
+  sum(has_ctf & has_size & stage_i_ii_iii & has_suv),
   "~ with LN information",
-  sum(has_ectf & stage_i_ii_iii & has_ln & has_size & has_suv),
+  sum(has_ctf & stage_i_ii_iii & has_ln & has_size & has_suv),
   "Validation",
-  sum(has_ectf & stage_i_ii_iii & has_ln & has_suv & has_size),
+  sum(has_ctf & stage_i_ii_iii & has_ln & has_suv & has_size),
   "~ Stage I",
-  sum(has_ectf & has_ln & has_suv & has_size &
+  sum(has_ctf & has_ln & has_suv & has_size &
           df_luc$clinical_stage == "I"),
   "~ Stage II",
-  sum(has_ectf & has_ln & has_suv & has_size &
+  sum(has_ctf & has_ln & has_suv & has_size &
           df_luc$clinical_stage == "II"),
   "~ Stage III",
-  sum(has_ectf & has_ln & has_suv & has_size &
+  sum(has_ctf & has_ln & has_suv & has_size &
           df_luc$clinical_stage == "III"))
 knitr::kable(df_population)
 ```
@@ -213,7 +222,7 @@ knitr::kable(df_population)
 
 ```{r report_imputation}
 df_analytical_model <-
-  df_luc[has_ectf & stage_i_ii_iii & has_ln & has_suv & has_size, ]
+  df_luc[has_ctf & stage_i_ii_iii & has_ln & has_suv & has_size, ]
 l_report_imputation <- report_imputation(df_analytical_model)
 data.frame(data_source = stringr::str_sub(names(l_report_imputation), 3),
            n_samples = as.integer(l_report_imputation)) %>%
@@ -238,8 +247,8 @@ df_validate_luc <- l_ret$df_model %>%
 df_validate_luc <- df_validate_luc %>%
   dplyr::mutate(elg = primary_volume * (fdg_suv - 1.0))
 
-df_validate_luc$ectf_predicted <- predict(modeling$prediction_model,
-                                          df_validate_luc)
+df_validate_luc$ctf_predicted <- predict(modeling$prediction_model,
+                                         df_validate_luc)
 ```
 
 ### Figure 9A and B
@@ -247,19 +256,19 @@ df_validate_luc$ectf_predicted <- predict(modeling$prediction_model,
 ```{r validation result plots}
 df_results <- df_validate_luc %>%
   dplyr::filter(clinical_stage %in% c("I", "II", "III"),
-                !is.na(ectf_predicted)) %>%
-  dplyr::mutate(ectf_visualize = pmin(1.0, ectf_predicted))
+                !is.na(ctf_predicted)) %>%
+  dplyr::mutate(ctf_visualize = pmin(1.0, ctf_predicted))
 
 hPlot <- waterfall_plot(df_results %>%
                           dplyr::mutate(detected = (tm_classifier_result == "detected")),
-                        name_y = "ectf_visualize",
+                        name_y = "ctf_visualize",
                         color_1 = "detected",
                         color_2 = "clinical_stage") +
   ggplot2::scale_fill_manual(labels = c("I", "II", "III",
                                         "not detected", "detected"),
                              values = c("black", "gray", "white",
                                         "yellow", "blue")) +
-  ggplot2::ylab("ECTF")
+  ggplot2::ylab("cTF")
 print(hPlot)
 ggplot2::ggsave(filename = "../figures/Fig_9a_luc_waterfall.eps",
                 plot = hPlot,
@@ -270,36 +279,16 @@ ggplot2::ggsave(filename = "../figures/Fig_9a_luc_waterfall.svg",
 
 l_ret <- simple_roc(df_results %>%
                       dplyr::mutate(detected = (tm_classifier_result == "detected")),
-                    "detected", "ectf_predicted")
+                    "detected", "ctf_predicted")
 print(l_ret$hPlot %>%
         assign_figure_style(axis_x = "False positive rate",
                             axis_y = "True positive rate",
                             export = "Fig_9b_luc_roc"))
 ```
 
-Model-predicted ECTF explains detection with TM assay with an AUC of `r l_ret$auc`
+Model-predicted cTF explains detection with TM assay with an AUC of `r l_ret$auc`
 (95% CI `r as.numeric(l_ret$auc_ci[c(1,3)])`).
-Detected cases have higher model-predicted ECTF than undetected cases with one-sided two-sample Wilcoxon Rank Sum test p-Value `r l_ret$wilcoxon_p`.
-
-```{r validation_participants}
-df_validate_luc %>%
-  dplyr::count(clinical_stage, tm_classifier_result) %>%
-  tidyr::pivot_wider(names_from = "tm_classifier_result",
-                     values_from = "n", values_fill = 0) %>%
-  dplyr::mutate(n = detected + `not detected`) %>%
-  dplyr::select(clinical_stage, n, detected) %>%
-  knitr::kable()
-
-df_validate_luc %>%
-  dplyr::filter(!is.na(elg),
-                !is.na(ln_status)) %>%
-  dplyr::count(clinical_stage, tm_classifier_result) %>%
-  tidyr::pivot_wider(names_from = "tm_classifier_result",
-                     values_from = "n", values_fill = 0) %>%
-  dplyr::mutate(n = detected + `not detected`) %>%
-  dplyr::select(clinical_stage, n, detected) %>%
-  knitr::kable()
-```
+Detected cases have higher model-predicted cTF than undetected cases with one-sided two-sample Wilcoxon Rank Sum test p-Value `r l_ret$wilcoxon_p`.
 
 ### Figure 3C (center)
 
@@ -341,6 +330,21 @@ df_population <- tibble::tribble(
 knitr::kable(df_population)
 ```
 
+### Detection with TM assay for validation participants
+
+```{r validation_participants}
+df_validate_luc %>%
+  dplyr::filter(!is.na(elg),
+                !is.na(ln_status),
+                clinical_stage %in% c("I", "II", "III")) %>%
+  dplyr::count(clinical_stage, tm_classifier_result) %>%
+  tidyr::pivot_wider(names_from = "tm_classifier_result",
+                     values_from = "n", values_fill = 0) %>%
+  dplyr::mutate(n = detected + `not detected`) %>%
+  dplyr::select(clinical_stage, n, detected) %>%
+  knitr::kable()
+```
+
 ### Validation data imputation status
 
 ```{r report_validation_imputation}
@@ -350,8 +354,8 @@ l_report_imputation <- report_imputation(df_used_in_validation)
 data.frame(data_source = stringr::str_sub(names(l_report_imputation), 3),
            n_samples = as.integer(l_report_imputation),
            stringsAsFactors = FALSE) %>%
-  # ectf is always model-predicted for validation
-  dplyr::filter(!endsWith(data_source, "ectf")) %>%
+  # cTF is always model-predicted for validation
+  dplyr::filter(!endsWith(data_source, "ctf")) %>%
   knitr::kable()
 ```
 
@@ -360,12 +364,21 @@ data.frame(data_source = stringr::str_sub(names(l_report_imputation), 3),
 ```{r competing_model}
 v_variables <- c("elg", "primary_volume", "ln_status", "score_histograde",
                  "is_adc", "is_scc", "is_sclc")
-v_targets <- c("ectf", "ctdna_amount_ge")
+v_targets <- c("ctf", "ctdna_amount_ge")
 competing_model <- create_model(df_luc %>%
                                       dplyr::filter(clinical_stage %in% c("I", "II", "III")),
                                     v_targets = v_targets, v_variables = v_variables)
-knitr::kable(competing_model$df_analysis_model)
-summary(competing_model$analysis_model)
+knitr::kable(competing_model$df_analysis_model %>%
+               dplyr::select(-p_value) %>%
+               dplyr::mutate(variable = dplyr::case_when(
+                               variable == "elg" ~ "ELG",
+                               variable == "ln_status" ~ "Lymph node status",
+                               variable == "score_histograde" ~ "Histologic grade",
+                               variable == "is_adc" ~ "Adenocarcinoma",
+                               variable == "is_scc" ~ "Squamous cell carcinoma",
+                               variable == "is_sclc" ~ "Small cell lung cancer",
+                               variable == "primary_volume" ~ "Primary volume",
+                               TRUE ~ variable)))
 
 v_variables <- c("primary_volume", "ln_status", "score_histograde",
                  "is_adc", "is_scc", "is_sclc")
@@ -373,8 +386,17 @@ competing_model <- create_model(df_luc %>%
                                       dplyr::filter(clinical_stage %in% c("I", "II", "III")),
                                     v_targets = v_targets, v_variables = v_variables)
 
-knitr::kable(competing_model$df_analysis_model)
-summary(competing_model$analysis_model)
+knitr::kable(competing_model$df_analysis_model %>%
+               dplyr::select(-p_value) %>%
+               dplyr::mutate(variable = dplyr::case_when(
+                               variable == "elg" ~ "ELG",
+                               variable == "ln_status" ~ "Lymph node status",
+                               variable == "score_histograde" ~ "Histologic grade",
+                               variable == "is_adc" ~ "Adenocarcinoma",
+                               variable == "is_scc" ~ "Squamous cell carcinoma",
+                               variable == "is_sclc" ~ "Small cell lung cancer",
+                               variable == "primary_volume" ~ "Primary volume",
+                               TRUE ~ variable)))
 ```
 
 ### Supplemental figure 2: ROC broken down by stage
@@ -382,7 +404,7 @@ summary(competing_model$analysis_model)
 ```{r roc_by_stage}
 lret <- combined_roc(df_results %>%
                        dplyr::mutate(detected = (tm_classifier_result == "detected")),
-                     "detected", "ectf_predicted", "clinical_stage")
+                     "detected", "ctf_predicted", "clinical_stage")
 print(lret$hPlot %>%
         assign_figure_style(axis_x = "False positive rate",
                             axis_y = "True positive rate",

@@ -1,4 +1,4 @@
-participant_id	sex	age	clinical_stage	t_stage	n_stage	m_stage	ln_involved	n_primary_lesions	histologic_grade	histologic_type	fdg_suv	ectf	ectf_source	weight_kg	height_m	size_1	size_2	size_3	wgbs_classifier_score	cfdna_conc_ng_ml	wgbs_classifier_result
+participant_id	sex	age	clinical_stage	t_stage	n_stage	m_stage	ln_involved	n_primary_lesions	histologic_grade	histologic_type	fdg_suv	ctf	ctf_source	weight_kg	height_m	size_1	size_2	size_3	wgbs_classifier_score	cfdna_conc_ng_ml	wgbs_classifier_result
 ccga_1016	Male	70	Non-informative	T2	N2	Non-informative	1	1	Other/missing	SCLC	9.3	NA	NA	86.3	1.73	17	NA	NA	0.998608	22.441471571906355	detected
 ccga_1023	Male	82	I	T1	N0	M0	Other/missing	1	Other/missing	SCC	6.1	NA	NA	89.8	1.75	16	NA	NA	0.451519	6.165371809100999	not detected
 ccga_1033	Male	69	IV	Tx	Nx	M1	Other/missing	1	Other/missing	SCLC	NA	NA	NA	67.3	1.8	NA	NA	NA	0.999901	48.979729729729726	detected

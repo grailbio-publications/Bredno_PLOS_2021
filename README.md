@@ -1,8 +1,8 @@
 ## Overview
 
 This project provides data and code to reproduce the analysis results
-presented in Bredno J et al., "Clinical determinants of cfDNA tumor fraction from
-studies of a multi-cancer early detection test", 2021.
+presented in Bredno J et al.,
+"Clinical correlates of circulating cell-free DNA tumor fraction," 2021.
 
 ### Background
 
@@ -70,13 +70,13 @@ This generates tables and lists in the file `report_luc_model.html` and also
 creates figures in eps and svg formats in the directory `figures` and saves
 models for prediction in the directory `cmd`.
 
-A shell script allows to predict cfDNA tumor fraction and total number
+A shell script allows to predict circulating tumor fraction and total number
 of cell-free tumor-derived genome equivalents (GE) in the circulation of a patient.
 The prediction for all models is available in one shell script:
 
 ```
 cd cmd
-./predict_ectf.R
+./predict_ctf.R
 ```
 
 This shell script queries user input to select a cancer type, then enter number

@@ -1,6 +1,6 @@
 # Command line script
 
-This directory contains the script `predict_ectf.R` that provides model predictions
+This directory contains the script `predict_ctf.R` that provides model predictions
 from user-provided input. This directory receives the prediction models for
 breast, lung, and colorectal cancer when the markdown documents in the directory
 Rmd are rendered. These models are necessary to run the script.
@@ -55,12 +55,12 @@ colorectal cancer with valid values 1-4 for T1, T2, T3, T4 respectively.
 The script will end with the output of the models (example here):
 
 ```
-The model predicts a cfDNA tumor fraction of 0.000391
+The model predicts a circulating tumor fraction of 0.000391
   (95% CI [0.000206; 0.000575])
 Estimated number of tumor-derived GEs in circulation: 1334.9
   (95% CI [687.4; 1982.5])
 ```
 
-Estimated cfDNA tumor fracion and total number of genome equivalents for tumor-
+Estimated circulating tumor fraction and total number of genome equivalents for tumor-
 derived cfDNA fragments in the circulation of the patient are given together with
 their respecitve 95% confidence intervals.
