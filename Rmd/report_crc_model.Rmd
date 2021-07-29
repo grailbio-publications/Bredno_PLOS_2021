@@ -1,5 +1,5 @@
 ---
-title: "Biophysical model of estimated cfDNA tumor fraction for colorectal cancer"
+title: "Biophysical model of circulating tumor fraction for colorectal cancer"
 author: "J. Bredno"
 date: '`r format(Sys.time(), "%Y-%m-%d")`'
 output:
