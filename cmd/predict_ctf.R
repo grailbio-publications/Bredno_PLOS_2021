@@ -126,6 +126,7 @@ main <- function() {
   quantitative_prediction <- predict(quantitative_model,
                                      df_case,
                                      interval = "confidence")
+  ctf_prediction <- pmin(1.0, ctf_prediction)
   cat(sprintf(
     "The model predicts a circulating tumor fraction of %f\n  (95%% CI [%f; %f])\n",
     ctf_prediction[1], ctf_prediction[2], ctf_prediction[3]))

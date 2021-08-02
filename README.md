@@ -6,15 +6,33 @@ presented in Bredno J et al.,
 
 ### Background
 
-Liquid biopsy applications of cell-free DNA (cfDNA) are often limited by the amount of circulating tumor DNA (ctDNA) and the fraction of cfDNA in a blood sample that is derived from tumor cells (tumor fraction). This tumor fraction varies widely between individuals and cancer types. Clinical factors that influence tumor fraction have not been completely elucidated.
+Oncology applications of cell-free DNA analysis are often limited by the amount of circulating tumor
+DNA and the fraction of cell-free DNA derived from tumor cells in a blood sample. This circulating
+tumor fraction varies widely between individuals and cancer types. Clinical factors that influence
+tumor fraction have not been completely elucidated.
 
 ### Methods and Findings
 
-Tumor fraction was determined for breast, lung, and colorectal cancer participant samples in the first substudy of the Circulating Cell-free Genome Atlas study CCGA (NCT02889978), and was related to clinical tumor and patient characteristics. Linear models were created to determine the influence of tumor size combined with mitotic or metabolic activity (as tumor mitotic volume or excessive lesion glycolysis, respectively), histologic type, histologic grade, and lymph node status on tumor fraction. For breast cancer and lung cancer, tumor mitotic volume and excessive lesion glycolysis (primary lesion volume scaled by %Ki-67+ or PET SUV - 1.0, respectively) were the only statistically significant covariates. For colorectal cancer, the surface area of tumors invading beyond the subserosa was the only significant covariate. The models were validated with cases from the second CCGA substudy, and show that these clinical determinants of tumor fraction can predict and explain the performance of a multi-cancer early detection test.
+Circulating tumor fraction was determined for breast, lung, and colorectal cancer participant samples in
+the first substudy of the Circulating Cell-free Genome Atlas study (CCGA; NCT02889978; multi-cancer early
+detection test development) and was related to tumor and patient characteristics. Linear models were
+created to determine the influence of tumor size combined with mitotic or metabolic activity (as tumor
+mitotic volume or excessive lesion glycolysis, respectively), histologic type, histologic grade, and lymph
+node status on tumor fraction. For breast and lung cancer, tumor mitotic volume and excessive lesion
+glycolysis (primary lesion volume scaled by percentage positive for Ki-67 or PET standardized uptake value
+minus 1.0, respectively) were the only statistically significant covariates. For colorectal cancer, the
+surface area of tumors invading beyond the subserosa was the only significant covariate. The models were
+validated with cases from the second CCGA substudy and show that these clinical correlates of circulating
+tumor fraction can predict and explain the performance of a multi-cancer early detection test.
 
 ### Conclusions
 
-Prognostic clinical variables, including mitotic or metabolic activity and depth of invasion, were identified as determinants of ctDNA by linear models that relate clinical covariates to tumor fraction. The identified correlations indicate that faster growing tumors have higher tumor fractions. Early cancer detection from liquid biopsy is determined by tumor fraction. The results therefore support that early detection is particularly sensitive for faster growing, aggressive tumors with high mortality, many of which have no available screening today.
+Prognostic clinical variables, including mitotic or metabolic activity and depth of invasion, were identified
+as correlates of circulating tumor DNA by linear models that relate clinical covariates to tumor fraction.
+The identified correlates indicate that faster growing tumors have higher tumor fractions. Early cancer
+detection from assays that analyze cell-free DNA is determined by circulating tumor fraction. Results support
+that early detection is particularly sensitive for faster growing, aggressive tumors with high mortality,
+many of which have no available screening today.
 
 ## System requirements and installation
 
